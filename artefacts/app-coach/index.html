@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="fr" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MON COACH DE COURSE — ROMAIN</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#a900a9",
+            "on-primary": "#ffffff",
+            "primary-container": "#ff00ff",
+            "on-primary-container": "#510051",
+            "inverse-primary": "#ffabf3",
+            "secondary": "#5e5e5e",
+            "on-secondary": "#ffffff",
+            "secondary-container": "#e2e2e2",
+            "on-secondary-container": "#646464",
+            "tertiary": "#5d5f5f",
+            "on-tertiary": "#ffffff",
+            "tertiary-container": "#919292",
+            "on-tertiary-container": "#292b2c",
+            "error": "#ba1a1a",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6",
+            "on-error-container": "#93000a",
+            "surface": "#f9f9f9",
+            "on-surface": "#1a1c1c",
+            "on-surface-variant": "#564052",
+            "surface-variant": "#e2e2e2",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f3f3f4",
+            "surface-container": "#eeeeee",
+            "surface-container-high": "#e8e8e8",
+            "surface-container-highest": "#e2e2e2",
+            "surface-dim": "#dadada",
+            "surface-bright": "#f9f9f9",
+            "surface-tint": "#a900a9",
+            "background": "#f9f9f9",
+            "on-background": "#1a1c1c",
+            "outline": "#897083",
+            "outline-variant": "#dcbed4",
+            "inverse-surface": "#2f3131",
+            "inverse-on-surface": "#f0f1f1",
+            "on-primary-fixed": "#380038",
+            "on-primary-fixed-variant": "#810081",
+            "primary-fixed": "#ffd7f5",
+            "primary-fixed-dim": "#ffabf3",
+            "secondary-fixed": "#e2e2e2",
+            "secondary-fixed-dim": "#c6c6c6",
+            "on-secondary-fixed": "#1b1b1b",
+            "on-secondary-fixed-variant": "#474747",
+            "tertiary-fixed": "#e2e2e2",
+            "tertiary-fixed-dim": "#c6c6c7",
+            "on-tertiary-fixed": "#1a1c1c",
+            "on-tertiary-fixed-variant": "#454747",
+          },
+          borderRadius: {
+            "DEFAULT": "0px",
+            "lg": "0px",
+            "xl": "0px",
+            "full": "9999px"
+          },
+          spacing: {
+            "xs": "4px",
+            "sm": "8px",
+            "md": "16px",
+            "lg": "24px",
+            "xl": "48px",
+            "xxl": "96px",
+            "gutter": "24px",
+            "margin": "32px",
+            "unit": "4px"
+          },
+          fontFamily: {
+            "display-xl": ["Lexend"],
+            "headline-lg": ["Lexend"],
+            "headline-md": ["Lexend"],
+            "body-lg": ["Lexend"],
+            "body-md": ["Lexend"],
+            "label-bold": ["Lexend"],
+            "label-sm": ["Lexend"]
+          },
+          fontSize: {
+            "display-xl": ["72px", { lineHeight: "1.1", letterSpacing: "-0.04em", fontWeight: "800" }],
+            "headline-lg": ["40px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "headline-md": ["24px", { lineHeight: "1.3", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "body-lg": ["18px", { lineHeight: "1.6", letterSpacing: "0em", fontWeight: "400" }],
+            "body-md": ["16px", { lineHeight: "1.6", letterSpacing: "0em", fontWeight: "400" }],
+            "label-bold": ["14px", { lineHeight: "1.2", letterSpacing: "0.05em", fontWeight: "700" }],
+            "label-sm": ["12px", { lineHeight: "1.2", letterSpacing: "0.02em", fontWeight: "500" }]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    body { background-color: #f9f9f9; font-family: 'Lexend', sans-serif; }
+    .page { display: none; }
+    .page.active { display: block; }
+
+    /* Type badge chips */
+    .type-chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 8px;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      background: #1a1c1c;
+      color: #fff;
+    }
+    .type-chip.tempo    { background: #a900a9; }
+    .type-chip.endurance { background: #1a1c1c; }
+    .type-chip.longue   { background: #1a1c1c; }
+    .type-chip.recup    { background: #5e5e5e; }
+    .type-chip.frac     { background: #a900a9; }
+
+    /* Progress bar shimmer */
+    @keyframes shimmer {
+      from { transform: translateX(-100%); }
+      to   { transform: translateX(100%); }
+    }
+    .shimmer::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+      animation: shimmer 2s infinite;
+    }
+
+    /* Nav active */
+    nav button.active {
+      color: #a900a9;
+      border-bottom: 2px solid #a900a9;
+    }
+    nav button:not(.active):hover {
+      background: #f3f3f4;
+    }
+
+    /* Table row hover */
+    .run-row:hover { background: #ffd7f5; }
+
+    /* Card fuchsia accent top line */
+    .card-accent::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: #a900a9;
+    }
+  </style>
+</head>
+<body class="text-on-surface min-h-screen">
+
+<!-- ── HEADER ── -->
+<header class="bg-white border-b-2 border-black flex items-center justify-between px-gutter py-md sticky top-0 z-50">
+  <div class="flex items-center gap-md">
+    <span class="material-symbols-outlined text-primary text-3xl">directions_run</span>
+    <div>
+      <div class="font-black uppercase tracking-tighter text-lg text-black leading-none">MON COACH DE COURSE</div>
+      <div class="text-[11px] font-label-bold uppercase tracking-widest text-secondary mt-xs">Romain Dortier · Strava · Marathon Auxerre 26 mai 2026</div>
+    </div>
+  </div>
+  <div class="hidden md:flex items-center gap-md">
+    <div id="header-countdown" class="border-2 border-black px-md py-sm font-label-bold text-label-bold uppercase tracking-widest text-black">
+      <span id="header-days">—</span> JOURS
+    </div>
+    <div class="bg-primary text-white px-md py-sm font-label-bold text-label-bold uppercase tracking-widest">MARATHON D'AUXERRE</div>
+  </div>
+</header>
+
+<!-- ── NAV ── -->
+<nav class="bg-white border-b-2 border-black flex overflow-x-auto">
+  <button class="active flex items-center gap-sm px-gutter py-md font-label-bold text-label-bold uppercase tracking-widest text-black border-b-2 border-transparent transition-all whitespace-nowrap" onclick="showPage('recent', this)">
+    <span class="material-symbols-outlined text-sm">bar_chart</span> Dernières sorties
+  </button>
+  <button class="flex items-center gap-sm px-gutter py-md font-label-bold text-label-bold uppercase tracking-widest text-secondary border-b-2 border-transparent transition-all whitespace-nowrap" onclick="showPage('marathon', this)">
+    <span class="material-symbols-outlined text-sm">flag</span> Prédiction marathon
+  </button>
+  <button class="flex items-center gap-sm px-gutter py-md font-label-bold text-label-bold uppercase tracking-widest text-secondary border-b-2 border-transparent transition-all whitespace-nowrap" onclick="showPage('records', this)">
+    <span class="material-symbols-outlined text-sm">emoji_events</span> Records personnels
+  </button>
+</nav>
+
+<!-- ══════════════════════════════════════════════
+     PAGE 1 — DERNIÈRES SORTIES
+══════════════════════════════════════════════ -->
+<div id="page-recent" class="page active px-gutter md:px-margin py-xl max-w-5xl mx-auto">
+
+  <!-- Section header -->
+  <div class="flex items-end justify-between mb-xl">
+    <div>
+      <h1 class="font-black uppercase tracking-tighter text-4xl md:text-5xl text-black leading-none">Dernières<br>Sorties</h1>
+      <p class="text-body-md font-body-md text-secondary mt-sm">20 activités récentes · allures &amp; distances</p>
+    </div>
+    <div class="hidden md:flex gap-sm">
+      <div class="bg-black text-white px-md py-sm font-label-bold text-label-bold uppercase tracking-widest text-xs">Strava Live</div>
+    </div>
+  </div>
+
+  <!-- KPI strip -->
+  <div class="grid grid-cols-3 gap-gutter mb-xl">
+    <div class="bg-white border-2 border-black p-lg relative card-accent">
+      <p class="font-label-bold text-label-bold uppercase text-secondary mb-xs">Distance totale</p>
+      <div class="flex items-baseline gap-xs">
+        <span id="kpi-dist" class="text-5xl font-black leading-none tracking-tighter">—</span>
+        <span class="font-headline-md text-primary">km</span>
+      </div>
+      <p class="text-[11px] font-label-bold uppercase tracking-widest text-secondary mt-sm">20 sorties</p>
+    </div>
+    <div class="bg-white border-2 border-black p-lg relative card-accent">
+      <p class="font-label-bold text-label-bold uppercase text-secondary mb-xs">Allure moyenne</p>
+      <div class="flex items-baseline gap-xs">
+        <span id="kpi-pace" class="text-5xl font-black leading-none tracking-tighter">—</span>
+        <span class="font-headline-md text-primary">/km</span>
+      </div>
+      <p class="text-[11px] font-label-bold uppercase tracking-widest text-secondary mt-sm">Sorties courues</p>
+    </div>
+    <div class="bg-white border-2 border-black p-lg relative card-accent">
+      <p class="font-label-bold text-label-bold uppercase text-secondary mb-xs">Sortie longue max</p>
+      <div class="flex items-baseline gap-xs">
+        <span class="text-5xl font-black leading-none tracking-tighter">30</span>
+        <span class="font-headline-md text-primary">km</span>
+      </div>
+      <p class="text-[11px] font-label-bold uppercase tracking-widest text-secondary mt-sm">22 mars 2026</p>
+    </div>
+  </div>
+
+  <!-- Runs table -->
+  <div class="bg-white border-2 border-black overflow-x-auto">
+    <table class="w-full text-left border-collapse">
+      <thead>
+        <tr class="border-b-2 border-black">
+          <th class="px-gutter py-md font-label-bold text-label-bold uppercase text-secondary whitespace-nowrap">Date</th>
+          <th class="px-gutter py-md font-label-bold text-label-bold uppercase text-secondary">Sortie</th>
+          <th class="px-gutter py-md font-label-bold text-label-bold uppercase text-secondary whitespace-nowrap">Distance</th>
+          <th class="px-gutter py-md font-label-bold text-label-bold uppercase text-secondary whitespace-nowrap">Temps</th>
+          <th class="px-gutter py-md font-label-bold text-label-bold uppercase text-secondary whitespace-nowrap">Allure</th>
+        </tr>
+      </thead>
+      <tbody id="runs-tbody" class="divide-y divide-surface-container-high"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     PAGE 2 — PRÉDICTION MARATHON
+══════════════════════════════════════════════ -->
+<div id="page-marathon" class="page px-gutter md:px-margin py-xl max-w-5xl mx-auto">
+
+  <!-- Section header -->
+  <div class="flex items-end justify-between mb-xl">
+    <div>
+      <h1 class="font-black uppercase tracking-tighter text-4xl md:text-5xl text-black leading-none">Marathon<br>d'Auxerre</h1>
+      <p class="text-body-md font-body-md text-secondary mt-sm">26 mai 2026 · 42,195 km</p>
+    </div>
+    <!-- Countdown block -->
+    <div class="text-right">
+      <div id="days-left" class="text-display-xl font-display-xl leading-none text-primary">—</div>
+      <div class="font-label-bold text-label-bold uppercase tracking-widest text-secondary">jours restants</div>
+    </div>
+  </div>
+
+  <!-- Predictions grid -->
+  <p class="font-label-bold text-label-bold uppercase tracking-widest text-secondary mb-md">Prédictions · Formule de Riegel (T₂ = T₁ × (D₂/D₁)^1.06)</p>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-xl">
+
+    <div class="bg-white border-2 border-black p-lg relative card-accent">
+      <div class="type-chip endurance mb-md">Via 10 km</div>
+      <div class="text-4xl font-black tracking-tighter text-black mt-sm">3h21'22"</div>
+      <div class="font-label-bold text-label-bold uppercase text-primary mt-xs tracking-widest">⚡ 4:46 /km</div>
+      <div class="text-[12px] font-label-sm text-secondary mt-md leading-relaxed">Basé sur 43:46 sur 10 km<br>Course du midi · 14/04/2026</div>
+    </div>
+
+    <div class="bg-white border-2 border-black p-lg relative" style="border-color:#a900a9; border-width:2px;">
+      <div class="absolute top-0 left-0 right-0 h-[3px] bg-primary"></div>
+      <div class="flex items-center gap-sm mt-sm mb-md">
+        <div class="type-chip tempo">Via semi</div>
+        <span class="font-label-bold text-[10px] uppercase tracking-widest text-primary">★ Plus fiable</span>
+      </div>
+      <div class="text-4xl font-black tracking-tighter text-black mt-sm">3h31'42"</div>
+      <div class="font-label-bold text-label-bold uppercase text-primary mt-xs tracking-widest">⚡ 5:01 /km</div>
+      <div class="text-[12px] font-label-sm text-secondary mt-md leading-relaxed">Basé sur 1h41'32" sur semi<br>Course du midi · 29/03/2026</div>
+    </div>
+
+    <div class="bg-white border-2 border-black p-lg relative card-accent">
+      <div class="type-chip endurance mb-md">Via 30 km</div>
+      <div class="text-4xl font-black tracking-tighter text-black mt-sm">3h44'52"</div>
+      <div class="font-label-bold text-label-bold uppercase text-primary mt-xs tracking-widest">⚡ 5:20 /km</div>
+      <div class="text-[12px] font-label-sm text-secondary mt-md leading-relaxed">Basé sur 30 km en 2h37'<br>Course matinale · 22/03/2026</div>
+    </div>
+  </div>
+
+  <!-- Target card -->
+  <p class="font-label-bold text-label-bold uppercase tracking-widest text-secondary mb-md">Objectif recommandé</p>
+  <div class="bg-white border-2 border-black p-xl relative card-accent mb-xl">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-lg">
+      <div>
+        <div class="font-label-bold text-label-bold uppercase tracking-widest text-secondary mb-sm">Cible marathon Auxerre</div>
+        <div class="text-6xl font-black tracking-tighter text-primary leading-none">3h35'00"</div>
+      </div>
+      <div class="md:text-right">
+        <div class="text-3xl font-black tracking-tighter text-black">5:06 <span class="text-lg font-bold text-secondary">/km</span></div>
+        <div class="font-label-bold text-[11px] uppercase tracking-widest text-secondary mt-xs">Fourchette réaliste</div>
+        <div class="font-black text-lg text-black mt-xs">3h25' – 3h45'</div>
+      </div>
+    </div>
+    <div class="mt-lg bg-surface-container-low border border-surface-dim p-md text-body-md font-body-md text-secondary leading-relaxed">
+      La prédiction via le semi-marathon est la plus fiable en l'absence de marathon récent. Le volume d'entraînement
+      (30 km, 28 km, 21 km) confirme une bonne endurance de fond. Stratégie : partir à <strong class="text-black">5:05–5:10 /km</strong>
+      sur les 30 premiers km, puis tenter une légère accélération si les sensations sont bonnes. Éviter de partir trop vite.
+    </div>
+  </div>
+
+  <!-- Pace plan -->
+  <p class="font-label-bold text-label-bold uppercase tracking-widest text-secondary mb-md">Plan d'allures recommandé · cible 3h35'</p>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+    <div class="bg-white border-2 border-black p-lg text-center relative card-accent">
+      <div class="font-label-bold text-[10px] uppercase tracking-widest text-secondary mb-sm">km 0–10</div>
+      <div class="text-2xl font-black tracking-tighter text-black">5:10<span class="text-sm font-bold text-secondary"> /km</span></div>
+      <div class="text-[11px] font-label-sm text-secondary mt-xs uppercase tracking-wide">Départ prudent</div>
+    </div>
+    <div class="bg-white border-2 border-black p-lg text-center relative card-accent">
+      <div class="font-label-bold text-[10px] uppercase tracking-widest text-secondary mb-sm">km 10–30</div>
+      <div class="text-2xl font-black tracking-tighter text-black">5:05<span class="text-sm font-bold text-secondary"> /km</span></div>
+      <div class="text-[11px] font-label-sm text-secondary mt-xs uppercase tracking-wide">Rythme de croisière</div>
+    </div>
+    <div class="bg-white border-2 border-black p-lg text-center relative card-accent">
+      <div class="font-label-bold text-[10px] uppercase tracking-widest text-secondary mb-sm">km 30–38</div>
+      <div class="text-2xl font-black tracking-tighter text-black">5:00<span class="text-sm font-bold text-secondary"> /km</span></div>
+      <div class="text-[11px] font-label-sm text-secondary mt-xs uppercase tracking-wide">Maintien</div>
+    </div>
+    <div class="bg-primary text-white border-2 border-primary p-lg text-center relative">
+      <div class="font-label-bold text-[10px] uppercase tracking-widest text-white/70 mb-sm">km 38–42</div>
+      <div class="text-2xl font-black tracking-tighter text-white">4:50<span class="text-sm font-bold text-white/70"> /km</span></div>
+      <div class="text-[11px] font-label-sm text-white/80 mt-xs uppercase tracking-wide">Finish 🔥</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     PAGE 3 — RECORDS PERSONNELS
+══════════════════════════════════════════════ -->
+<div id="page-records" class="page px-gutter md:px-margin py-xl max-w-5xl mx-auto">
+
+  <!-- Section header -->
+  <div class="mb-xl">
+    <h1 class="font-black uppercase tracking-tighter text-4xl md:text-5xl text-black leading-none">Records<br>Personnels</h1>
+    <p class="text-body-md font-body-md text-secondary mt-sm">Distances clés · best performances</p>
+  </div>
+
+  <!-- Records grid -->
+  <p class="font-label-bold text-label-bold uppercase tracking-widest text-secondary mb-md">Performances clés</p>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter mb-xl">
+
+    <div class="bg-white border-2 border-black p-lg relative card-accent">
+      <div class="flex items-start justify-between mb-md">
+        <div class="type-chip tempo">5 km</div>
+        <span class="material-symbols-outlined text-primary">emoji_events</span>
+      </div>
+      <div class="text-5xl font-black tracking-tighter text-black leading-none">21:15</div>
+      <div class="font-label-bold text-label-bold uppercase text-primary mt-sm tracking-widest">4:15 /km</div>
+      <div class="text-[12px] font-label-sm text-secondary mt-sm">17 avril 2026 · 5.03 km en 21:23</div>
+      <div class="mt-md bg-surface-container-low h-1 relative overflow-hidden shimmer">
+        <div class="bg-primary h-full" style="width:88%"></div>
+      </div>
+      <div class="flex justify-between mt-xs">
+        <span class="text-[10px] font-label-sm uppercase tracking-widest text-secondary">Performance</span>
+        <span class="text-[10px] font-label-sm uppercase tracking-widest text-primary">88%</span>
+      </div>
+    </div>
+
+    <div class="bg-white border-2 border-black p-lg relative card-accent">
+      <div class="flex items-start justify-between mb-md">
+        <div class="type-chip tempo">10 km</div>
+        <span class="material-symbols-outlined text-primary">emoji_events</span>
+      </div>
+      <div class="text-5xl font-black tracking-tighter text-black leading-none">43:46</div>
+      <div class="font-label-bold text-label-bold uppercase text-primary mt-sm tracking-widest">4:22 /km</div>
+      <div class="text-[12px] font-label-sm text-secondary mt-sm">14 avril 2026 · 10.17 km en 44:31</div>
+      <div class="mt-md bg-surface-container-low h-1 relative overflow-hidden shimmer">
+        <div class="bg-primary h-full" style="width:82%"></div>
+      </div>
+      <div class="flex justify-between mt-xs">
+        <span class="text-[10px] font-label-sm uppercase tracking-widest text-secondary">Performance</span>
+        <span class="text-[10px] font-label-sm uppercase tracking-widest text-primary">82%</span>
+      </div>
+    </div>
+
+    <div class="bg-white border-2 border-black p-lg relative card-accent">
+      <div class="flex items-start justify-between mb-md">
+        <div class="type-chip endurance">Semi-marathon</div>
+        <span class="material-symbols-outlined text-primary">emoji_events</span>
+      </div>
+      <div class="text-5xl font-black tracking-tighter text-black leading-none">1h41'32"</div>
+      <div class="font-label-bold text-label-bold uppercase text-primary mt-sm tracking-widest">4:49 /km · 21.61 km</div>
+      <div class="text-[12px] font-label-sm text-secondary mt-sm">29 mars 2026 · 21.61 km en 1h44'</div>
+      <div class="mt-md bg-surface-container-low h-1 relative overflow-hidden shimmer">
+        <div class="bg-primary h-full" style="width:75%"></div>
+      </div>
+      <div class="flex justify-between mt-xs">
+        <span class="text-[10px] font-label-sm uppercase tracking-widest text-secondary">Performance</span>
+        <span class="text-[10px] font-label-sm uppercase tracking-widest text-primary">75%</span>
+      </div>
+    </div>
+
+    <div class="bg-white border-2 border-black p-lg relative card-accent">
+      <div class="flex items-start justify-between mb-md">
+        <div class="type-chip endurance">30 km (record distance)</div>
+        <span class="material-symbols-outlined text-primary">emoji_events</span>
+      </div>
+      <div class="text-5xl font-black tracking-tighter text-black leading-none">2h37'00"</div>
+      <div class="font-label-bold text-label-bold uppercase text-primary mt-sm tracking-widest">5:13 /km · 30.06 km</div>
+      <div class="text-[12px] font-label-sm text-secondary mt-sm">22 mars 2026 · Course matinale</div>
+      <div class="mt-md bg-surface-container-low h-1 relative overflow-hidden shimmer">
+        <div class="bg-primary h-full" style="width:70%"></div>
+      </div>
+      <div class="flex justify-between mt-xs">
+        <span class="text-[10px] font-label-sm uppercase tracking-widest text-secondary">Performance</span>
+        <span class="text-[10px] font-label-sm uppercase tracking-widest text-primary">70%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Autres sorties remarquables -->
+  <p class="font-label-bold text-label-bold uppercase tracking-widest text-secondary mb-md">Autres sorties remarquables</p>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter mb-xl">
+
+    <div class="bg-white border-2 border-black p-lg relative card-accent">
+      <div class="flex items-center gap-sm mb-md">
+        <span class="material-symbols-outlined text-secondary text-base">terrain</span>
+        <div class="type-chip endurance">28 km · Sortie longue</div>
+      </div>
+      <div class="text-4xl font-black tracking-tighter text-black leading-none">2h45'00"</div>
+      <div class="font-label-bold text-label-bold uppercase text-secondary mt-sm tracking-widest">5:51 /km · 28.22 km</div>
+      <div class="text-[12px] font-label-sm text-secondary mt-sm">5 avril 2026 · J-21 avant le marathon</div>
+    </div>
+
+    <div class="bg-white border-2 border-black p-lg relative card-accent">
+      <div class="flex items-center gap-sm mb-md">
+        <span class="material-symbols-outlined text-primary text-base">bolt</span>
+        <div class="type-chip tempo">Fractionné 400m</div>
+      </div>
+      <div class="text-4xl font-black tracking-tighter text-black leading-none">1'13"</div>
+      <div class="font-label-bold text-label-bold uppercase text-primary mt-sm tracking-widest">2:54 /km · 420 m</div>
+      <div class="text-[12px] font-label-sm text-secondary mt-sm">3 avril 2026 · 400m × 3</div>
+    </div>
+
+    <div class="bg-white border-2 border-black p-lg relative card-accent">
+      <div class="flex items-center gap-sm mb-md">
+        <span class="material-symbols-outlined text-secondary text-base">forest</span>
+        <div class="type-chip recup">Trail Trilport</div>
+      </div>
+      <div class="text-4xl font-black tracking-tighter text-black leading-none">1h47'00"</div>
+      <div class="font-label-bold text-label-bold uppercase text-secondary mt-sm tracking-widest">5:51 /km · 18.33 km</div>
+      <div class="text-[12px] font-label-sm text-secondary mt-sm">18 janvier 2026 · Trail dénivelé</div>
+    </div>
+
+    <div class="bg-white border-2 border-black p-lg relative card-accent">
+      <div class="flex items-center gap-sm mb-md">
+        <span class="material-symbols-outlined text-secondary text-base">speed</span>
+        <div class="type-chip endurance">~22 km tempo</div>
+      </div>
+      <div class="text-4xl font-black tracking-tighter text-black leading-none">2h03'00"</div>
+      <div class="font-label-bold text-label-bold uppercase text-secondary mt-sm tracking-widest">5:24 /km · 22.76 km</div>
+      <div class="text-[12px] font-label-sm text-secondary mt-sm">15 mars 2026 · Course du midi</div>
+    </div>
+  </div>
+
+  <!-- Volume mensuel -->
+  <p class="font-label-bold text-label-bold uppercase tracking-widest text-secondary mb-md">Volume mensuel 2026</p>
+  <div class="bg-white border-2 border-black p-lg">
+    <div id="monthly-bars"></div>
+  </div>
+
+</div>
+
+<!-- ── FAB ── -->
+<button class="fixed bottom-gutter right-gutter w-14 h-14 bg-black text-white border-2 border-black flex items-center justify-center hover:bg-primary transition-colors duration-150 z-50" title="Actualiser depuis Strava">
+  <span class="material-symbols-outlined">sync</span>
+</button>
+
+<script>
+  /* ── Navigation ── */
+  function showPage(name, btn) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('nav button').forEach(b => {
+      b.classList.remove('active');
+      b.classList.add('text-secondary');
+      b.classList.remove('text-black');
+    });
+    document.getElementById('page-' + name).classList.add('active');
+    btn.classList.add('active');
+    btn.classList.remove('text-secondary');
+    btn.classList.add('text-black');
+  }
+
+  /* ── Countdown ── */
+  const marathon = new Date('2026-05-26T00:00:00');
+  const today = new Date();
+  today.setHours(0,0,0,0);
+  const daysLeft = Math.max(0, Math.ceil((marathon - today) / (1000*60*60*24)));
+  document.getElementById('days-left').textContent = daysLeft;
+  document.getElementById('header-days').textContent = daysLeft;
+
+  /* ── Runs data ── */
+  const runs = [
+    { date:'24/04', name:'Course à pied du midi',            dist:10.13, time:'46:50', pace:277, type:'endurance' },
+    { date:'23/04', name:"Course dans l'après-midi",         dist:10.16, time:'46:10', pace:273, type:'endurance' },
+    { date:'22/04', name:'Course à pied du midi',            dist:10.06, time:'44:28', pace:265, type:'tempo'     },
+    { date:'19/04', name:'Course à pied du midi',            dist:20.14, time:'1:40:00',pace:298,type:'longue'    },
+    { date:'17/04', name:'Course à pied (rapide)',           dist: 5.03, time:'21:23', pace:255, type:'tempo'     },
+    { date:'17/04', name:"Course dans l'après-midi",         dist: 5.18, time:'25:46', pace:299, type:'endurance' },
+    { date:'15/04', name:"Course dans l'après-midi",         dist: 9.12, time:'50:35', pace:333, type:'récup'     },
+    { date:'14/04', name:'Course à pied du midi',            dist:10.17, time:'44:31', pace:263, type:'tempo'     },
+    { date:'12/04', name:'Exploration des laideurs',         dist:12.38, time:'1:20:00',pace:388,type:'récup'     },
+    { date:'12/04', name:'Escapade hors des sentiers',       dist: 4.91, time:'29:03', pace:355, type:'récup'     },
+    { date:'10/04', name:'Course à pied du midi',            dist:10.87, time:'1:02:00',pace:342,type:'endurance' },
+    { date:'08/04', name:'Course à pied le soir',            dist:12.38, time:'1:18:00',pace:378,type:'récup'     },
+    { date:'05/04', name:'Course matinale',                  dist:28.22, time:'2:45:00',pace:351,type:'longue'    },
+    { date:'03/04', name:'400m × 3 (fractionné)',            dist: 1.26, time:'~4:05', pace:194, type:'fractionné'},
+    { date:'29/03', name:'Course à pied du midi',            dist:21.61, time:'1:44:00',pace:289,type:'longue'    },
+    { date:'27/03', name:'Course à pied du midi',            dist: 8.29, time:'51:50', pace:375, type:'récup'     },
+    { date:'22/03', name:'Course matinale',                  dist:30.06, time:'2:37:00',pace:313,type:'longue'    },
+    { date:'20/03', name:'Endurance fondamentale',           dist:10.10, time:'1:01:00',pace:362,type:'récup'     },
+    { date:'18/03', name:'Course à pied du midi',            dist: 8.22, time:'35:20', pace:258, type:'tempo'     },
+    { date:'15/03', name:'Course à pied du midi',            dist:22.76, time:'2:03:00',pace:324,type:'longue'    },
+  ];
+
+  const typeMap = {
+    tempo:      { cls:'tempo',    label:'Tempo'      },
+    endurance:  { cls:'endurance',label:'Endurance'  },
+    longue:     { cls:'longue',   label:'Longue'     },
+    récup:      { cls:'recup',    label:'Récup'      },
+    fractionné: { cls:'frac',     label:'Fractionné' },
+  };
+
+  function paceColor(p) {
+    if (p < 270) return '#a900a9';
+    if (p < 320) return '#1a1c1c';
+    return '#5e5e5e';
+  }
+
+  function fmtPace(s) {
+    const m = Math.floor(s/60), sec = s % 60;
+    return `${m}:${String(sec).padStart(2,'0')}`;
+  }
+
+  const MAX_PACE = 420, MIN_PACE = 180;
+  let totalDist = 0, paceSum = 0, paceCount = 0;
+
+  const tbody = document.getElementById('runs-tbody');
+  runs.forEach(r => {
+    const tm = typeMap[r.type] || { cls:'endurance', label: r.type };
+    const pColor = paceColor(r.pace);
+    const barW = r.pace === 194 ? 100 : Math.round((1 - (r.pace - MIN_PACE)/(MAX_PACE - MIN_PACE)) * 100);
+    const paceDisplay = r.pace === 194 ? '2:54' : fmtPace(r.pace);
+    totalDist += r.dist;
+    if (r.pace > 194) { paceSum += r.pace; paceCount++; }
+
+    const tr = document.createElement('tr');
+    tr.className = 'run-row transition-colors cursor-default';
+    tr.innerHTML = `
+      <td class="px-gutter py-md font-label-sm text-label-sm uppercase tracking-widest text-secondary whitespace-nowrap">${r.date}</td>
+      <td class="px-gutter py-md">
+        <div class="font-label-bold text-sm text-black">${r.name}</div>
+        <span class="type-chip ${tm.cls} mt-xs">${tm.label}</span>
+      </td>
+      <td class="px-gutter py-md font-black text-black whitespace-nowrap">${r.dist} <span class="font-label-sm text-secondary text-xs">km</span></td>
+      <td class="px-gutter py-md font-label-sm text-secondary tabular-nums whitespace-nowrap">${r.time}</td>
+      <td class="px-gutter py-md whitespace-nowrap">
+        <div class="flex items-center gap-sm">
+          <div class="w-14 h-[3px] bg-surface-container-high relative overflow-hidden">
+            <div class="h-full" style="width:${barW}%;background:${pColor};"></div>
+          </div>
+          <span class="font-black text-sm tabular-nums" style="color:${pColor};">${paceDisplay} <span class="font-label-sm text-secondary">/km</span></span>
+        </div>
+      </td>`;
+    tbody.appendChild(tr);
+  });
+
+  /* KPIs */
+  document.getElementById('kpi-dist').textContent = totalDist.toFixed(0);
+  const avgPace = Math.round(paceSum / paceCount);
+  document.getElementById('kpi-pace').textContent = fmtPace(avgPace);
+
+  /* ── Monthly volume ── */
+  const monthly = [
+    { label:'Jan 2026', km: 26.2 },
+    { label:'Fév 2026', km: 36.8 },
+    { label:'Mar 2026', km:156.0 },
+    { label:'Avr 2026', km:141.5 },
+  ];
+  const maxKm = Math.max(...monthly.map(m => m.km));
+  const mbEl = document.getElementById('monthly-bars');
+  monthly.forEach((m, i) => {
+    const pct = Math.round(m.km / maxKm * 100);
+    const isMax = m.km === maxKm;
+    mbEl.innerHTML += `
+      <div class="mb-lg last:mb-0">
+        <div class="flex justify-between items-baseline mb-sm">
+          <span class="font-label-bold text-label-bold uppercase tracking-widest text-secondary">${m.label}</span>
+          <span class="font-black text-black">${m.km} <span class="font-label-sm text-secondary text-xs">km</span></span>
+        </div>
+        <div class="bg-surface-container-low h-[6px] relative overflow-hidden">
+          <div class="${isMax ? 'bg-primary' : 'bg-on-surface'} h-full transition-all duration-700" style="width:${pct}%"></div>
+        </div>
+      </div>`;
+  });
+</script>
+</body>
+</html>

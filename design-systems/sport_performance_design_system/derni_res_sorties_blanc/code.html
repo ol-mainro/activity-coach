@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VOID ELITE | Performance Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#810081",
+                        "secondary-fixed-dim": "#c6c6c6",
+                        "inverse-surface": "#2f3131",
+                        "on-secondary-fixed": "#1b1b1b",
+                        "error-container": "#ffdad6",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-surface": "#1a1c1c",
+                        "outline-variant": "#dcbed4",
+                        "on-surface-variant": "#564052",
+                        "secondary-container": "#e2e2e2",
+                        "surface": "#f9f9f9",
+                        "background": "#f9f9f9",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#f9f9f9",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#ffabf3",
+                        "on-primary-fixed": "#380038",
+                        "on-tertiary-container": "#292b2c",
+                        "primary-container": "#ff00ff",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#474747",
+                        "surface-container-high": "#e8e8e8",
+                        "tertiary-container": "#919292",
+                        "surface-container-low": "#f3f3f4",
+                        "surface-tint": "#a900a9",
+                        "tertiary-fixed": "#e2e2e2",
+                        "surface-container": "#eeeeee",
+                        "primary-fixed-dim": "#ffabf3",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "tertiary": "#5d5f5f",
+                        "primary": "#a900a9",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#ffd7f5",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#e2e2e2",
+                        "outline": "#897083",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#dadada",
+                        "on-secondary-container": "#646464",
+                        "secondary": "#5e5e5e",
+                        "on-background": "#1a1c1c",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#510051",
+                        "secondary-fixed": "#e2e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "sm": "8px",
+                        "md": "16px",
+                        "gutter": "24px",
+                        "xl": "48px",
+                        "unit": "4px",
+                        "xxl": "96px",
+                        "xs": "4px",
+                        "margin": "32px",
+                        "lg": "24px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Lexend"],
+                        "label-bold": ["Lexend"],
+                        "headline-md": ["Lexend"],
+                        "display-xl": ["Lexend"],
+                        "body-md": ["Lexend"],
+                        "headline-lg": ["Lexend"],
+                        "label-sm": ["Lexend"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                        "label-bold": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- TopNavBar -->
+<header class="bg-white dark:bg-black border-b-2 border-black dark:border-white flex justify-between items-center w-full px-6 py-4 fixed top-0 z-50 flat no shadows">
+<div class="flex items-center gap-xl">
+<span class="text-2xl font-black italic tracking-tighter text-black dark:text-white uppercase font-lexend">VOID ELITE</span>
+<nav class="hidden md:flex gap-md">
+<a class="font-lexend tracking-tighter uppercase text-fuchsia-600 border-b-2 border-fuchsia-600 px-2 py-1" href="#">Overview</a>
+<a class="font-lexend tracking-tighter uppercase text-black dark:text-white hover:bg-fuchsia-600 hover:text-white transition-colors duration-150 px-2 py-1" href="#">Engine</a>
+<a class="font-lexend tracking-tighter uppercase text-black dark:text-white hover:bg-fuchsia-600 hover:text-white transition-colors duration-150 px-2 py-1" href="#">Biometrics</a>
+</nav>
+</div>
+<div class="flex items-center gap-md">
+<div class="relative hidden lg:block">
+<input class="border-b-2 border-black bg-transparent px-4 py-1 text-label-sm font-label-bold focus:border-primary focus:ring-0 uppercase" placeholder="SEARCH PERFORMANCE" type="text"/>
+</div>
+<span class="material-symbols-outlined text-black dark:text-white cursor-pointer" data-icon="notifications">notifications</span>
+<span class="material-symbols-outlined text-black dark:text-white cursor-pointer" data-icon="account_circle">account_circle</span>
+</div>
+</header>
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-0 h-full flex flex-col pt-20 bg-white dark:bg-black h-screen w-64 border-r-2 border-black dark:border-white flat no shadows hidden md:flex">
+<div class="px-6 py-gutter">
+<h2 class="font-lexend font-bold uppercase text-sm text-fuchsia-600 dark:text-fuchsia-400">Performance</h2>
+<p class="text-label-sm text-on-surface-variant uppercase tracking-widest">Elite Status</p>
+</div>
+<nav class="flex-1">
+<ul class="flex flex-col">
+<li>
+<a class="flex items-center gap-md px-6 py-4 bg-fuchsia-600 text-white font-lexend font-bold uppercase text-sm Transition-all ease-in-out duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+                        Overview
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-md px-6 py-4 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-900 font-lexend font-bold uppercase text-sm Transition-all ease-in-out duration-200 hover:border-l-4 hover:border-fuchsia-600" href="#">
+<span class="material-symbols-outlined" data-icon="speed">speed</span>
+                        Engine
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-md px-6 py-4 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-900 font-lexend font-bold uppercase text-sm Transition-all ease-in-out duration-200 hover:border-l-4 hover:border-fuchsia-600" href="#">
+<span class="material-symbols-outlined" data-icon="monitor_heart">monitor_heart</span>
+                        Biometrics
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-md px-6 py-4 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-900 font-lexend font-bold uppercase text-sm Transition-all ease-in-out duration-200 hover:border-l-4 hover:border-fuchsia-600" href="#">
+<span class="material-symbols-outlined" data-icon="bedtime">bedtime</span>
+                        Recovery
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-md px-6 py-4 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-900 font-lexend font-bold uppercase text-sm Transition-all ease-in-out duration-200 hover:border-l-4 hover:border-fuchsia-600" href="#">
+<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+                        Vault
+                    </a>
+</li>
+</ul>
+</nav>
+<div class="p-6">
+<button class="w-full bg-black text-white py-4 font-label-bold uppercase tracking-tighter hover:bg-primary transition-colors flex items-center justify-center gap-xs">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+                Add Session
+            </button>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="md:ml-64 pt-24 px-gutter md:px-margin pb-xxl">
+<!-- Dashboard Header -->
+<header class="mb-xl flex flex-col md:flex-row md:items-end justify-between gap-md">
+<div>
+<h1 class="font-headline-lg text-headline-lg uppercase font-lexend">Dernières Sorties</h1>
+<p class="text-body-lg font-body-lg text-secondary">Elite Activity Monitoring &amp; Engine Recovery</p>
+</div>
+<div class="flex gap-sm">
+<div class="bg-black text-white px-md py-sm font-label-sm uppercase tracking-widest">Week 42</div>
+<div class="border-2 border-black px-md py-sm font-label-sm uppercase tracking-widest">Active Focus</div>
+</div>
+</header>
+<!-- Bento Grid Metrics -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-xl">
+<!-- Total Distance Card -->
+<div class="md:col-span-4 bg-white border-2 border-black relative p-lg group">
+<div class="absolute top-0 left-0 w-full h-[2px] bg-primary"></div>
+<p class="font-label-bold text-label-bold uppercase text-secondary mb-xs">Total Distance</p>
+<div class="flex items-baseline gap-xs">
+<span class="text-display-xl font-display-xl leading-none">58.4</span>
+<span class="font-headline-md text-headline-md text-primary">KM</span>
+</div>
+<div class="mt-gutter flex items-center gap-sm">
+<div class="flex-1 bg-surface-container-low h-1">
+<div class="bg-primary h-full w-[78%]"></div>
+</div>
+<span class="font-label-sm text-label-sm">+12% vs LW</span>
+</div>
+</div>
+<!-- Weekly Load -->
+<div class="md:col-span-4 bg-white border-2 border-black relative p-lg">
+<div class="absolute top-0 left-0 w-full h-[2px] bg-primary"></div>
+<p class="font-label-bold text-label-bold uppercase text-secondary mb-xs">Weekly Load</p>
+<div class="flex items-baseline gap-xs">
+<span class="text-display-xl font-display-xl leading-none">842</span>
+<span class="font-headline-md text-headline-md text-secondary">TSS</span>
+</div>
+<p class="mt-gutter text-label-sm text-label-sm font-bold uppercase text-primary">Optimal Zone</p>
+</div>
+<!-- Avg Pace -->
+<div class="md:col-span-4 bg-white border-2 border-black relative p-lg">
+<div class="absolute top-0 left-0 w-full h-[2px] bg-primary"></div>
+<p class="font-label-bold text-label-bold uppercase text-secondary mb-xs">Average Pace</p>
+<div class="flex items-baseline gap-xs">
+<span class="text-display-xl font-display-xl leading-none">4:12</span>
+<span class="font-headline-md text-headline-md text-secondary">/KM</span>
+</div>
+<p class="mt-gutter text-label-sm text-label-sm uppercase">Focus: Tempo Sustain</p>
+</div>
+<!-- Performance Visualizer -->
+<div class="md:col-span-12 lg:col-span-8 bg-white border-2 border-black p-lg relative min-h-[320px]">
+<div class="absolute top-0 left-0 w-full h-[2px] bg-primary"></div>
+<div class="flex justify-between items-start mb-xl">
+<h3 class="font-headline-md text-headline-md uppercase">Engine Output</h3>
+<select class="border-0 border-b-2 border-black font-label-bold text-label-sm uppercase py-1 focus:ring-0">
+<option>Last 7 Days</option>
+<option>Last 30 Days</option>
+</select>
+</div>
+<div class="w-full h-48 flex items-end justify-between gap-sm">
+<!-- Faux Bar Chart -->
+<div class="flex-1 bg-surface-container-low relative group">
+<div class="absolute bottom-0 left-0 w-full bg-secondary h-[40%] group-hover:bg-primary transition-colors"></div>
+</div>
+<div class="flex-1 bg-surface-container-low relative group">
+<div class="absolute bottom-0 left-0 w-full bg-secondary h-[65%] group-hover:bg-primary transition-colors"></div>
+</div>
+<div class="flex-1 bg-surface-container-low relative group">
+<div class="absolute bottom-0 left-0 w-full bg-secondary h-[45%] group-hover:bg-primary transition-colors"></div>
+</div>
+<div class="flex-1 bg-surface-container-low relative group">
+<div class="absolute bottom-0 left-0 w-full bg-primary h-[85%] group-hover:bg-primary transition-colors"></div>
+</div>
+<div class="flex-1 bg-surface-container-low relative group">
+<div class="absolute bottom-0 left-0 w-full bg-secondary h-[60%] group-hover:bg-primary transition-colors"></div>
+</div>
+<div class="flex-1 bg-surface-container-low relative group">
+<div class="absolute bottom-0 left-0 w-full bg-secondary h-[70%] group-hover:bg-primary transition-colors"></div>
+</div>
+<div class="flex-1 bg-surface-container-low relative group">
+<div class="absolute bottom-0 left-0 w-full bg-secondary h-[55%] group-hover:bg-primary transition-colors"></div>
+</div>
+</div>
+<div class="flex justify-between mt-md text-label-sm uppercase font-bold text-secondary">
+<span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+</div>
+</div>
+<!-- Spotlight Image -->
+<div class="md:col-span-12 lg:col-span-4 border-2 border-black relative overflow-hidden group">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="dramatic low angle shot of a male athlete sprinting on a dark urban track with high contrast fuchsia lighting reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCkBaSQ9Jw0mdg042j-Yw6AfN1ngUlLGn5oS2hqVi9gdNpgtdfGdZU0xeiz9exjSR_nmAJb9Bd_ZRN9Y-oEYpa5w9cQd4SZ-rYNIrjw1hD5EVVv7-ZLFj73CcJIn6Khjt4hHKHT-HXkJxCSn2vi4deH9bV6DVKwVBLq32kEcIGxscftCi5jLYQ28tyOcRShHQh8WQaVHl6wbuK_ChXOStW3TwfMx2S2zYU4SpcAGhsndhlA8WjMTy58dQdUNl9gI_2PTMUPJnyxSU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80"></div>
+<div class="absolute bottom-lg left-lg right-lg text-white">
+<p class="font-label-bold text-label-sm uppercase text-primary mb-xs">Recommended</p>
+<h4 class="font-headline-md text-headline-md uppercase leading-tight">Threshold Interval Training</h4>
+</div>
+</div>
+</section>
+<!-- Activities List -->
+<section class="space-y-gutter">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md uppercase">Recent Runs</h3>
+<button class="text-label-bold text-label-bold uppercase border-b-2 border-black hover:text-primary hover:border-primary transition-colors">View All Activities</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b-2 border-black">
+<th class="py-md font-label-bold uppercase text-label-sm">Activity</th>
+<th class="py-md font-label-bold uppercase text-label-sm">Date</th>
+<th class="py-md font-label-bold uppercase text-label-sm">Distance</th>
+<th class="py-md font-label-bold uppercase text-label-sm">Avg Pace</th>
+<th class="py-md font-label-bold uppercase text-label-sm">Status</th>
+<th class="py-md font-label-bold uppercase text-label-sm text-right">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-black">
+<tr class="group hover:bg-fuchsia-50 transition-colors">
+<td class="py-lg">
+<div class="flex items-center gap-md">
+<div class="w-12 h-12 border-2 border-black flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="directions_run">directions_run</span>
+</div>
+<div>
+<p class="font-label-bold uppercase text-sm">Morning Tempo Block</p>
+<p class="text-xs text-secondary uppercase">Urban Surface</p>
+</div>
+</div>
+</td>
+<td class="py-lg font-label-sm uppercase">Oct 24, 2023</td>
+<td class="py-lg font-headline-md text-sm">12.5 km</td>
+<td class="py-lg font-headline-md text-sm">4:05/km</td>
+<td class="py-lg">
+<span class="inline-flex items-center gap-xs px-2 py-1 bg-black text-white text-[10px] font-bold uppercase tracking-widest">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                                    Elite Output
+                                </span>
+</td>
+<td class="py-lg text-right">
+<button class="material-symbols-outlined hover:text-primary" data-icon="arrow_forward">arrow_forward</button>
+</td>
+</tr>
+<tr class="group hover:bg-fuchsia-50 transition-colors">
+<td class="py-lg">
+<div class="flex items-center gap-md">
+<div class="w-12 h-12 border-2 border-black flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="directions_run">directions_run</span>
+</div>
+<div>
+<p class="font-label-bold uppercase text-sm">Threshold Reps</p>
+<p class="text-xs text-secondary uppercase">Synthetic Track</p>
+</div>
+</div>
+</td>
+<td class="py-lg font-label-sm uppercase">Oct 22, 2023</td>
+<td class="py-lg font-headline-md text-sm">8.2 km</td>
+<td class="py-lg font-headline-md text-sm">3:52/km</td>
+<td class="py-lg">
+<span class="inline-flex items-center gap-xs px-2 py-1 bg-black text-white text-[10px] font-bold uppercase tracking-widest">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                                    Recovery Advised
+                                </span>
+</td>
+<td class="py-lg text-right">
+<button class="material-symbols-outlined hover:text-primary" data-icon="arrow_forward">arrow_forward</button>
+</td>
+</tr>
+<tr class="group hover:bg-fuchsia-50 transition-colors">
+<td class="py-lg">
+<div class="flex items-center gap-md">
+<div class="w-12 h-12 border-2 border-black flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="directions_run">directions_run</span>
+</div>
+<div>
+<p class="font-label-bold uppercase text-sm">Long Endurance Build</p>
+<p class="text-xs text-secondary uppercase">Trail / Mix</p>
+</div>
+</div>
+</td>
+<td class="py-lg font-label-sm uppercase">Oct 20, 2023</td>
+<td class="py-lg font-headline-md text-sm">22.0 km</td>
+<td class="py-lg font-headline-md text-sm">4:45/km</td>
+<td class="py-lg">
+<span class="inline-flex items-center gap-xs px-2 py-1 bg-black text-white text-[10px] font-bold uppercase tracking-widest">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                                    High Volume
+                                </span>
+</td>
+<td class="py-lg text-right">
+<button class="material-symbols-outlined hover:text-primary" data-icon="arrow_forward">arrow_forward</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</main>
+<!-- FAB Suppression Logic: FAB is contextually shown on main screens like Home/Overview -->
+<button class="fixed bottom-gutter right-gutter w-16 h-16 bg-black text-white border-2 border-black flex items-center justify-center hover:bg-primary transition-all active:scale-95 z-50">
+<span class="material-symbols-outlined text-3xl" data-icon="add">add</span>
+</button>
+</body></html>

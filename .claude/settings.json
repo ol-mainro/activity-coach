@@ -1,0 +1,8 @@
+{
+    "env": {
+        "CLAUDE_CODE_USE_BEDROCK": "0",
+        "ANTHROPIC_API_KEY": "",
+        "AWS_REGION": "us-east-1",
+        "AWS_BEARER_TOKEN_BEDROCK": ""
+    }
+}

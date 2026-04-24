@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#810081",
+                        "secondary-fixed-dim": "#c6c6c6",
+                        "inverse-surface": "#2f3131",
+                        "on-secondary-fixed": "#1b1b1b",
+                        "error-container": "#ffdad6",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-surface": "#1a1c1c",
+                        "outline-variant": "#dcbed4",
+                        "on-surface-variant": "#564052",
+                        "secondary-container": "#e2e2e2",
+                        "surface": "#f9f9f9",
+                        "background": "#f9f9f9",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#f9f9f9",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#ffabf3",
+                        "on-primary-fixed": "#380038",
+                        "on-tertiary-container": "#292b2c",
+                        "primary-container": "#ff00ff",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#474747",
+                        "surface-container-high": "#e8e8e8",
+                        "tertiary-container": "#919292",
+                        "surface-container-low": "#f3f3f4",
+                        "surface-tint": "#a900a9",
+                        "tertiary-fixed": "#e2e2e2",
+                        "surface-container": "#eeeeee",
+                        "primary-fixed-dim": "#ffabf3",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "tertiary": "#5d5f5f",
+                        "primary": "#a900a9",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#ffd7f5",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#e2e2e2",
+                        "outline": "#897083",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#dadada",
+                        "on-secondary-container": "#646464",
+                        "secondary": "#5e5e5e",
+                        "on-background": "#1a1c1c",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#510051",
+                        "secondary-fixed": "#e2e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "sm": "8px",
+                        "md": "16px",
+                        "gutter": "24px",
+                        "xl": "48px",
+                        "unit": "4px",
+                        "xxl": "96px",
+                        "xs": "4px",
+                        "margin": "32px",
+                        "lg": "24px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Lexend"],
+                        "label-bold": ["Lexend"],
+                        "headline-md": ["Lexend"],
+                        "display-xl": ["Lexend"],
+                        "body-md": ["Lexend"],
+                        "headline-lg": ["Lexend"],
+                        "label-sm": ["Lexend"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                        "label-bold": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { background-color: #ffffff; color: #1a1c1c; }
+        .sharp-border { border: 1px solid #1a1c1c; }
+        .fuchsia-accent { border-top: 2px solid #a900a9; }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-background">
+<!-- TopNavBar -->
+<nav class="bg-white border-b-2 border-black flex justify-between items-center w-full px-6 py-4 fixed top-0 z-50">
+<div class="text-2xl font-black italic tracking-tighter text-black font-lexend uppercase">VOID ELITE</div>
+<div class="hidden md:flex gap-8 items-center font-lexend tracking-tighter uppercase text-sm font-bold">
+<a class="text-black hover:bg-fuchsia-600 hover:text-white px-2 py-1 transition-colors duration-150" href="#">Overview</a>
+<a class="text-fuchsia-600 border-b-2 border-fuchsia-600 px-2 py-1" href="#">Engine</a>
+<a class="text-black hover:bg-fuchsia-600 hover:text-white px-2 py-1 transition-colors duration-150" href="#">Biometrics</a>
+<a class="text-black hover:bg-fuchsia-600 hover:text-white px-2 py-1 transition-colors duration-150" href="#">Recovery</a>
+<a class="text-black hover:bg-fuchsia-600 hover:text-white px-2 py-1 transition-colors duration-150" href="#">Vault</a>
+</div>
+<div class="flex items-center gap-4 text-black">
+<span class="material-symbols-outlined cursor-pointer">notifications</span>
+<span class="material-symbols-outlined cursor-pointer">account_circle</span>
+</div>
+</nav>
+<!-- SideNavBar (Hidden on Mobile) -->
+<aside class="hidden md:flex fixed left-0 top-0 h-full w-64 flex-col pt-24 bg-white border-r-2 border-black z-40">
+<div class="px-6 mb-8">
+<h2 class="font-lexend font-extrabold text-xl uppercase tracking-tighter">Performance</h2>
+<p class="font-lexend text-xs text-secondary uppercase font-bold tracking-widest">Elite Status</p>
+</div>
+<div class="flex flex-col flex-grow">
+<a class="flex items-center gap-4 px-6 py-4 text-black hover:border-l-4 hover:border-fuchsia-600 hover:bg-gray-100 transition-all font-lexend font-bold uppercase text-sm" href="#">
+<span class="material-symbols-outlined">dashboard</span> Overview
+            </a>
+<a class="flex items-center gap-4 px-6 py-4 bg-fuchsia-600 text-white font-lexend font-bold uppercase text-sm" href="#">
+<span class="material-symbols-outlined">speed</span> Engine
+            </a>
+<a class="flex items-center gap-4 px-6 py-4 text-black hover:border-l-4 hover:border-fuchsia-600 hover:bg-gray-100 transition-all font-lexend font-bold uppercase text-sm" href="#">
+<span class="material-symbols-outlined">monitor_heart</span> Biometrics
+            </a>
+<a class="flex items-center gap-4 px-6 py-4 text-black hover:border-l-4 hover:border-fuchsia-600 hover:bg-gray-100 transition-all font-lexend font-bold uppercase text-sm" href="#">
+<span class="material-symbols-outlined">bedtime</span> Recovery
+            </a>
+<a class="flex items-center gap-4 px-6 py-4 text-black hover:border-l-4 hover:border-fuchsia-600 hover:bg-gray-100 transition-all font-lexend font-bold uppercase text-sm" href="#">
+<span class="material-symbols-outlined">inventory_2</span> Vault
+            </a>
+</div>
+<div class="p-6">
+<button class="w-full bg-black text-white font-lexend font-bold uppercase text-sm py-4 hover:bg-primary transition-colors">
+                Add Session
+            </button>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="md:ml-64 pt-24 pb-12 px-gutter lg:px-margin">
+<!-- Hero: Countdown Section -->
+<section class="mb-xl">
+<div class="flex flex-col md:flex-row justify-between items-end border-b-2 border-black pb-4 mb-8">
+<div>
+<h1 class="font-display-xl text-display-xl uppercase italic">Marathon d'Auxerre</h1>
+<p class="font-label-bold text-label-bold text-primary uppercase tracking-[0.2em]">Target: Octobre 2024</p>
+</div>
+<div class="flex gap-8 mt-6 md:mt-0">
+<div class="text-right">
+<span class="block font-headline-lg text-headline-lg leading-none">42</span>
+<span class="block font-label-sm text-label-sm uppercase text-secondary">Days</span>
+</div>
+<div class="text-right">
+<span class="block font-headline-lg text-headline-lg leading-none">12</span>
+<span class="block font-label-sm text-label-sm uppercase text-secondary">Hrs</span>
+</div>
+<div class="text-right">
+<span class="block font-headline-lg text-headline-lg leading-none">08</span>
+<span class="block font-label-sm text-label-sm uppercase text-secondary">Min</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Predictions & Metrics -->
+<div class="bento-grid">
+<!-- Main Prediction Card -->
+<div class="col-span-12 lg:col-span-8 bg-white sharp-border fuchsia-accent p-8 relative overflow-hidden">
+<div class="flex justify-between items-start mb-12">
+<div>
+<span class="bg-black text-white px-2 py-1 font-label-sm text-[10px] uppercase tracking-widest">Riegel Formula</span>
+<h3 class="font-headline-lg text-headline-lg uppercase mt-2">Predicted Finish</h3>
+</div>
+<div class="text-right">
+<span class="block font-display-xl text-primary leading-none">03:14:22</span>
+<span class="block font-label-bold text-label-bold uppercase tracking-widest text-secondary mt-2">Estimated Time</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="border-l-2 border-fuchsia-600 pl-4">
+<p class="font-label-sm text-secondary uppercase">Last 10K</p>
+<p class="font-headline-md">41:30</p>
+</div>
+<div class="border-l-2 border-fuchsia-600 pl-4">
+<p class="font-label-sm text-secondary uppercase">Semi-Marathon</p>
+<p class="font-headline-md">01:31:15</p>
+</div>
+<div class="border-l-2 border-fuchsia-600 pl-4">
+<p class="font-label-sm text-secondary uppercase">30K Projected</p>
+<p class="font-headline-md">02:16:40</p>
+</div>
+</div>
+<div class="mt-12 w-full h-2 bg-surface-container overflow-hidden">
+<div class="h-full bg-primary w-[74%]"></div>
+</div>
+<div class="flex justify-between mt-2 font-label-sm text-secondary uppercase">
+<span>Peak Volume Reached</span>
+<span>74% of Plan Complete</span>
+</div>
+</div>
+<!-- Side Card: Condition Profile -->
+<div class="col-span-12 lg:col-span-4 bg-white sharp-border fuchsia-accent p-8">
+<h3 class="font-label-bold text-label-bold uppercase tracking-widest mb-6">Physiological Readiness</h3>
+<div class="space-y-6">
+<div class="flex justify-between items-center">
+<span class="font-body-md uppercase text-sm">VO2 Max (Est)</span>
+<span class="font-headline-md text-primary">58</span>
+</div>
+<div class="w-full h-px bg-secondary-container"></div>
+<div class="flex justify-between items-center">
+<span class="font-body-md uppercase text-sm">Anaerobic Threshold</span>
+<span class="font-headline-md">172 <span class="text-xs text-secondary">BPM</span></span>
+</div>
+<div class="w-full h-px bg-secondary-container"></div>
+<div class="flex justify-between items-center">
+<span class="font-body-md uppercase text-sm">Resting Heart Rate</span>
+<span class="font-headline-md">44 <span class="text-xs text-secondary">BPM</span></span>
+</div>
+</div>
+<div class="mt-12 bg-surface-container-highest p-4">
+<p class="font-label-sm text-black italic">"Optimal recovery phase begins in 4 days. Maintain low intensity until Friday session."</p>
+</div>
+</div>
+<!-- Bottom Section: Pace Plan -->
+<div class="col-span-12 bg-black text-white p-8 overflow-x-auto">
+<div class="flex justify-between items-center mb-8">
+<h3 class="font-headline-md uppercase">Target Pace Execution Strategy</h3>
+<div class="flex gap-4">
+<span class="flex items-center gap-2 font-label-sm"><span class="w-3 h-3 bg-primary"></span> Uphill Adjustment</span>
+<span class="flex items-center gap-2 font-label-sm"><span class="w-3 h-3 bg-white"></span> Race Pace</span>
+</div>
+</div>
+<table class="w-full text-left font-lexend">
+<thead>
+<tr class="border-b border-gray-800 text-secondary text-xs uppercase tracking-widest">
+<th class="pb-4">Segment</th>
+<th class="pb-4">Distance</th>
+<th class="pb-4">Target Pace</th>
+<th class="pb-4">Heart Rate Zone</th>
+<th class="pb-4">Fueling Plan</th>
+</tr>
+</thead>
+<tbody class="text-sm">
+<tr class="border-b border-gray-900 group hover:bg-gray-900">
+<td class="py-6 font-bold">Opening Phase</td>
+<td class="py-6">0 - 5km</td>
+<td class="py-6 text-primary font-bold">4:40 min/km</td>
+<td class="py-6">Z2 (Low)</td>
+<td class="py-6">Hydration only</td>
+</tr>
+<tr class="border-b border-gray-900 group hover:bg-gray-900">
+<td class="py-6 font-bold">Steady State</td>
+<td class="py-6">5 - 25km</td>
+<td class="py-6 text-primary font-bold">4:35 min/km</td>
+<td class="py-6">Z3 (Moderate)</td>
+<td class="py-6">Gel at 10k, 20k</td>
+</tr>
+<tr class="border-b border-gray-900 group hover:bg-gray-900">
+<td class="py-6 font-bold">The Threshold</td>
+<td class="py-6">25 - 35km</td>
+<td class="py-6 text-primary font-bold">4:32 min/km</td>
+<td class="py-6">Z4 (High)</td>
+<td class="py-6">Gel at 30k + Caffeine</td>
+</tr>
+<tr class="group hover:bg-gray-900">
+<td class="py-6 font-bold">Max Effort</td>
+<td class="py-6">35 - 42.2km</td>
+<td class="py-6 text-primary font-bold">4:25 min/km</td>
+<td class="py-6">Z5 (Peak)</td>
+<td class="py-6">Sip on demand</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Weather/Route Context -->
+<div class="col-span-12 md:col-span-6 bg-white sharp-border p-8">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary">cloud</span>
+<h3 class="font-label-bold uppercase">Forecast: Auxerre</h3>
+</div>
+<div class="flex gap-12 items-baseline">
+<span class="font-display-xl text-5xl italic">14°C</span>
+<div class="text-secondary font-label-sm uppercase">
+<p>Wind: 8km/h NNE</p>
+<p>Humidity: 62%</p>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-6 bg-white sharp-border p-8">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary">terrain</span>
+<h3 class="font-label-bold uppercase">Course Topography</h3>
+</div>
+<div class="flex gap-12 items-baseline">
+<span class="font-display-xl text-5xl italic">+142m</span>
+<div class="text-secondary font-label-sm uppercase">
+<p>Total Elevation Gain</p>
+<p>Steepest Grade: 3.2%</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Call to Action -->
+<div class="mt-xl flex justify-center">
+<button class="bg-black text-white px-xl py-lg font-label-bold uppercase tracking-widest hover:bg-primary transition-all flex items-center gap-4 group">
+                Download Official Strategy Guide
+                <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+</div>
+</main>
+<!-- Map Visualization Overlay (Decorative) -->
+<div class="hidden lg:block fixed bottom-12 right-12 w-64 h-64 border-2 border-black p-4 bg-white z-10 shadow-lg">
+<div class="w-full h-full grayscale opacity-40 hover:opacity-100 transition-opacity">
+<img alt="Map" class="w-full h-full object-cover" data-alt="abstract minimalist map of city streets and a river in clean architectural style with sharp black lines" data-location="Auxerre, France" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzD4IK5VB9Fph8gfAw2_Rk5T4h9HUJvJWJAMvqQc_LLDgpYbH63KXDdnGdiGfRg3-uYYIoCJgEzqC1v2rq4ebUa77opzyxb04Ca1tRS1YusJHQAVIhliuh8g1HMFwrTJNKTttUhMunRiFM9Q8w-VwE7gcWbAxOJe6mHpor39CIVqZfLXG5NNLt7dklRslQRv3setE0LUUvEY7rhtR0E8lkfW_5LanOkggJLQYgph7epRECeW7h4IpoA61H4Ao4YAFvEvLTMxC4P98"/>
+</div>
+<p class="absolute bottom-6 left-6 font-label-sm text-black bg-white px-2 uppercase font-bold">Route Alpha</p>
+</div>
+</body></html>

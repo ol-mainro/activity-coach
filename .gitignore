@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# Build artifacts
+*.zip
+
+# Sensitive credentials (never commit)
+SECRETS.md
