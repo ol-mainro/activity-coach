@@ -191,6 +191,9 @@
   <button class="flex items-center gap-sm px-gutter py-md font-label-bold text-label-bold uppercase tracking-widest text-secondary border-b-2 border-transparent transition-all whitespace-nowrap" onclick="showPage('records', this)">
     <span class="material-symbols-outlined text-sm">emoji_events</span> Records personnels
   </button>
+  <button class="flex items-center gap-sm px-gutter py-md font-label-bold text-label-bold uppercase tracking-widest text-secondary border-b-2 border-transparent transition-all whitespace-nowrap" onclick="showPage('analyse', this)">
+    <span class="material-symbols-outlined text-sm">analytics</span> Analyse entraînement
+  </button>
 </nav>
 
 <!-- ══════════════════════════════════════════════
@@ -210,28 +213,28 @@
   </div>
 
   <!-- KPI strip -->
-  <div class="grid grid-cols-3 gap-gutter mb-xl">
-    <div class="bg-white border-2 border-black p-lg relative card-accent">
-      <p class="font-label-bold text-label-bold uppercase text-secondary mb-xs">Distance totale</p>
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-gutter mb-xl">
+    <div class="bg-white border-2 border-black p-md sm:p-lg relative card-accent">
+      <p class="font-label-bold text-label-bold uppercase text-secondary mb-xs text-[11px]">Distance totale</p>
       <div class="flex items-baseline gap-xs">
-        <span id="kpi-dist" class="text-5xl font-black leading-none tracking-tighter">—</span>
-        <span class="font-headline-md text-primary">km</span>
+        <span id="kpi-dist" class="text-4xl sm:text-5xl font-black leading-none tracking-tighter">—</span>
+        <span class="text-lg sm:text-2xl font-black text-primary">km</span>
       </div>
       <p class="text-[11px] font-label-bold uppercase tracking-widest text-secondary mt-sm">20 sorties</p>
     </div>
-    <div class="bg-white border-2 border-black p-lg relative card-accent">
-      <p class="font-label-bold text-label-bold uppercase text-secondary mb-xs">Allure moyenne</p>
+    <div class="bg-white border-2 border-black p-md sm:p-lg relative card-accent">
+      <p class="font-label-bold text-label-bold uppercase text-secondary mb-xs text-[11px]">Allure moyenne</p>
       <div class="flex items-baseline gap-xs">
-        <span id="kpi-pace" class="text-5xl font-black leading-none tracking-tighter">—</span>
-        <span class="font-headline-md text-primary">/km</span>
+        <span id="kpi-pace" class="text-4xl sm:text-5xl font-black leading-none tracking-tighter">—</span>
+        <span class="text-lg sm:text-2xl font-black text-primary">/km</span>
       </div>
       <p class="text-[11px] font-label-bold uppercase tracking-widest text-secondary mt-sm">Sorties courues</p>
     </div>
-    <div class="bg-white border-2 border-black p-lg relative card-accent">
-      <p class="font-label-bold text-label-bold uppercase text-secondary mb-xs">Sortie longue max</p>
+    <div class="bg-white border-2 border-black p-md sm:p-lg relative card-accent">
+      <p class="font-label-bold text-label-bold uppercase text-secondary mb-xs text-[11px]">Sortie longue max</p>
       <div class="flex items-baseline gap-xs">
-        <span class="text-5xl font-black leading-none tracking-tighter">30</span>
-        <span class="font-headline-md text-primary">km</span>
+        <span class="text-4xl sm:text-5xl font-black leading-none tracking-tighter">30</span>
+        <span class="text-lg sm:text-2xl font-black text-primary">km</span>
       </div>
       <p class="text-[11px] font-label-bold uppercase tracking-widest text-secondary mt-sm">22 mars 2026</p>
     </div>
@@ -486,6 +489,369 @@
 
 </div>
 
+<!-- ══════════════════════════════════════════════
+     PAGE 4 — ANALYSE ENTRAÎNEMENT
+══════════════════════════════════════════════ -->
+<div id="page-analyse" class="page px-gutter md:px-margin py-xl max-w-5xl mx-auto">
+
+  <!-- Section header -->
+  <div class="flex items-end justify-between mb-xl">
+    <div>
+      <h1 class="font-black uppercase tracking-tighter text-4xl md:text-5xl text-black leading-none">Analyse<br>Entraînement</h1>
+      <p class="text-body-md font-body-md text-secondary mt-sm">4 mois · janvier → avril 2026 · J-32 du marathon</p>
+    </div>
+    <div class="hidden md:block text-right">
+      <div class="text-4xl font-black tracking-tighter text-primary leading-none">360</div>
+      <div class="font-label-bold text-[11px] uppercase tracking-widest text-secondary">km courus</div>
+    </div>
+  </div>
+
+  <!-- ── BILAN 4 MOIS ── -->
+  <p class="font-label-bold text-label-bold uppercase tracking-widest text-secondary mb-md">Bilan des 4 mois d'entraînement</p>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-gutter mb-xl">
+    <div class="bg-white border-2 border-black p-lg relative card-accent">
+      <p class="font-label-bold text-[10px] uppercase tracking-widest text-secondary mb-xs">Volume total</p>
+      <div class="text-3xl font-black tracking-tighter text-black leading-none">360 <span class="text-base font-bold text-primary">km</span></div>
+      <p class="text-[10px] font-label-sm uppercase tracking-widest text-secondary mt-sm">Jan → Avr 2026</p>
+    </div>
+    <div class="bg-white border-2 border-black p-lg relative card-accent">
+      <p class="font-label-bold text-[10px] uppercase tracking-widest text-secondary mb-xs">Sorties longues</p>
+      <div class="text-3xl font-black tracking-tighter text-black leading-none">4 <span class="text-base font-bold text-primary">≥ 20 km</span></div>
+      <p class="text-[10px] font-label-sm uppercase tracking-widest text-secondary mt-sm">15, 22, 29 mar · 5 avr</p>
+    </div>
+    <div class="bg-white border-2 border-black p-lg relative card-accent">
+      <p class="font-label-bold text-[10px] uppercase tracking-widest text-secondary mb-xs">Distance max</p>
+      <div class="text-3xl font-black tracking-tighter text-black leading-none">30 <span class="text-base font-bold text-primary">km</span></div>
+      <p class="text-[10px] font-label-sm uppercase tracking-widest text-secondary mt-sm">22 mars · 2h37'</p>
+    </div>
+    <div class="bg-white border-2 border-black p-lg relative card-accent">
+      <p class="font-label-bold text-[10px] uppercase tracking-widest text-secondary mb-xs">Pic mensuel</p>
+      <div class="text-3xl font-black tracking-tighter text-black leading-none">156 <span class="text-base font-bold text-primary">km</span></div>
+      <p class="text-[10px] font-label-sm uppercase tracking-widest text-secondary mt-sm">Mars 2026</p>
+    </div>
+  </div>
+
+  <!-- Progression mensuelle -->
+  <div class="bg-white border-2 border-black p-lg mb-xl">
+    <p class="font-label-bold text-label-bold uppercase tracking-widest text-secondary mb-lg">Progression mensuelle du volume</p>
+    <div id="analyse-monthly-bars"></div>
+    <div class="mt-lg pt-lg border-t border-surface-container-high text-[12px] font-label-sm text-secondary leading-relaxed">
+      <strong class="text-black">Lecture :</strong> Jan–Fév = phase de reprise progressive (+40 %). Mar = montée en charge maximale (×4 par rapport à Jan). Avr = légère décrue amorçant l'affûtage. Progression saine et contrôlée.
+    </div>
+  </div>
+
+  <!-- Répartition séances -->
+  <p class="font-label-bold text-label-bold uppercase tracking-widest text-secondary mb-md">Répartition des séances (20 dernières sorties)</p>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-gutter mb-xl">
+    <div class="bg-white border-2 border-black p-lg text-center relative card-accent">
+      <div class="text-3xl font-black tracking-tighter text-black">7</div>
+      <div class="type-chip longue mt-sm mx-auto" style="display:inline-flex;">Sorties longues</div>
+      <p class="text-[10px] font-label-sm text-secondary mt-sm">≥ 10 km · endurance</p>
+    </div>
+    <div class="bg-white border-2 border-black p-lg text-center relative card-accent">
+      <div class="text-3xl font-black tracking-tighter text-primary">5</div>
+      <div class="type-chip tempo mt-sm mx-auto" style="display:inline-flex;">Tempo / Vitesse</div>
+      <p class="text-[10px] font-label-sm text-secondary mt-sm">allure spécifique</p>
+    </div>
+    <div class="bg-white border-2 border-black p-lg text-center relative card-accent">
+      <div class="text-3xl font-black tracking-tighter text-black">7</div>
+      <div class="type-chip recup mt-sm mx-auto" style="display:inline-flex;">Récupération</div>
+      <p class="text-[10px] font-label-sm text-secondary mt-sm">footing lent</p>
+    </div>
+    <div class="bg-white border-2 border-black p-lg text-center relative card-accent">
+      <div class="text-3xl font-black tracking-tighter text-primary">1</div>
+      <div class="type-chip frac mt-sm mx-auto" style="display:inline-flex;">Fractionné</div>
+      <p class="text-[10px] font-label-sm text-secondary mt-sm">400m × 3</p>
+    </div>
+  </div>
+
+  <!-- ── ADAPTATION OBJECTIF ── -->
+  <p class="font-label-bold text-label-bold uppercase tracking-widest text-secondary mb-md">Adaptation à l'objectif 3h35'</p>
+  <div class="bg-white border-2 border-black p-lg md:p-xl relative card-accent mb-gutter">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+      <div>
+        <div class="font-label-bold text-[10px] uppercase tracking-widest text-secondary mb-sm">Allure cible marathon</div>
+        <div class="text-4xl font-black tracking-tighter text-primary leading-none">5:06<span class="text-lg font-bold text-secondary"> /km</span></div>
+        <div class="text-[11px] font-label-sm text-secondary mt-sm">pendant 42,195 km</div>
+      </div>
+      <div>
+        <div class="font-label-bold text-[10px] uppercase tracking-widest text-secondary mb-sm">Allure longues récentes</div>
+        <div class="text-4xl font-black tracking-tighter text-black leading-none">5:13<span class="text-lg font-bold text-secondary"> /km</span></div>
+        <div class="text-[11px] font-label-sm text-secondary mt-sm">30 km le 22 mars</div>
+      </div>
+      <div>
+        <div class="font-label-bold text-[10px] uppercase tracking-widest text-secondary mb-sm">Écart à combler</div>
+        <div class="text-4xl font-black tracking-tighter text-black leading-none">7<span class="text-lg font-bold text-secondary"> sec/km</span></div>
+        <div class="text-[11px] font-label-sm text-secondary mt-sm">gérable · affûtage aidant</div>
+      </div>
+    </div>
+    <div class="mt-lg bg-surface-container-low p-md text-[13px] font-label-sm text-secondary leading-relaxed">
+      <strong class="text-black">Analyse :</strong> L'écart de 7 secondes/km entre la performance en longue et l'allure cible est encourageant. Le semi-marathon couru en 1h41'32" (4:49/km) confirme que le système aérobie est suffisamment développé. L'affûtage des 3 dernières semaines libèrera 2 à 4 % de performance supplémentaire — soit environ 4–8 sec/km récupérées.
+    </div>
+  </div>
+
+  <!-- Phase affûtage -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-xl">
+    <div class="bg-white border-2 border-black p-lg relative card-accent">
+      <div class="flex items-center gap-sm mb-md">
+        <span class="material-symbols-outlined text-primary">schedule</span>
+        <div class="font-label-bold text-[10px] uppercase tracking-widest text-secondary">Semaine J-4 → J-2</div>
+      </div>
+      <div class="font-black text-black text-lg">Affûtage actif</div>
+      <p class="text-[12px] font-label-sm text-secondary mt-sm leading-relaxed">Volume réduit à 50–60 %. Maintien de 2–3 sorties à allure marathon. Jambes fraîches, forme en hausse.</p>
+    </div>
+    <div class="bg-white border-2 border-black p-lg relative card-accent">
+      <div class="flex items-center gap-sm mb-md">
+        <span class="material-symbols-outlined text-primary">hotel</span>
+        <div class="font-label-bold text-[10px] uppercase tracking-widest text-secondary">Semaine J-1</div>
+      </div>
+      <div class="font-black text-black text-lg">Repos &amp; activation</div>
+      <p class="text-[12px] font-label-sm text-secondary mt-sm leading-relaxed">1–2 footings courts. Préservation des réserves glycogène. Pas de séance intense. Hydratation maximale.</p>
+    </div>
+    <div class="bg-primary text-white border-2 border-primary p-lg relative">
+      <div class="flex items-center gap-sm mb-md">
+        <span class="material-symbols-outlined text-white">flag</span>
+        <div class="font-label-bold text-[10px] uppercase tracking-widest text-white/70">26 mai 2026</div>
+      </div>
+      <div class="font-black text-white text-lg">Jour J — Auxerre</div>
+      <p class="text-[12px] font-label-sm text-white/80 mt-sm leading-relaxed">Départ prudent à 5:10/km. Objectif : arriver au km 30 en forme. Finir fort.</p>
+    </div>
+  </div>
+
+  <!-- ── RISQUES & INCERTITUDES ── -->
+  <p class="font-label-bold text-label-bold uppercase tracking-widest text-secondary mb-md">Risques &amp; Incertitudes</p>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter mb-xl">
+
+    <div class="bg-white border-2 border-black p-lg relative">
+      <div class="absolute top-0 left-0 right-0 h-[3px] bg-error"></div>
+      <div class="flex items-center gap-sm mb-md mt-sm">
+        <span class="material-symbols-outlined text-error text-xl">warning</span>
+        <div>
+          <div class="font-black text-black text-sm uppercase tracking-widest">Distance max : 30 km</div>
+          <div class="font-label-bold text-[10px] uppercase tracking-widest text-error">Risque élevé</div>
+        </div>
+      </div>
+      <p class="text-[13px] font-label-sm text-secondary leading-relaxed">Le marathon dépasse de 12 km la sortie la plus longue effectuée. Les km 30–42 seront en territoire inconnu. La fatigue musculaire et la déplétion glycémique s'intensifient au-delà de 30 km.</p>
+    </div>
+
+    <div class="bg-white border-2 border-black p-lg relative">
+      <div class="absolute top-0 left-0 right-0 h-[3px] bg-error"></div>
+      <div class="flex items-center gap-sm mb-md mt-sm">
+        <span class="material-symbols-outlined text-error text-xl">local_fire_department</span>
+        <div>
+          <div class="font-black text-black text-sm uppercase tracking-widest">Départ trop rapide</div>
+          <div class="font-label-bold text-[10px] uppercase tracking-widest text-error">Risque élevé</div>
+        </div>
+      </div>
+      <p class="text-[13px] font-label-sm text-secondary leading-relaxed">Le 10 km en 43:46 génère un attrait vers une allure &lt; 5:00/km. Partir à 4:50 les 5 premiers km = catastrophe garantie au km 32. Discipline absolue sur la montre.</p>
+    </div>
+
+    <div class="bg-white border-2 border-black p-lg relative">
+      <div class="absolute top-0 left-0 right-0 h-[3px]" style="background:#f59e0b;"></div>
+      <div class="flex items-center gap-sm mb-md mt-sm">
+        <span class="material-symbols-outlined text-xl" style="color:#f59e0b;">thermometer</span>
+        <div>
+          <div class="font-black text-black text-sm uppercase tracking-widest">Météo de fin mai</div>
+          <div class="font-label-bold text-[10px] uppercase tracking-widest" style="color:#f59e0b;">Risque modéré</div>
+        </div>
+      </div>
+      <p class="text-[13px] font-label-sm text-secondary leading-relaxed">Fin mai peut apporter 18–25 °C. Au-delà de 18 °C, la performance baisse de 1–2 min/10 °C supplémentaire. Prévoir une stratégie d'hydratation à chaque ravitaillement (tous les 5 km).</p>
+    </div>
+
+    <div class="bg-white border-2 border-black p-lg relative">
+      <div class="absolute top-0 left-0 right-0 h-[3px]" style="background:#f59e0b;"></div>
+      <div class="flex items-center gap-sm mb-md mt-sm">
+        <span class="material-symbols-outlined text-xl" style="color:#f59e0b;">battery_low</span>
+        <div>
+          <div class="font-black text-black text-sm uppercase tracking-widest">Fatigue accumulée</div>
+          <div class="font-label-bold text-[10px] uppercase tracking-widest" style="color:#f59e0b;">Risque modéré</div>
+        </div>
+      </div>
+      <p class="text-[13px] font-label-sm text-secondary leading-relaxed">156 km en mars + 141 km en avril = charge élevée. L'affûtage doit être respecté scrupuleusement. Ne pas "compenser" par des séances de dernière minute.</p>
+    </div>
+
+    <div class="bg-white border-2 border-black p-lg relative md:col-span-2">
+      <div class="absolute top-0 left-0 right-0 h-[3px] bg-surface-container-high"></div>
+      <div class="flex items-center gap-sm mb-md mt-sm">
+        <span class="material-symbols-outlined text-secondary text-xl">psychology</span>
+        <div>
+          <div class="font-black text-black text-sm uppercase tracking-widest">Gestion mentale km 30–38</div>
+          <div class="font-label-bold text-[10px] uppercase tracking-widest text-secondary">Risque faible (à surveiller)</div>
+        </div>
+      </div>
+      <p class="text-[13px] font-label-sm text-secondary leading-relaxed">Le "mur" est autant psychologique que physiologique. Avoir une stratégie mentale par segments (penser km par km dès le km 30, s'accrocher à un groupe ou un pace-runner) est essentiel. L'entraînement mental doit être aussi sérieux que l'entraînement physique.</p>
+    </div>
+  </div>
+
+  <!-- ── DÉFIS PHYSIOLOGIQUES ── -->
+  <p class="font-label-bold text-label-bold uppercase tracking-widest text-secondary mb-md">Défis physiologiques du marathon</p>
+
+  <!-- Le mur -->
+  <div class="bg-white border-2 border-black p-lg md:p-xl relative card-accent mb-gutter">
+    <div class="flex items-start gap-md">
+      <span class="material-symbols-outlined text-primary text-4xl mt-xs">wall</span>
+      <div class="flex-1">
+        <div class="font-black text-black text-xl uppercase tracking-tight mb-sm">Le Mur — km 30 à 35</div>
+        <p class="text-[13px] font-label-sm text-secondary leading-relaxed mb-md">
+          Phénomène central du marathon : l'épuisement des réserves de glycogène musculaire (~90 min à allure marathon). Le corps bascule sur l'oxydation des lipides, beaucoup moins efficace. La vitesse chute de 10–20 % en quelques kilomètres. Symptômes : jambes de plomb, brûlures musculaires, désorientation légère.
+        </p>
+        <div class="bg-surface-container-low border-l-2 border-primary p-md text-[12px] font-label-sm text-secondary leading-relaxed">
+          <strong class="text-black">Stratégie anti-mur :</strong> Prendre 1 gel énergétique toutes les 45 min dès le km 10 (4 gels au total). Partir à allure conservatrice. Les km 30–38 seront difficiles — c'est normal et attendu.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grid physio -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter mb-xl">
+
+    <div class="bg-white border-2 border-black p-lg relative card-accent">
+      <div class="flex items-center gap-sm mb-md">
+        <span class="material-symbols-outlined text-primary">science</span>
+        <div class="font-black text-black text-sm uppercase tracking-widest">Métabolisme énergétique</div>
+      </div>
+      <div class="space-y-sm">
+        <div class="flex justify-between items-center py-sm border-b border-surface-container-high">
+          <span class="text-[12px] font-label-sm text-secondary">Glycogène musculaire (stock)</span>
+          <span class="font-black text-black text-sm">~1 800 kcal</span>
+        </div>
+        <div class="flex justify-between items-center py-sm border-b border-surface-container-high">
+          <span class="text-[12px] font-label-sm text-secondary">Dépense marathon à 5:06/km</span>
+          <span class="font-black text-black text-sm">~2 800 kcal</span>
+        </div>
+        <div class="flex justify-between items-center py-sm border-b border-surface-container-high">
+          <span class="text-[12px] font-label-sm text-secondary">Déficit à combler (gels + lipides)</span>
+          <span class="font-black text-primary text-sm">~1 000 kcal</span>
+        </div>
+        <div class="flex justify-between items-center py-sm">
+          <span class="text-[12px] font-label-sm text-secondary">Apport cible via gels (4×25g)</span>
+          <span class="font-black text-black text-sm">~400 kcal</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white border-2 border-black p-lg relative card-accent">
+      <div class="flex items-center gap-sm mb-md">
+        <span class="material-symbols-outlined text-primary">water_drop</span>
+        <div class="font-black text-black text-sm uppercase tracking-widest">Déshydratation</div>
+      </div>
+      <p class="text-[13px] font-label-sm text-secondary leading-relaxed mb-md">
+        Perte hydrique possible : <strong class="text-black">1,5 à 2,5 L/h</strong> selon la chaleur. Une déshydratation de 2 % du poids corporel dégrade la performance de 4–6 %. À 3 %, le risque de crampes et de malaise thermique devient critique.
+      </p>
+      <div class="bg-surface-container-low p-md text-[12px] font-label-sm text-secondary leading-relaxed">
+        <strong class="text-black">Plan hydratation :</strong> Boire 150–200 mL à chaque ravitaillement (km 5, 10, 15…). Ne pas attendre la soif. Commencer à boire à l'entraînement dès maintenant pour habituer le tube digestif.
+      </div>
+    </div>
+
+    <div class="bg-white border-2 border-black p-lg relative card-accent">
+      <div class="flex items-center gap-sm mb-md">
+        <span class="material-symbols-outlined text-primary">device_thermostat</span>
+        <div class="font-black text-black text-sm uppercase tracking-widest">Thermorégulation</div>
+      </div>
+      <p class="text-[13px] font-label-sm text-secondary leading-relaxed">
+        Un effort de 3h35' produit une chaleur interne intense. La transpiration refroidit mais au prix d'une perte hydrique massive. En cas de forte chaleur : réduire l'allure de 5–10 sec/km dès 22 °C, verser de l'eau froide sur la tête aux ravitaillements, choisir des vêtements clairs et respirants.
+      </p>
+    </div>
+
+    <div class="bg-white border-2 border-black p-lg relative card-accent">
+      <div class="flex items-center gap-sm mb-md">
+        <span class="material-symbols-outlined text-primary">fitness_center</span>
+        <div class="font-black text-black text-sm uppercase tracking-widest">Fatigue neuromusculaire</div>
+      </div>
+      <p class="text-[13px] font-label-sm text-secondary leading-relaxed">
+        42 km impliquent <strong class="text-black">~35 000 foulées</strong>. Chaque impact équivaut à 2–3× le poids du corps. Les micro-lésions musculaires s'accumulent progressivement. Passé le km 30, la fréquence de foulée tend à baisser et l'économie de course se détériore. L'affûtage permet de reconstituer les réserves neuromusculaires.
+      </p>
+    </div>
+
+    <div class="bg-white border-2 border-black p-lg relative card-accent md:col-span-2">
+      <div class="flex items-center gap-sm mb-md">
+        <span class="material-symbols-outlined text-primary">favorite</span>
+        <div class="font-black text-black text-sm uppercase tracking-widest">Système cardio-vasculaire &amp; VO₂max</div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+        <div>
+          <div class="font-label-bold text-[10px] uppercase tracking-widest text-secondary mb-xs">VO₂max estimé</div>
+          <div class="text-3xl font-black tracking-tighter text-black">~53 <span class="text-sm font-bold text-secondary">mL/kg/min</span></div>
+          <p class="text-[11px] font-label-sm text-secondary mt-xs">Estimé via semi-marathon · niveau bon coureur amateur</p>
+        </div>
+        <div>
+          <div class="font-label-bold text-[10px] uppercase tracking-widest text-secondary mb-xs">% VO₂max à 5:06/km</div>
+          <div class="text-3xl font-black tracking-tighter text-primary">~80 <span class="text-sm font-bold text-secondary">%</span></div>
+          <p class="text-[11px] font-label-sm text-secondary mt-xs">Zone sustainable sur la durée · 78–82 % = zone marathon</p>
+        </div>
+        <div>
+          <div class="font-label-bold text-[10px] uppercase tracking-widest text-secondary mb-xs">FC cible estimée</div>
+          <div class="text-3xl font-black tracking-tighter text-black">155–165 <span class="text-sm font-bold text-secondary">bpm</span></div>
+          <p class="text-[11px] font-label-sm text-secondary mt-xs">À surveiller les 10 premiers km pour ne pas partir trop haut</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SYNTHÈSE FINALE ── -->
+  <p class="font-label-bold text-label-bold uppercase tracking-widest text-secondary mb-md">Synthèse &amp; verdict</p>
+  <div class="bg-white border-2 border-primary p-lg md:p-xl relative" style="border-width:2px;">
+    <div class="absolute top-0 left-0 right-0 h-[3px] bg-primary"></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-lg mt-sm">
+      <div>
+        <div class="font-label-bold text-[10px] uppercase tracking-widest text-secondary mb-md">Points forts</div>
+        <ul class="space-y-sm">
+          <li class="flex items-start gap-sm text-[13px] font-label-sm text-secondary">
+            <span class="material-symbols-outlined text-primary text-base mt-xs flex-shrink-0">check_circle</span>
+            Progression rapide : ×6 de volume entre jan et mar
+          </li>
+          <li class="flex items-start gap-sm text-[13px] font-label-sm text-secondary">
+            <span class="material-symbols-outlined text-primary text-base mt-xs flex-shrink-0">check_circle</span>
+            Sorties longues solides : 4 séances ≥ 20 km dont un 30 km
+          </li>
+          <li class="flex items-start gap-sm text-[13px] font-label-sm text-secondary">
+            <span class="material-symbols-outlined text-primary text-base mt-xs flex-shrink-0">check_circle</span>
+            Semi en 1h41 = base aérobie très solide
+          </li>
+          <li class="flex items-start gap-sm text-[13px] font-label-sm text-secondary">
+            <span class="material-symbols-outlined text-primary text-base mt-xs flex-shrink-0">check_circle</span>
+            Alternance tempo / récup bien intégrée
+          </li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-label-bold text-[10px] uppercase tracking-widest text-secondary mb-md">Points à surveiller</div>
+        <ul class="space-y-sm">
+          <li class="flex items-start gap-sm text-[13px] font-label-sm text-secondary">
+            <span class="material-symbols-outlined text-error text-base mt-xs flex-shrink-0">error</span>
+            Distance max 30 km · les 12 derniers km seront une découverte
+          </li>
+          <li class="flex items-start gap-sm text-[13px] font-label-sm text-secondary">
+            <span class="material-symbols-outlined text-error text-base mt-xs flex-shrink-0">error</span>
+            Départ trop rapide = premier risque d'échec à l'objectif
+          </li>
+          <li class="flex items-start gap-sm text-[13px] font-label-sm text-secondary">
+            <span class="material-symbols-outlined text-error text-base mt-xs flex-shrink-0">error</span>
+            Météo fin mai imprévisible · prévoir plan B allure
+          </li>
+          <li class="flex items-start gap-sm text-[13px] font-label-sm text-secondary">
+            <span class="material-symbols-outlined text-error text-base mt-xs flex-shrink-0">error</span>
+            Nutrition course : tester les gels à l'entraînement avant J
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-lg pt-lg border-t border-surface-container-high">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-md">
+        <div>
+          <div class="font-label-bold text-[10px] uppercase tracking-widest text-secondary mb-xs">Objectif réaliste</div>
+          <div class="text-4xl font-black tracking-tighter text-primary leading-none">3h30' – 3h40'</div>
+        </div>
+        <div class="bg-black text-white px-lg py-md">
+          <div class="font-label-bold text-[10px] uppercase tracking-widest text-white/60 mb-xs">Verdict</div>
+          <div class="font-black text-white uppercase tracking-tight">Prêt. Gère le départ.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
 <!-- ── FAB ── -->
 <button class="fixed bottom-gutter right-gutter w-14 h-14 bg-black text-white border-2 border-black flex items-center justify-center hover:bg-primary transition-colors duration-150 z-50" title="Actualiser depuis Strava">
   <span class="material-symbols-outlined">sync</span>
@@ -594,6 +960,35 @@
   document.getElementById('kpi-dist').textContent = totalDist.toFixed(0);
   const avgPace = Math.round(paceSum / paceCount);
   document.getElementById('kpi-pace').textContent = fmtPace(avgPace);
+
+  /* ── Analyse page monthly bars ── */
+  const analyseMonthly = [
+    { label:'Jan 2026', km: 26.2,  note:'Reprise progressive' },
+    { label:'Fév 2026', km: 36.8,  note:'Montée en charge' },
+    { label:'Mar 2026', km:156.0,  note:'Pic entraînement' },
+    { label:'Avr 2026', km:141.5,  note:'Affûtage amorcé' },
+  ];
+  const amMax = Math.max(...analyseMonthly.map(m => m.km));
+  const amEl = document.getElementById('analyse-monthly-bars');
+  if (amEl) {
+    analyseMonthly.forEach(m => {
+      const pct = Math.round(m.km / amMax * 100);
+      const isMax = m.km === amMax;
+      amEl.innerHTML += `
+        <div class="mb-lg last:mb-0">
+          <div class="flex justify-between items-baseline mb-sm">
+            <div>
+              <span class="font-label-bold text-label-bold uppercase tracking-widest text-secondary">${m.label}</span>
+              <span class="ml-sm text-[10px] font-label-sm text-secondary opacity-70">${m.note}</span>
+            </div>
+            <span class="font-black text-black">${m.km} <span class="font-label-sm text-secondary text-xs">km</span></span>
+          </div>
+          <div class="bg-surface-container-low h-[8px] relative overflow-hidden">
+            <div class="${isMax ? 'bg-primary' : 'bg-on-surface'} h-full transition-all duration-700" style="width:${pct}%"></div>
+          </div>
+        </div>`;
+    });
+  }
 
   /* ── Monthly volume ── */
   const monthly = [
