@@ -1,6 +1,6 @@
 ## Objectif
 
-Analyser mes sorties Strava et préparer au mieux mes objectifs sportifs, dont le marathon d'Auxerre le 26 mai 2026.
+Analyser mes sorties Strava.
 
 M'identifier uniquement par mon prénom — l'application doit rester anonyme.
 
@@ -12,8 +12,8 @@ Plusieurs mini-apps, pages web et supports de présentation sont destinés à ê
 
 Les données importées depuis Strava sont stockées dans `./raw-data/strava`.
 
-- **Import incrémental uniquement** : ne réimporter que les activités absentes du dossier (comparer par `activity_id`).
-- **Format** : un fichier JSON par activité, nommé `{activity_id}.json`, contenant les champs bruts Strava.
+- **Import incrémental uniquement** : ne réimporter que les activités absentes du dossier (comparer par `activity_id`) et celles de moins de 7 jours (ces denrnières peuvent avoir été modifiées), sauf si de nouveaux champs sont nécessaires pour les besoin des applications.
+- **Format** : un fichier JSON par activité, nommé `{activity_id}.json`, contenant les champs bruts Strava et leurs descriptions.
 - **Source de vérité** : le front-end lit ses données depuis ce dossier (via script de build ou fetch au chargement) — jamais de données codées en dur dans le HTML.
 - **Script de build** : `./scripts/build-data.js` transforme `./raw-data/strava/*.json` en `./artefacts/app-coach/data/runs.json`.
 

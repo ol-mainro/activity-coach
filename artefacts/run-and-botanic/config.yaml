@@ -1,11 +1,14 @@
-design_system: herbier-botanique
+design_system: strava_running_herbarium
+variant: botanical_high_contrast
 palette:
-  parchment: "#f7f3e9"
-  forest: "#2c5f2e"
-  ochre: "#8b6914"
-  ink: "#1a1a1a"
+  primary: "#000d03"
+  primary-container: "#0a2612"
+  secondary: "#43664d"
+  surface: "#fbf9f8"
+  inverse-primary: "#aecfb0"
+  secondary-container: "#c2e9c9"
 typography:
-  headings: "Playfair Display"
-  body: "Source Sans 3"
+  headings: "Noto Serif"
+  body: "Inter"
 source_data: strava-activity-descriptions
 last_updated: "2026-04-25"
