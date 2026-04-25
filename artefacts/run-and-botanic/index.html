@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Run & Botanic — La flore sauvage sur vos chemins</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --parchment:      #f7f3e9;
+      --parchment-dark: #ede7d5;
+      --parchment-mid:  #e3dbc8;
+      --forest:         #2c5f2e;
+      --forest-mid:     #3d7a40;
+      --forest-light:   #4a8c4f;
+      --forest-pale:    #d6e8d7;
+      --ochre:          #8b6914;
+      --ochre-light:    #c49a2a;
+      --earth:          #5c3d1e;
+      --ink:            #1a1a1a;
+      --ink-mid:        #3a3a3a;
+      --ink-light:      #6a6a6a;
+      --cream-border:   #c8bfa0;
+      --white:          #ffffff;
+
+      /* Family colors */
+      --asteraceae:  #d4a017;
+      --brassicaceae:#5a9e5a;
+      --poaceae:     #8db87d;
+      --lamiaceae:   #7b5ea7;
+      --fabaceae:    #c06080;
+      --apiaceae:    #9aaa3a;
+      --ranunculaceae:#4a7aaa;
+      --lythraceae:  #aa4477;
+      --other:       #7a8a7a;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      background: var(--parchment);
+      color: var(--ink);
+      min-height: 100vh;
+    }
+
+    /* ─── HEADER ─── */
+    header {
+      background: var(--forest);
+      color: var(--white);
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .header-deco {
+      position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      opacity: 0.08;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill='%23ffffff'%3E%3Cellipse cx='100' cy='180' rx='4' ry='60'/%3E%3Cellipse cx='100' cy='180' rx='60' ry='4' transform='rotate(30 100 180)'/%3E%3Cellipse cx='100' cy='180' rx='60' ry='4' transform='rotate(-30 100 180)'/%3E%3Ccircle cx='100' cy='115' r='8'/%3E%3Cellipse cx='70' cy='140' rx='20' ry='10' transform='rotate(-20 70 140)'/%3E%3Cellipse cx='130' cy='140' rx='20' ry='10' transform='rotate(20 130 140)'/%3E%3Cellipse cx='55' cy='110' rx='18' ry='9' transform='rotate(-40 55 110)'/%3E%3Cellipse cx='145' cy='110' rx='18' ry='9' transform='rotate(40 145 110)'/%3E%3C/g%3E%3C/svg%3E");
+      background-repeat: repeat;
+    }
+    .header-inner {
+      position: relative;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 32px 36px;
+      display: flex;
+      align-items: flex-end;
+      gap: 32px;
+    }
+    .header-logo {
+      font-size: 64px;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .header-text h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+    }
+    .header-text h1 em {
+      font-style: italic;
+      color: #a8d5aa;
+    }
+    .header-text p {
+      margin-top: 8px;
+      font-size: 16px;
+      font-weight: 300;
+      color: #b8d5b9;
+      max-width: 520px;
+      line-height: 1.5;
+    }
+    .header-stats {
+      margin-top: 32px;
+      background: rgba(0,0,0,0.2);
+      display: flex;
+      gap: 0;
+    }
+    .stat-item {
+      flex: 1;
+      padding: 16px 24px;
+      border-right: 1px solid rgba(255,255,255,0.12);
+      text-align: center;
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-num {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      font-weight: 700;
+      color: #a8d5aa;
+    }
+    .stat-label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #7aaa7c;
+      margin-top: 2px;
+    }
+
+    /* ─── NAV TABS ─── */
+    .tabs-bar {
+      background: var(--forest);
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .tabs-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 32px;
+      display: flex;
+      gap: 4px;
+    }
+    .tab-btn {
+      padding: 14px 24px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: none;
+      border: none;
+      color: #7aaa7c;
+      cursor: pointer;
+      border-bottom: 3px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .tab-btn:hover { color: #b8d5b9; }
+    .tab-btn.active {
+      color: #ffffff;
+      border-bottom-color: #a8d5aa;
+    }
+
+    /* ─── MAIN ─── */
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 32px;
+    }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+
+    /* ─── SECTION HEADERS ─── */
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 600;
+      color: var(--forest);
+      margin-bottom: 6px;
+    }
+    .section-sub {
+      font-size: 15px;
+      color: var(--ink-light);
+      margin-bottom: 28px;
+    }
+
+    /* ─── FILTER BAR ─── */
+    .filter-bar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+      align-items: center;
+    }
+    .filter-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-right: 4px;
+    }
+    .filter-btn {
+      padding: 6px 14px;
+      border: 1.5px solid var(--cream-border);
+      background: var(--white);
+      border-radius: 99px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--ink-mid);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover {
+      border-color: var(--forest-mid);
+      color: var(--forest);
+    }
+    .filter-btn.active {
+      background: var(--forest);
+      border-color: var(--forest);
+      color: var(--white);
+    }
+    .search-box {
+      padding: 7px 14px;
+      border: 1.5px solid var(--cream-border);
+      background: var(--white);
+      border-radius: 99px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 13px;
+      color: var(--ink);
+      outline: none;
+      min-width: 220px;
+      transition: border-color 0.15s;
+    }
+    .search-box:focus { border-color: var(--forest-mid); }
+    .search-box::placeholder { color: var(--ink-light); }
+
+    /* ─── RUN CARDS (SORTIES) ─── */
+    .runs-timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .run-card {
+      background: var(--white);
+      border: 1.5px solid var(--cream-border);
+      border-left: 4px solid var(--forest-mid);
+      padding: 24px;
+      transition: border-left-color 0.2s, box-shadow 0.2s;
+    }
+    .run-card:hover {
+      box-shadow: 0 4px 16px rgba(44,95,46,0.12);
+      border-left-color: var(--forest);
+    }
+    .run-card-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+    .run-date-badge {
+      flex-shrink: 0;
+      background: var(--forest-pale);
+      border: 1.5px solid var(--forest-mid);
+      padding: 8px 14px;
+      text-align: center;
+      min-width: 72px;
+    }
+    .run-date-day {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--forest);
+      line-height: 1;
+    }
+    .run-date-month {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--forest-mid);
+    }
+    .run-meta { flex: 1; }
+    .run-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+    .run-lieu {
+      font-size: 13px;
+      color: var(--ink-light);
+      margin-bottom: 6px;
+    }
+    .run-lieu span { color: var(--ochre); font-weight: 600; }
+    .run-chips-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .run-info-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 10px;
+      background: var(--parchment);
+      border: 1px solid var(--parchment-mid);
+      font-size: 12px;
+      color: var(--ink-mid);
+      border-radius: 99px;
+    }
+    .run-strava-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 10px;
+      background: #fc4c02;
+      border: none;
+      font-size: 12px;
+      color: white;
+      border-radius: 99px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .run-strava-link:hover { background: #e04000; }
+
+    .run-habitat-line {
+      margin: 12px 0 10px;
+      font-size: 13px;
+      color: var(--ink-mid);
+      font-style: italic;
+      padding-left: 12px;
+      border-left: 2px solid var(--forest-pale);
+    }
+
+    .plant-count-badge {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--forest-mid);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .plant-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .plant-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 12px;
+      border: 1.5px solid var(--cream-border);
+      background: var(--parchment);
+      font-size: 13px;
+      color: var(--ink-mid);
+      cursor: pointer;
+      border-radius: 99px;
+      transition: all 0.15s;
+      font-family: 'Source Sans 3', sans-serif;
+    }
+    .plant-chip:hover {
+      border-color: var(--forest-mid);
+      background: var(--forest-pale);
+      color: var(--forest);
+    }
+    .plant-chip .chip-icon { font-size: 15px; }
+    .plant-chip .chip-family-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ─── HERBIER GRID ─── */
+    .herbier-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      gap: 16px;
+    }
+    .plant-card {
+      background: var(--white);
+      border: 1.5px solid var(--cream-border);
+      cursor: pointer;
+      transition: all 0.18s;
+      position: relative;
+      overflow: hidden;
+    }
+    .plant-card:hover {
+      box-shadow: 0 6px 20px rgba(44,95,46,0.15);
+      transform: translateY(-2px);
+      border-color: var(--forest-mid);
+    }
+    .plant-card-top {
+      background: var(--parchment);
+      padding: 28px 16px 20px;
+      text-align: center;
+      border-bottom: 1px solid var(--parchment-mid);
+      position: relative;
+    }
+    .plant-card-top::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--family-color, var(--forest-mid));
+    }
+    .plant-icon { font-size: 48px; margin-bottom: 8px; }
+    .plant-obs-count {
+      position: absolute;
+      top: 8px; right: 8px;
+      background: var(--forest);
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 99px;
+    }
+    .plant-card-body { padding: 14px 16px; }
+    .plant-nom {
+      font-family: 'Playfair Display', serif;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 3px;
+      text-transform: capitalize;
+    }
+    .plant-latin {
+      font-family: 'Playfair Display', serif;
+      font-size: 12px;
+      font-style: italic;
+      color: var(--ink-light);
+      margin-bottom: 8px;
+    }
+    .plant-family-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 99px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: white;
+      background: var(--family-color, var(--other));
+    }
+    .plant-habitat-short {
+      margin-top: 8px;
+      font-size: 12px;
+      color: var(--ink-light);
+      line-height: 1.4;
+    }
+
+    /* ─── MODAL ─── */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(26,26,26,0.65);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal {
+      background: var(--parchment);
+      max-width: 600px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      border: 2px solid var(--cream-border);
+      position: relative;
+      animation: modalIn 0.2s ease;
+    }
+    @keyframes modalIn {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .modal-header {
+      padding: 28px 28px 20px;
+      border-bottom: 1px solid var(--parchment-mid);
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      background: var(--white);
+      position: relative;
+    }
+    .modal-header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: var(--family-color, var(--forest));
+    }
+    .modal-icon { font-size: 60px; flex-shrink: 0; }
+    .modal-title-block { flex: 1; }
+    .modal-nom {
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--ink);
+      text-transform: capitalize;
+    }
+    .modal-latin {
+      font-family: 'Playfair Display', serif;
+      font-size: 16px;
+      font-style: italic;
+      color: var(--ink-light);
+      margin-bottom: 8px;
+    }
+    .modal-close {
+      position: absolute;
+      top: 16px; right: 16px;
+      background: none;
+      border: 1.5px solid var(--cream-border);
+      width: 32px; height: 32px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer;
+      font-size: 18px;
+      color: var(--ink-mid);
+      border-radius: 50%;
+    }
+    .modal-close:hover { background: var(--parchment-dark); }
+    .modal-body { padding: 24px 28px; }
+    .modal-section { margin-bottom: 20px; }
+    .modal-section-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--forest-mid);
+      margin-bottom: 6px;
+    }
+    .modal-section p {
+      font-size: 14px;
+      color: var(--ink-mid);
+      line-height: 1.65;
+    }
+    .modal-chips-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .modal-info-chip {
+      padding: 4px 12px;
+      background: var(--white);
+      border: 1.5px solid var(--parchment-mid);
+      font-size: 13px;
+      color: var(--ink-mid);
+      border-radius: 99px;
+    }
+    .modal-anecdote {
+      background: var(--forest-pale);
+      border-left: 3px solid var(--forest-mid);
+      padding: 12px 16px;
+      font-size: 14px;
+      color: var(--forest);
+      line-height: 1.6;
+      font-style: italic;
+    }
+    .modal-obs-list { display: flex; flex-direction: column; gap: 6px; }
+    .modal-obs-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 12px;
+      background: var(--white);
+      border: 1px solid var(--parchment-mid);
+      font-size: 13px;
+    }
+    .modal-obs-date {
+      font-weight: 700;
+      color: var(--forest);
+      min-width: 80px;
+    }
+    .modal-obs-lieu { color: var(--ink-mid); flex: 1; }
+
+    /* ─── CTA ─── */
+    .cta-section {
+      margin-top: 56px;
+      background: var(--forest);
+      padding: 40px;
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+    .cta-icon { font-size: 56px; flex-shrink: 0; }
+    .cta-text h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 8px;
+    }
+    .cta-text p {
+      font-size: 15px;
+      color: #a8d5aa;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+    .cta-template {
+      background: rgba(0,0,0,0.25);
+      border: 1px solid rgba(255,255,255,0.15);
+      padding: 14px 18px;
+      font-size: 13px;
+      color: #c8e8ca;
+      font-style: italic;
+      line-height: 1.6;
+      margin-bottom: 14px;
+      max-width: 480px;
+    }
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      background: #a8d5aa;
+      color: var(--forest);
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .cta-btn:hover { background: #c8e8ca; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px 32px;
+      border-top: 1px solid var(--parchment-mid);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-text {
+      font-size: 12px;
+      color: var(--ink-light);
+    }
+    .footer-inaturalist {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--forest-mid);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .footer-inaturalist:hover { color: var(--forest); }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 640px) {
+      .header-inner { flex-direction: column; gap: 12px; padding: 24px 20px 20px; }
+      .header-text h1 { font-size: 30px; }
+      .header-stats { flex-wrap: wrap; }
+      .stat-item { min-width: 50%; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.12); }
+      main { padding: 24px 20px; }
+      .cta-section { flex-direction: column; padding: 28px 20px; }
+      .herbier-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-deco"></div>
+  <div class="header-inner">
+    <div class="header-logo">🌿</div>
+    <div class="header-text">
+      <h1>Run &amp; <em>Botanic</em></h1>
+      <p>La flore sauvage observée sur les chemins de course — des friches urbaines aux sous-bois printaniers.</p>
+    </div>
+  </div>
+  <div class="header-stats">
+    <div class="stat-item">
+      <span class="stat-num" id="stat-sorties">5</span>
+      <span class="stat-label">Sorties botaniques</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" id="stat-especes">35</span>
+      <span class="stat-label">Espèces observées</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" id="stat-familles">10</span>
+      <span class="stat-label">Familles botaniques</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">Île-de-France</span>
+      <span class="stat-label">Région</span>
+    </div>
+  </div>
+</header>
+
+<div class="tabs-bar">
+  <div class="tabs-inner">
+    <button class="tab-btn active" data-tab="sorties">🏃 Sorties</button>
+    <button class="tab-btn" data-tab="herbier">🌸 Herbier</button>
+  </div>
+</div>
+
+<main>
+
+  <!-- ═══ SORTIES ═══ -->
+  <div class="tab-panel active" id="tab-sorties">
+    <h2 class="section-title">Sorties botaniques</h2>
+    <p class="section-sub">Les observations de flore notées dans les descriptions d'activités Strava.</p>
+
+    <div class="filter-bar">
+      <span class="filter-label">Lieu</span>
+      <button class="filter-btn active" data-lieu="tous">Tous</button>
+      <button class="filter-btn" data-lieu="canal">Canal Saint-Denis</button>
+      <button class="filter-btn" data-lieu="trilport">Trilport</button>
+      <button class="filter-btn" data-lieu="sousbois">Sous-bois</button>
+    </div>
+
+    <div class="runs-timeline" id="runs-list"></div>
+  </div>
+
+  <!-- ═══ HERBIER ═══ -->
+  <div class="tab-panel" id="tab-herbier">
+    <h2 class="section-title">Herbier de course</h2>
+    <p class="section-sub">Toutes les espèces observées — cliquez sur une plante pour en savoir plus.</p>
+
+    <div class="filter-bar">
+      <input type="text" class="search-box" id="plant-search" placeholder="🔍  Rechercher une espèce…">
+      <span class="filter-label" style="margin-left:8px">Famille</span>
+      <button class="filter-btn active" data-family="toutes">Toutes</button>
+      <button class="filter-btn" data-family="Asteraceae">Astéracées</button>
+      <button class="filter-btn" data-family="Brassicaceae">Brassicacées</button>
+      <button class="filter-btn" data-family="Poaceae">Poacées</button>
+      <button class="filter-btn" data-family="Lamiaceae">Lamiacées</button>
+    </div>
+
+    <div class="herbier-grid" id="herbier-grid"></div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <div class="cta-icon">🌸</div>
+    <div class="cta-text">
+      <h3>Toi aussi, note ta flore sauvage !</h3>
+      <p>Prêt·e à devenir un·e botanic runner ? Lors de ta prochaine sortie, observe la végétation autour de toi et ajoute tes découvertes dans la description Strava. Voici un modèle :</p>
+      <div class="cta-template" id="cta-template">
+        Botanique running — [lieu] : [liste des plantes observées]. Et toi, tu es aussi un botanic runner 🌸 qu'as-tu croisé sur ton chemin ?
+      </div>
+      <button class="cta-btn" onclick="copyTemplate()">📋 Copier le modèle</button>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <span class="footer-text">Run &amp; Botanic — données issues de Strava · Avril 2026</span>
+  <a class="footer-inaturalist" href="https://www.inaturalist.org" target="_blank">🔭 Identifier une plante sur iNaturalist →</a>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModalOnOverlay(event)">
+  <div class="modal" id="modal">
+    <div class="modal-header" id="modal-header">
+      <div class="modal-icon" id="modal-icon"></div>
+      <div class="modal-title-block">
+        <div class="modal-nom" id="modal-nom"></div>
+        <div class="modal-latin" id="modal-latin"></div>
+        <div id="modal-family-badge"></div>
+      </div>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <div class="modal-section-label">Description</div>
+        <p id="modal-description"></p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-label">Informations</div>
+        <div class="modal-chips-row" id="modal-info-chips"></div>
+      </div>
+      <div class="modal-section" id="modal-anecdote-section">
+        <div class="modal-section-label">À savoir</div>
+        <div class="modal-anecdote" id="modal-anecdote"></div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-label">Observée lors de</div>
+        <div class="modal-obs-list" id="modal-obs-list"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ══════════════════════════════════════════
+//  DATA
+// ══════════════════════════════════════════
+
+const FAMILY_COLORS = {
+  "Asteraceae":    "#c89a10",
+  "Brassicaceae":  "#4a8c4a",
+  "Poaceae":       "#6a9a50",
+  "Lamiaceae":     "#7b5ea7",
+  "Fabaceae":      "#b05070",
+  "Apiaceae":      "#8a9a20",
+  "Ranunculaceae": "#3a6a9a",
+  "Lythraceae":    "#9a3a6a",
+  "Boraginaceae":  "#4a7aaa",
+  "Caryophyllaceae":"#8a6a5a",
+  "Polygonaceae":  "#7a6a4a",
+  "Primulaceae":   "#c87040",
+  "Geraniaceae":   "#c05080",
+  "Rosaceae":      "#c06050",
+  "Rubiaceae":     "#5a8a3a",
+  "Plantaginaceae":"#4a7a5a",
+  "Asparagaceae":  "#4060aa",
+  "Papaveraceae":  "#c04040",
+};
+
+const PLANTS = {
+  "roquette jaune": {
+    latin: "Diplotaxis tenuifolia", famille: "Brassicaceae", icon: "🌼",
+    floraison: "Avr–oct", habitat: "Friches, voies ferrées, murs, terrains vagues",
+    description: "Plante pionnière des milieux perturbés urbains, la roquette jaune colonise les terrains vagues, talus ferroviaires et murs anciens. Ses fleurs jaune citron à 4 pétales en croix sont typiques des Brassicacées. Elle forme souvent de grands tapis en bords de canal et de voie ferrée.",
+    anecdote: "Cousin sauvage de la roquette cultivée, ses feuilles finement découpées sont comestibles et légèrement piquantes. Jadis récoltée comme herbe potagère des pauvres.",
+    runs: ["18237676883","18210382799"]
+  },
+  "laiterons": {
+    latin: "Sonchus spp.", famille: "Asteraceae", icon: "🌻",
+    floraison: "Jan–déc", habitat: "Bords de routes, friches, jardins, cultures",
+    description: "Les laiterons sont des plantes nitrophiles très communes, reconnaissables à leur suc laiteux blanc et leurs fleurs jaunes en capitules. Très résistantes, elles poussent toute l'année dans les milieux perturbés et constituent une ressource importante pour les insectes pollinisateurs précoces.",
+    anecdote: "Leurs feuilles étaient consommées comme légume dans l'Antiquité et au Moyen Âge. Encore comestibles aujourd'hui en salade ou cuits.",
+    runs: ["18237676883","18210382799"]
+  },
+  "brome stérile": {
+    latin: "Bromus sterilis", famille: "Poaceae", icon: "🌾",
+    floraison: "Avr–juil", habitat: "Bords de chemins, murs, terrains secs",
+    description: "Graminée annuelle des milieux perturbés et secs, reconnaissable à ses longues arêtes pendantes qui lui donnent un aspect élégant et frangé. Très commune en milieu urbain, elle tapisse les pieds de murs et bords de trottoirs. Malgré son nom, ses graines se dispersent très efficacement.",
+    anecdote: "Le qualificatif 'stérile' est trompeur : cette plante produit abondamment des graines et colonise allègrement les espaces urbains.",
+    runs: ["18237676883","18210382799","18171190655"]
+  },
+  "orge des rats": {
+    latin: "Hordeum murinum", famille: "Poaceae", icon: "🌾",
+    floraison: "Avr–juin", habitat: "Trottoirs, pieds de murs, pelouses piétinées",
+    description: "Petite graminée annuelle très commune dans les villes, poussant même dans les fissures de trottoirs. Ses épis dressés portent de longues arêtes rigides. Très résistante au piétinement, elle est l'une des plantes les plus ubiquistes de l'espace urbain.",
+    anecdote: "Son nom évoque les 'murinum' (des murs). Ses arêtes accrochées aux poils et vêtements lui permettent de se disperser passivement.",
+    runs: ["18237676883"]
+  },
+  "trèfle des prés": {
+    latin: "Trifolium pratense", famille: "Fabaceae", icon: "🍀",
+    floraison: "Mai–sept", habitat: "Prairies, talus, bords de routes",
+    description: "Le trèfle des prés est une plante mellifère emblématique des prairies. Ses fleurs rose-mauve en capitule sphérique sont très appréciées des bourdons dont les trompes sont suffisamment longues pour atteindre le nectar. Il enrichit naturellement le sol en azote grâce à des bactéries symbiotiques.",
+    anecdote: "La trèfle à quatre feuilles est une mutation rare (1 sur 10 000) considérée comme porte-bonheur dans de nombreuses cultures.",
+    runs: ["18237676883","18224962111"]
+  },
+  "marguerites": {
+    latin: "Leucanthemum vulgare", famille: "Asteraceae", icon: "🌼",
+    floraison: "Mai–sept", habitat: "Prairies, talus, bords de chemins",
+    description: "Plante emblématique des prairies non fauchées, la grande marguerite se reconnaît à ses ligules blanches et son cœur jaune. Elle indique généralement des milieux peu fertilisés et non traités. Sa présence est un bon indicateur de biodiversité floristique.",
+    anecdote: "L'effeuillage de la marguerite ('il m'aime un peu, beaucoup…') est une tradition populaire dont l'origine remonte au XIXe siècle.",
+    runs: ["18237676883"]
+  },
+  "pâquerettes": {
+    latin: "Bellis perennis", famille: "Asteraceae", icon: "🌸",
+    floraison: "Jan–déc", habitat: "Pelouses, gazons, prairies fauchées",
+    description: "La pâquerette est l'une des plantes les plus communes et les plus résistantes des pelouses tondues. Elle fleurit pratiquement toute l'année et supporte parfaitement le piétinement et la tonte. Ses capitules ferment la nuit et par temps nuageux.",
+    anecdote: "En phytothérapie traditionnelle, la pâquerette était utilisée comme cicatrisante et anti-inflammatoire. Ses jeunes feuilles sont comestibles en salade.",
+    runs: ["18237676883","18224962111","18210382799","18144255874"]
+  },
+  "rumex": {
+    latin: "Rumex spp.", famille: "Polygonaceae", icon: "🌿",
+    floraison: "Juin–sept", habitat: "Bords de routes, friches, prairies",
+    description: "Les rumex sont des plantes robustes facilement reconnaissables à leurs grandes feuilles et leurs tiges florales portant de nombreux petits fruits brun-rougeâtre. Très nitrophiles, ils indiquent des sols riches. Plusieurs espèces sont comestibles et utilisées en cuisine.",
+    anecdote: "L'oseille cultivée est un rumex (Rumex acetosa). Les espèces sauvages ont des feuilles acidulées comestibles, riches en vitamine C.",
+    runs: ["18237676883"]
+  },
+  "géraniums": {
+    latin: "Geranium spp.", famille: "Geraniaceae", icon: "💜",
+    floraison: "Avr–sept", habitat: "Haies, sous-bois, bords de chemins",
+    description: "Les géraniums sauvages (à ne pas confondre avec les pélargoniums horticoles) sont des plantes discrètes des lisières et bords de chemins. Leurs fleurs à 5 pétales roses ou violets et leur fruit en forme de bec de grue (d'où leur autre nom 'bec-de-grue') sont caractéristiques.",
+    anecdote: "Le mot 'géranium' vient du grec 'geranos' (grue), en référence au long fruit allongé ressemblant à un bec.",
+    runs: ["18237676883","18171190655"]
+  },
+  "salicaires": {
+    latin: "Lythrum salicaria", famille: "Lythraceae", icon: "🌺",
+    floraison: "Juin–sept", habitat: "Bords d'eau, marais, fossés humides",
+    description: "Majestueuse plante des zones humides, la salicaire colonise les rives des canaux, rivières et marais. Ses grandes épis de fleurs rose-violet vif sont très attractifs pour les papillons et abeilles. Elle se distingue aussi par son hétérostylie : ses fleurs existent en trois formes différentes.",
+    anecdote: "Autrefois utilisée en médecine pour ses propriétés astringentes et antimicrobiennes, notamment contre les diarrhées. Elle est maintenant invasive en Amérique du Nord.",
+    runs: ["18237676883"]
+  },
+  "porcelles enracinées": {
+    latin: "Hypochaeris radicata", famille: "Asteraceae", icon: "🌻",
+    floraison: "Mai–sept", habitat: "Pelouses sèches, talus, bords de routes",
+    description: "Plante vivace des pelouses piétinées et sèches, la porcelle enracinée forme une rosette de feuilles rudes au sol d'où partent de longues tiges portant des capitules jaunes. Elle est très commune dans les gazons et pelouses urbaines peu fertilisées.",
+    anecdote: "Son nom latin 'Hypochaeris' vient du grec et signifie 'appétissant pour les porcs', faisant référence à son ancienne utilisation comme fourrage.",
+    runs: ["18224962111"]
+  },
+  "plantains": {
+    latin: "Plantago spp.", famille: "Plantaginaceae", icon: "🌿",
+    floraison: "Avr–oct", habitat: "Chemins, pelouses piétinées, bords de routes",
+    description: "Les plantains sont des plantes extrêmement résistantes au piétinement, véritables indicateurs de sols compactés. Leurs feuilles nervurées en rosette et leurs épis cylindriques de fleurs minuscules sont caractéristiques. Le plantain lancéolé et le grand plantain sont les deux espèces les plus communes.",
+    anecdote: "Les graines de plantain psyllium (Plantago ovata) sont aujourd'hui cultivées industriellement comme laxatifs naturels et fibres alimentaires.",
+    runs: ["18224962111","18144255874"]
+  },
+  "cardamines hirsute": {
+    latin: "Cardamine hirsuta", famille: "Brassicaceae", icon: "🌸",
+    floraison: "Fév–mai", habitat: "Murs, pelouses, jardins, rocailles",
+    description: "Petite plante annuelle discrète mais omniprésente, la cardamine hérissée pousse dans les moindres interstices : fissures de murs, bords de pelouses, pieds de haies. Ses toutes petites fleurs blanches à 4 pétales annoncent le printemps dès février. Ses fruits explosent à maturité pour disperser les graines.",
+    anecdote: "Ses gousses peuvent catapulter leurs graines jusqu'à 1 mètre de distance grâce à un mécanisme de tension élastique.",
+    runs: ["18224962111","18144255874"]
+  },
+  "céraistes": {
+    latin: "Cerastium spp.", famille: "Caryophyllaceae", icon: "⚪",
+    floraison: "Mar–juil", habitat: "Pelouses, murs, terrains sableux",
+    description: "Les céraistes sont de petites plantes à fleurs blanches dont les pétales sont profondément échancrés, donnant l'illusion d'avoir 10 pétales au lieu de 5. Très communes dans les pelouses piétinées et les terrains sableux, elles forment souvent de petits tapis blancs.",
+    anecdote: "Le céraiste des toits (Cerastium tomentosum) est cultivé comme plante ornementale tapissante pour ses feuilles argentées et ses fleurs abondantes.",
+    runs: ["18224962111","18144255874"]
+  },
+  "capselles bourse-à-pasteur": {
+    latin: "Capsella bursa-pastoris", famille: "Brassicaceae", icon: "💚",
+    floraison: "Jan–déc", habitat: "Partout : jardins, cultures, trottoirs",
+    description: "La capselle est l'une des plantes adventices les plus communes au monde. Reconnaissable entre toutes à ses fruits en forme de cœur ou de bourse triangulaire, elle fleurit pratiquement toute l'année. Elle est présente sur tous les continents sauf l'Antarctique.",
+    anecdote: "Son nom 'bourse-à-pasteur' vient de la forme de ses fruits ressemblant aux petites sacoches que portaient les bergers médiévaux. Comestible et riche en vitamines.",
+    runs: ["18224962111","18144255874"]
+  },
+  "chélidoines": {
+    latin: "Chelidonium majus", famille: "Papaveraceae", icon: "🌼",
+    floraison: "Avr–sept", habitat: "Vieux murs, haies, décombres, villages",
+    description: "La chélidoine ou grande éclaire est une plante caractéristique des villages et vieux murs. Son suc jaune-orangé très visible, exsudant à la cassure de la tige, était autrefois utilisé pour soigner les verrues. Ses fleurs jaunes à 4 pétales s'épanouissent en grappes.",
+    anecdote: "Très toxique, la chélidoine ne doit pas être ingérée. Son suc orangé contient des alcaloïdes puissants — d'où son usage externe traditionnel contre les verrues et cors.",
+    runs: ["18224962111"]
+  },
+  "anémones": {
+    latin: "Anemone nemorosa", famille: "Ranunculaceae", icon: "🌸",
+    floraison: "Mar–mai", habitat: "Sous-bois de feuillus humides",
+    description: "L'anémone des bois est une plante printanière des sous-bois qui forme de grands tapis blancs éphémères avant la feuillaison des arbres. Elle profite de la lumière disponible avant que le feuillage ne ferme la canopée. Sa floraison très brève (quelques semaines) en fait un symbole de l'éphémère printanier.",
+    anecdote: "Toute la plante est toxique. Son nom vient du grec 'anemos' (vent), car ses fleurs légères tremblent au moindre souffle. Les fées des forêts lui sont traditionnellement associées.",
+    runs: ["18171190655"]
+  },
+  "jacinthes des bois": {
+    latin: "Hyacinthoides non-scripta", famille: "Asparagaceae", icon: "💜",
+    floraison: "Avr–mai", habitat: "Sous-bois humides de feuillus",
+    description: "La jacinthe des bois crée des tapis bleu-violet spectaculaires dans les sous-bois de chênes et charmes en avril-mai. Ce spectacle éphémère, appelé 'blue carpet' en Angleterre, attire de nombreux promeneurs. Elle pousse en symbiose avec les champignons du sol.",
+    anecdote: "La Grande-Bretagne abrite la moitié de la population mondiale de jacinthes des bois. Elles sont protégées car leur bulbe met 5 à 7 ans à se développer.",
+    runs: ["18171190655"]
+  },
+  "cerfeuils": {
+    latin: "Anthriscus sylvestris", famille: "Apiaceae", icon: "⚪",
+    floraison: "Avr–juin", habitat: "Lisières, haies, bords de chemins",
+    description: "Le cerfeuil sauvage est une grande ombellifère à fleurs blanches très commune des bords de chemins et lisières. Ses ombelles blanches créent un effet de dentelle végétale. Il pousse souvent en grandes populations, particulièrement abondant au printemps.",
+    anecdote: "Attention à ne pas confondre avec la ciguë, également ombellifère à fleurs blanches mais mortellement toxique. Le cerfeuil a une odeur anisée caractéristique.",
+    runs: ["18171190655"]
+  },
+  "bugles": {
+    latin: "Ajuga reptans", famille: "Lamiaceae", icon: "💙",
+    floraison: "Avr–juin", habitat: "Sous-bois, prairies humides, haies",
+    description: "La bugle rampante forme de petits tapis persistants dans les sous-bois frais et les prairies humides. Ses épis de fleurs bleu-violet intense sont très attractifs pour les bourdons. Excellente plante couvre-sol, elle est aussi cultivée comme ornementale.",
+    anecdote: "En phytothérapie traditionnelle, la bugle était réputée pour ses propriétés hémostatiques. Son nom vient du latin 'bugula', d'origine obscure.",
+    runs: ["18171190655"]
+  },
+  "véroniques": {
+    latin: "Veronica spp.", famille: "Plantaginaceae", icon: "💙",
+    floraison: "Mar–sept", habitat: "Pelouses, chemins, sous-bois",
+    description: "Les véroniques sont de petites plantes discrètes aux fleurs bleues délicates à 4 pétales, dont l'un est souvent plus petit que les autres. Il en existe de nombreuses espèces adaptées à des milieux variés. Leurs fleurs tombent facilement à la cueillette.",
+    anecdote: "Le nom 'véronique' fait référence à Sainte Véronique qui aurait essuyé le visage du Christ. Les fleurs bleues auraient représenté sa sincérité.",
+    runs: ["18171190655"]
+  },
+  "vesces": {
+    latin: "Vicia spp.", famille: "Fabaceae", icon: "🌸",
+    floraison: "Mai–août", habitat: "Haies, prairies, cultures",
+    description: "Les vesces sont des plantes grimpantes légumineuses aux fleurs papilionacées roses ou violettes. Elles s'accrochent aux autres végétaux grâce à des vrilles. Comme tous les légumineuses, elles fixent l'azote atmosphérique grâce à des bactéries symbiotiques dans leurs racines.",
+    anecdote: "Plusieurs espèces de vesces étaient cultivées dans l'Antiquité comme fourrage. Certaines sont toxiques pour l'homme à haute dose.",
+    runs: ["18171190655"]
+  },
+  "gaillets gratteron": {
+    latin: "Galium aparine", famille: "Rubiaceae", icon: "🌿",
+    floraison: "Mai–août", habitat: "Haies, lisières, décombres",
+    description: "Le gaillet gratteron est connu de tous pour sa capacité à s'accrocher aux vêtements et aux poils des animaux grâce à ses minuscules crochets recouvrant toute la plante. Plante grimpante atteignant 1 à 2 m, elle forme d'épais fourrés dans les haies et lisières.",
+    anecdote: "Le gaillet a inspiré le principe du velcro ! George de Mestral s'en est inspiré en 1948 après avoir observé au microscope comment ses crochets s'accrochaient à sa veste.",
+    runs: ["18171190655"]
+  },
+  "fraisiers": {
+    latin: "Fragaria vesca", famille: "Rosaceae", icon: "🍓",
+    floraison: "Avr–juin", habitat: "Lisières, haies, talus, sous-bois",
+    description: "Le fraisier des bois produit de petites fraises sauvages beaucoup plus parfumées que les fraises cultivées. Ses fleurs blanches à 5 pétales apparaissent dès avril dans les lisières et haies. Il se propage par stolons, formant de petites colonies.",
+    anecdote: "La fraise cultivée est un hybride artificiel créé au XVIIIe siècle entre deux espèces américaines. La fraise des bois est l'espèce originelle européenne.",
+    runs: ["18171190655"]
+  },
+  "lamier blanc": {
+    latin: "Lamium album", famille: "Lamiaceae", icon: "🤍",
+    floraison: "Mar–nov", habitat: "Haies, talus, bords de chemins",
+    description: "Souvent confondu avec l'ortie (dont il a les feuilles), le lamier blanc s'en distingue facilement par l'absence de poils urticants et ses grandes fleurs blanches en forme de casque. Il fleurit quasiment toute l'année, offrant un nectar précieux aux bourdons.",
+    anecdote: "Le lamier blanc est une excellente plante mellifère. Ses fleurs contiennent un nectar abondant accessible uniquement aux bourdons dont la trompe est assez longue.",
+    runs: ["18171190655"]
+  },
+  "lamier jaune": {
+    latin: "Lamiastrum galeobdolon", famille: "Lamiaceae", icon: "💛",
+    floraison: "Avr–juin", habitat: "Sous-bois frais, haies ombragées",
+    description: "Le lamier jaune ou galéobdolon est une plante tapissante des sous-bois humides, aux fleurs jaunes à taches brunes caractéristiques. Ses feuilles semi-persistantes tachetées de blanc restent vertes tout l'hiver sous les arbres.",
+    anecdote: "Parfois planté comme couvre-sol ornemental, il peut devenir envahissant hors de son habitat naturel. En forêt, il indique des sols riches et frais.",
+    runs: ["18171190655"]
+  },
+  "berces": {
+    latin: "Heracleum sphondylium", famille: "Apiaceae", icon: "🌿",
+    floraison: "Juin–sept", habitat: "Bords de chemins, prairies humides",
+    description: "La berce commune est une grande ombellifère pouvant atteindre 2 m. Ses larges ombelles de fleurs blanches ou roses attirent d'innombrables insectes en été. Elle colonise les bords de chemins, fossés et lisières humides.",
+    anecdote: "À ne pas confondre avec la berce du Caucase (Heracleum mantegazzianum), espèce invasive dont le suc provoque de graves brûlures cutanées au soleil.",
+    runs: ["18171190655"]
+  },
+  "cirses": {
+    latin: "Cirsium spp.", famille: "Asteraceae", icon: "🌸",
+    floraison: "Juin–oct", habitat: "Prairies, talus, bords de routes",
+    description: "Les cirses sont des chardons aux grandes fleurs rose-mauve très appréciées des papillons et bourdons. Leurs capitules couverts de bractées épineuses constituent d'excellentes sources de nectar. Plusieurs espèces poussent en Île-de-France, dans les prairies et talus.",
+    anecdote: "Le chardon est le symbole national de l'Écosse depuis le XIIIe siècle, quand des soldats vikings auraient marché pieds nus dans des chardons, alertant les Écossais de leur approche.",
+    runs: ["18171190655"]
+  },
+  "bardanes": {
+    latin: "Arctium spp.", famille: "Asteraceae", icon: "🌿",
+    floraison: "Juil–sept", habitat: "Friches, lisières, décombres",
+    description: "Les bardanes sont de grandes plantes biannuelles aux feuilles énormes et aux fruits en capitules épineux s'accrochant à tout ce qui passe. Elles poussent préférentiellement à la lisière des forêts et dans les décombres riches en azote.",
+    anecdote: "Comme le gaillet, la bardane a inspiré l'invention du velcro. En cuisine japonaise (gobo), sa racine est un légume courant et apprécié.",
+    runs: ["18171190655"]
+  },
+  "consoudes": {
+    latin: "Symphytum officinale", famille: "Boraginaceae", icon: "💜",
+    floraison: "Mai–août", habitat: "Bords d'eau, fossés, prairies humides",
+    description: "La consoude officinale est une grande plante des zones humides aux fleurs en clochettes pendantes rose-violacé. Ses grandes feuilles rugueuses et sa racine charnue sont caractéristiques. Elle pousse en colonies denses au bord des rivières et fossés.",
+    anecdote: "Longtemps utilisée en phytothérapie pour soigner les fractures et contusions (d'où 'consoude', du latin 'consolidare'). Contient de l'allantoïne cicatrisante, mais aussi des alcaloïdes hépatotoxiques si ingérée.",
+    runs: ["18171190655"]
+  },
+  "lamier pourpre": {
+    latin: "Lamium purpureum", famille: "Lamiaceae", icon: "💜",
+    floraison: "Jan–nov", habitat: "Cultures, jardins, bords de chemins",
+    description: "Le lamier pourpre est une petite plante annuelle aux fleurs rose-pourpre et aux feuilles rougeâtres caractéristiques. L'une des premières plantes à fleurir après l'hiver, elle offre un nectar précieux aux insectes qui sortent par les premières journées douces.",
+    anecdote: "Indicateur de sol riche et travaillé, le lamier pourpre est une adventice typique des jardins et cultures. Sa floraison dès janvier en fait une plante-ressource cruciale pour les bourdons reinettes.",
+    runs: ["18171190655"]
+  },
+  "primevères": {
+    latin: "Primula vulgaris", famille: "Primulaceae", icon: "💛",
+    floraison: "Fév–mai", habitat: "Sous-bois, haies, talus ombragés",
+    description: "La primevère acaule est l'une des premières fleurs du printemps, égayant les sous-bois et haies dès février. Ses fleurs jaune soufre en coussins rasants annoncent la fin de l'hiver. En sous-bois, elle préfère les sols frais et riches.",
+    anecdote: "La primevère est depuis longtemps associée au printemps dans la culture européenne. Dans le langage des fleurs, elle symbolise la jeunesse et l'amour naissant.",
+    runs: ["18171190655"]
+  },
+  "sauges": {
+    latin: "Salvia spp.", famille: "Lamiaceae", icon: "💜",
+    floraison: "Avr–sept", habitat: "Talus secs, prairies calcaires, berges",
+    description: "Les sauges sauvages arborent des fleurs en épis à deux lèvres bleu-violet très attractives pour les bourdons. La sauge des prés (Salvia pratensis) est l'espèce la plus commune en Île-de-France, colonisant les talus calcaires et bords de routes ensoleillés.",
+    anecdote: "La sauge officinale (Salvia officinalis) est une plante médicinale et culinaire utilisée depuis l'Antiquité. 'Salvia' vient du latin 'salvare' (sauver), en référence à ses vertus thérapeutiques.",
+    runs: ["18210382799"]
+  }
+};
+
+const RUNS = [
+  {
+    id: "18237676883",
+    date: "2026-04-24",
+    title: "Canal de Saint-Denis",
+    lieu: "Canal de Saint-Denis",
+    region: "Saint-Denis / Paris",
+    lieuf: "canal",
+    habitat: "Le long du canal de Saint-Denis — usines, chantiers, friches et immeubles d'habitation",
+    distance: 10.13,
+    plants: ["roquette jaune","laiterons","brome stérile","orge des rats","trèfle des prés","marguerites","pâquerettes","rumex","géraniums","salicaires"],
+    description: "Sortie canal avec une belle diversité de plantes de friches urbaines et de berges."
+  },
+  {
+    id: "18224962111",
+    date: "2026-04-23",
+    title: "Pelouse du stade de Trilport",
+    lieu: "Stade de Trilport",
+    region: "Trilport, Seine-et-Marne",
+    lieuf: "trilport",
+    habitat: "Flore des terrains piétinés et asphyxiés — pelouse du stade. Oiseaux des jardins : fauvettes à tête noire, pouillot véloce",
+    distance: 10.16,
+    plants: ["porcelles enracinées","plantains","pâquerettes","trèfle des prés","cardamines hirsute","céraistes","capselles bourse-à-pasteur","chélidoines"],
+    description: "Terrain piétiné riche en espèces adventices résistantes."
+  },
+  {
+    id: "18210382799",
+    date: "2026-04-22",
+    title: "Canal de Saint-Denis",
+    lieu: "Canal de Saint-Denis",
+    region: "Saint-Denis / Paris",
+    lieuf: "canal",
+    habitat: "Berges du canal — premières observations botaniques de la série",
+    distance: 10.06,
+    plants: ["roquette jaune","laiterons","brome stérile","pâquerettes","sauges"],
+    description: "Première sortie avec notations floristiques le long du canal."
+  },
+  {
+    id: "18171190655",
+    date: "2026-04-19",
+    title: "Sous-bois printaniers",
+    lieu: "Sous-bois et chemins forestiers",
+    region: "Trilport / Meaux, Seine-et-Marne",
+    lieuf: "sousbois",
+    habitat: "Sous-bois de feuillus, chemins forestiers et berges — succession florale printanière",
+    distance: 20.14,
+    plants: ["anémones","jacinthes des bois","cerfeuils","bugles","véroniques","géraniums","vesces","gaillets gratteron","fraisiers","lamier blanc","lamier jaune","berces","cirses","bardanes","consoudes","brome stérile","lamier pourpre","primevères"],
+    description: "La sortie la plus riche — 18 espèces dans les sous-bois de Seine-et-Marne en plein pic de floraison printanière."
+  },
+  {
+    id: "18144255874",
+    date: "2026-04-17",
+    title: "Pelouse du stade de Trilport",
+    lieu: "Stade de Trilport",
+    region: "Trilport, Seine-et-Marne",
+    lieuf: "trilport",
+    habitat: "Pelouse du stade — flore des terrains piétinés et asphyxiés",
+    distance: 5.18,
+    plants: ["plantains","pâquerettes","cardamines hirsute","céraistes","capselles bourse-à-pasteur"],
+    description: "Première sortie botaniquement annotée — espèces typiques des pelouses sportives."
+  }
+];
+
+// ══════════════════════════════════════════
+//  HELPERS
+// ══════════════════════════════════════════
+
+function getFamilyColor(famille) {
+  return FAMILY_COLORS[famille] || "#7a8a7a";
+}
+
+function formatDate(dateStr) {
+  const d = new Date(dateStr);
+  const day = d.getDate();
+  const months = ["jan","fév","mar","avr","mai","jun","jul","aoû","sep","oct","nov","déc"];
+  return { day, month: months[d.getMonth()], full: d.toLocaleDateString('fr-FR', {day:'numeric', month:'long', year:'numeric'}) };
+}
+
+function getPlantIcon(nom) {
+  return PLANTS[nom]?.icon || "🌿";
+}
+
+function getPlantFamily(nom) {
+  return PLANTS[nom]?.famille || "—";
+}
+
+function getAllSpecies() {
+  const all = new Set();
+  RUNS.forEach(r => r.plants.forEach(p => all.add(p)));
+  return [...all];
+}
+
+function countObservations(plantName) {
+  return RUNS.filter(r => r.plants.includes(plantName)).length;
+}
+
+// ══════════════════════════════════════════
+//  STATS
+// ══════════════════════════════════════════
+
+function updateStats() {
+  const species = getAllSpecies();
+  const families = new Set(species.map(p => PLANTS[p]?.famille).filter(Boolean));
+  document.getElementById('stat-sorties').textContent = RUNS.length;
+  document.getElementById('stat-especes').textContent = species.length;
+  document.getElementById('stat-familles').textContent = families.size;
+}
+
+// ══════════════════════════════════════════
+//  SORTIES TAB
+// ══════════════════════════════════════════
+
+let activeLieu = "tous";
+
+function renderRuns(lieuf) {
+  const list = document.getElementById('runs-list');
+  const filtered = lieuf === "tous" ? RUNS : RUNS.filter(r => r.lieuf === lieuf);
+  list.innerHTML = filtered.map(run => {
+    const d = formatDate(run.date);
+    const plantChips = run.plants.map(p => {
+      const fam = getPlantFamily(p);
+      const color = getFamilyColor(fam);
+      return `<button class="plant-chip" onclick="openModal('${p}')" title="${fam}">
+        <span class="chip-family-dot" style="background:${color}"></span>
+        <span class="chip-icon">${getPlantIcon(p)}</span>
+        ${p}
+      </button>`;
+    }).join('');
+
+    return `<div class="run-card">
+      <div class="run-card-header">
+        <div class="run-date-badge">
+          <span class="run-date-day">${d.day}</span>
+          <span class="run-date-month">${d.month} 2026</span>
+        </div>
+        <div class="run-meta">
+          <div class="run-title">${run.title}</div>
+          <div class="run-lieu">📍 <span>${run.region}</span></div>
+          <div class="run-chips-row">
+            <span class="run-info-chip">🏃 ${run.distance.toFixed(1)} km</span>
+            <span class="run-info-chip">🌿 ${run.plants.length} espèce${run.plants.length>1?'s':''}</span>
+            <a class="run-strava-link" href="https://www.strava.com/activities/${run.id}" target="_blank">Strava ↗</a>
+          </div>
+        </div>
+      </div>
+      <div class="run-habitat-line">${run.habitat}</div>
+      <div class="plant-count-badge">🌸 Espèces observées</div>
+      <div class="plant-chips">${plantChips}</div>
+    </div>`;
+  }).join('');
+}
+
+document.querySelectorAll('[data-lieu]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    activeLieu = btn.dataset.lieu;
+    document.querySelectorAll('[data-lieu]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderRuns(activeLieu);
+  });
+});
+
+// ══════════════════════════════════════════
+//  HERBIER TAB
+// ══════════════════════════════════════════
+
+let activeFamily = "toutes";
+let searchQuery = "";
+
+function renderHerbier() {
+  const grid = document.getElementById('herbier-grid');
+  const allSpecies = getAllSpecies();
+  const filtered = allSpecies.filter(nom => {
+    const p = PLANTS[nom];
+    const matchFamily = activeFamily === "toutes" || (p && p.famille === activeFamily);
+    const matchSearch = !searchQuery ||
+      nom.toLowerCase().includes(searchQuery) ||
+      (p && p.latin && p.latin.toLowerCase().includes(searchQuery)) ||
+      (p && p.famille && p.famille.toLowerCase().includes(searchQuery));
+    return matchFamily && matchSearch;
+  });
+
+  if (filtered.length === 0) {
+    grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:48px;color:var(--ink-light);font-style:italic;">Aucune espèce trouvée pour cette recherche.</div>`;
+    return;
+  }
+
+  grid.innerHTML = filtered.map(nom => {
+    const p = PLANTS[nom] || {};
+    const color = getFamilyColor(p.famille);
+    const obs = countObservations(nom);
+    return `<div class="plant-card" onclick="openModal('${nom}')" style="--family-color:${color}">
+      <div class="plant-card-top">
+        ${obs > 1 ? `<span class="plant-obs-count">${obs}×</span>` : ''}
+        <div class="plant-icon">${p.icon || '🌿'}</div>
+      </div>
+      <div class="plant-card-body">
+        <div class="plant-nom">${nom}</div>
+        <div class="plant-latin">${p.latin || '—'}</div>
+        <span class="plant-family-badge" style="background:${color}">${p.famille || '—'}</span>
+        <div class="plant-habitat-short">${p.floraison ? '🗓 ' + p.floraison : ''}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+document.querySelectorAll('[data-family]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    activeFamily = btn.dataset.family;
+    document.querySelectorAll('[data-family]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderHerbier();
+  });
+});
+
+document.getElementById('plant-search').addEventListener('input', e => {
+  searchQuery = e.target.value.toLowerCase().trim();
+  renderHerbier();
+});
+
+// ══════════════════════════════════════════
+//  MODAL
+// ══════════════════════════════════════════
+
+function openModal(nom) {
+  const p = PLANTS[nom];
+  if (!p) return;
+  const color = getFamilyColor(p.famille);
+
+  document.getElementById('modal-icon').textContent = p.icon || '🌿';
+  document.getElementById('modal-nom').textContent = nom;
+  document.getElementById('modal-latin').textContent = p.latin || '';
+  document.getElementById('modal-header').style.setProperty('--family-color', color);
+  document.getElementById('modal-family-badge').innerHTML =
+    `<span class="plant-family-badge" style="background:${color}">${p.famille || ''}</span>`;
+  document.getElementById('modal-description').textContent = p.description || '';
+
+  const chips = [
+    p.floraison ? `🗓 ${p.floraison}` : null,
+    p.habitat ? `🌍 ${p.habitat}` : null
+  ].filter(Boolean).map(c => `<span class="modal-info-chip">${c}</span>`).join('');
+  document.getElementById('modal-info-chips').innerHTML = chips;
+
+  if (p.anecdote) {
+    document.getElementById('modal-anecdote').textContent = p.anecdote;
+    document.getElementById('modal-anecdote-section').style.display = '';
+  } else {
+    document.getElementById('modal-anecdote-section').style.display = 'none';
+  }
+
+  const obsRuns = RUNS.filter(r => r.plants.includes(nom));
+  document.getElementById('modal-obs-list').innerHTML = obsRuns.map(r => {
+    const d = formatDate(r.date);
+    return `<div class="modal-obs-item">
+      <span class="modal-obs-date">${d.full}</span>
+      <span class="modal-obs-lieu">📍 ${r.region}</span>
+    </div>`;
+  }).join('');
+
+  document.getElementById('modal-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('modal-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function closeModalOnOverlay(e) {
+  if (e.target === document.getElementById('modal-overlay')) closeModal();
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+// ══════════════════════════════════════════
+//  TABS
+// ══════════════════════════════════════════
+
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+  });
+});
+
+// ══════════════════════════════════════════
+//  CTA
+// ══════════════════════════════════════════
+
+function copyTemplate() {
+  const text = document.getElementById('cta-template').textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = event.target.closest('button');
+    const orig = btn.textContent;
+    btn.textContent = '✅ Copié !';
+    setTimeout(() => btn.innerHTML = orig, 2000);
+  });
+}
+
+// ══════════════════════════════════════════
+//  INIT
+// ══════════════════════════════════════════
+
+updateStats();
+renderRuns("tous");
+renderHerbier();
+</script>
+</body>
+</html>
