@@ -646,6 +646,16 @@
       font-weight: 600;
     }
     .footer-inaturalist:hover { color: var(--forest); }
+    .footer-nav-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--ochre);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .footer-nav-link:hover { color: var(--forest); }
 
     /* ─── RESPONSIVE ─── */
     @media (max-width: 640px) {
@@ -749,6 +759,7 @@
 
 <footer>
   <span class="footer-text">Run &amp; Botanic — données issues de Strava · Avril 2026</span>
+  <a class="footer-nav-link" id="footer-nav-link" href="../app-coach/">🏃 Coach de course →</a>
   <a class="footer-inaturalist" href="https://www.inaturalist.org" target="_blank">🔭 Identifier une plante sur iNaturalist →</a>
 </footer>
 
