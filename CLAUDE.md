@@ -6,6 +6,14 @@ M'identifier seulement par mon prénom, l'application doit reste anonyme.
 
 Plusieurs mini apps et support de présentation sont destinés à être crées en tant qu'artefacts.
 
+## Données brutes Strava
+Les données brutes importées de Strava utiles pour l'application doivent être régulièrement importées dans le dossier `./raw-data/strava`.
+
+- **Import incrémental uniquement** : ne réimporter que les données des nouvelles activités (pas les activités déjà présentes).
+- **Format** : un fichier JSON par activité, nommé `{activity_id}.json`, contenant les champs bruts Strava.
+- **Source de vérité pour le front** : le front-end doit lire ses données depuis ce dossier (via un script de build ou un fetch au chargement) plutôt que des données codées en dur dans le HTML.
+- **Script de build** : utiliser `./scripts/build-data.js` (ou équivalent) pour transformer les fichiers `./raw-data/strava/*.json` en un fichier `./artefacts/app-coach/data/runs.json` consommé par l'application.
+
 ## Préférer l'utisation de scripts pluôt que de l'IA quand c'est possible
 Dans une optique d'optimisation de la consommation d'outils et des tokens, dès que des processus récurrents pouvant être générés sans ia générative sont identifiés, il faut créer des scripts dans le dossier ./scripts réalisant la même tâche et l'utiliser quand nécessaire.
 

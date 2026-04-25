@@ -220,7 +220,7 @@
         <span id="kpi-dist" class="text-4xl sm:text-5xl font-black leading-none tracking-tighter">—</span>
         <span class="text-lg sm:text-2xl font-black text-primary">km</span>
       </div>
-      <p class="text-[11px] font-label-bold uppercase tracking-widest text-secondary mt-sm">20 sorties</p>
+      <p class="text-[11px] font-label-bold uppercase tracking-widest text-secondary mt-sm">7 derniers jours</p>
     </div>
     <div class="bg-white border-2 border-black p-md sm:p-lg relative card-accent">
       <p class="font-label-bold text-label-bold uppercase text-secondary mb-xs text-[11px]">Allure moyenne</p>
@@ -228,7 +228,7 @@
         <span id="kpi-pace" class="text-4xl sm:text-5xl font-black leading-none tracking-tighter">—</span>
         <span class="text-lg sm:text-2xl font-black text-primary">/km</span>
       </div>
-      <p class="text-[11px] font-label-bold uppercase tracking-widest text-secondary mt-sm">Sorties courues</p>
+      <p class="text-[11px] font-label-bold uppercase tracking-widest text-secondary mt-sm">7 derniers jours</p>
     </div>
     <div class="bg-white border-2 border-black p-md sm:p-lg relative card-accent">
       <p class="font-label-bold text-label-bold uppercase text-secondary mb-xs text-[11px]">Sortie longue max</p>
@@ -921,15 +921,32 @@
 
   const MAX_PACE = 420, MIN_PACE = 180;
   let totalDist = 0, paceSum = 0, paceCount = 0;
+  let dist7d = 0, paceSum7d = 0, paceCount7d = 0;
+
+  /* Cutoff = today - 7 days (inclusive) */
+  const now7d = new Date(); now7d.setHours(0,0,0,0);
+  const cutoff7d = new Date(now7d); cutoff7d.setDate(now7d.getDate() - 7);
+
+  function parseRunDate(dateStr) {
+    const [d, m] = dateStr.split('/').map(Number);
+    return new Date(2026, m - 1, d);
+  }
 
   const tbody = document.getElementById('runs-tbody');
   runs.forEach(r => {
+    const runDate = parseRunDate(r.date);
+    const in7d = runDate >= cutoff7d;
+
     const tm = typeMap[r.type] || { cls:'endurance', label: r.type };
     const pColor = paceColor(r.pace);
     const barW = r.pace === 194 ? 100 : Math.round((1 - (r.pace - MIN_PACE)/(MAX_PACE - MIN_PACE)) * 100);
     const paceDisplay = r.pace === 194 ? '2:54' : fmtPace(r.pace);
     totalDist += r.dist;
     if (r.pace > 194) { paceSum += r.pace; paceCount++; }
+    if (in7d) {
+      dist7d += r.dist;
+      if (r.pace > 194) { paceSum7d += r.pace; paceCount7d++; }
+    }
 
     const tr = document.createElement('tr');
     tr.className = 'run-row transition-colors cursor-default';
@@ -952,10 +969,10 @@
     tbody.appendChild(tr);
   });
 
-  /* KPIs */
-  document.getElementById('kpi-dist').textContent = totalDist.toFixed(0);
-  const avgPace = Math.round(paceSum / paceCount);
-  document.getElementById('kpi-pace').textContent = fmtPace(avgPace);
+  /* KPIs — 7 derniers jours */
+  document.getElementById('kpi-dist').textContent = dist7d.toFixed(0);
+  const avgPace7d = paceCount7d > 0 ? Math.round(paceSum7d / paceCount7d) : 0;
+  document.getElementById('kpi-pace').textContent = paceCount7d > 0 ? fmtPace(avgPace7d) : '—';
 
   /* ── Analyse page monthly bars ── */
   const analyseMonthly = [
