@@ -10,10 +10,13 @@ Récupère les activités récentes via le MCP Strava (`mcp__strava__get-recent-
 
 Pour chaque activité retournée :
 - Vérifier si le fichier `./raw-data/strava/{activity_id}.json` existe déjà.
-- Si non : créer le fichier avec les champs bruts de l'activité.
-- Si oui : ignorer (import incrémental uniquement).
+- **Si non** : créer le fichier avec les champs bruts de l'activité.
+- **Si oui** : réimporter (écraser) uniquement dans deux cas :
+  1. L'activité date de moins de 7 jours (les données Strava peuvent encore être modifiées).
+  2. Les artefacts nécessitent des champs absents du fichier existant (champs non encore importés).
+- Dans tous les autres cas : ignorer.
 
-Afficher un résumé : combien de nouvelles activités importées, combien ignorées.
+Afficher un résumé : combien de nouvelles activités importées, combien mises à jour, combien ignorées.
 
 ### 2. Reconstruction du fichier de données consolidé
 
