@@ -1,45 +1,76 @@
 ## Objectif
-Utiliser le mcp Strava en vue d'analyser mes sorties et m'aider à préparer au mieux mes objectifs à venir, dont mon marathon à Auxerre le 26 mai 2026.
 
-M'identifier seulement par mon prénom, l'application doit reste anonyme.
+Analyser mes sorties Strava et préparer au mieux mes objectifs sportifs, dont le marathon d'Auxerre le 26 mai 2026.
 
+M'identifier uniquement par mon prénom — l'application doit rester anonyme.
 
-Plusieurs mini apps et support de présentation sont destinés à être crées en tant qu'artefacts.
+Plusieurs mini-apps, pages web et supports de présentation sont destinés à être créés en tant qu'artefacts.
+
+---
 
 ## Données brutes Strava
-Les données brutes importées de Strava utiles pour l'application doivent être régulièrement importées dans le dossier `./raw-data/strava`.
 
-- **Import incrémental uniquement** : ne réimporter que les données des nouvelles activités (pas les activités déjà présentes).
+Les données importées depuis Strava sont stockées dans `./raw-data/strava`.
+
+- **Import incrémental uniquement** : ne réimporter que les activités absentes du dossier (comparer par `activity_id`).
 - **Format** : un fichier JSON par activité, nommé `{activity_id}.json`, contenant les champs bruts Strava.
-- **Source de vérité pour le front** : le front-end doit lire ses données depuis ce dossier (via un script de build ou un fetch au chargement) plutôt que des données codées en dur dans le HTML.
-- **Script de build** : utiliser `./scripts/build-data.js` (ou équivalent) pour transformer les fichiers `./raw-data/strava/*.json` en un fichier `./artefacts/app-coach/data/runs.json` consommé par l'application.
+- **Source de vérité** : le front-end lit ses données depuis ce dossier (via script de build ou fetch au chargement) — jamais de données codées en dur dans le HTML.
+- **Script de build** : `./scripts/build-data.js` transforme `./raw-data/strava/*.json` en `./artefacts/app-coach/data/runs.json`.
 
-## Préférer l'utisation de scripts pluôt que de l'IA quand c'est possible
-Dans une optique d'optimisation de la consommation d'outils et des tokens, dès que des processus récurrents pouvant être générés sans ia générative sont identifiés, il faut créer des scripts dans le dossier ./scripts réalisant la même tâche et l'utiliser quand nécessaire.
+---
+
+## Scripts plutôt qu'IA
+
+Dès qu'un processus récurrent peut être automatisé sans IA générative, créer un script dans `./scripts` et l'utiliser systématiquement. Objectif : réduire la consommation de tokens et d'appels d'outils.
+
+---
 
 ## Création d'artefacts
-Ils doivent être stockés, après aboutissement, dans le dossier ../artefacts
 
-Après finalisation du produit, un fichier DESCRIPTION.md doit être produit et intégré dans le dossier sous la forme suivante :
+Les artefacts finalisés sont stockés dans `./artefacts`.
 
-`---`
-`titre: "Transformation IA & Amélioration Continue (Gemini/Marp)"`
-`description: "Présentation Marp (Markdown) générée par Gemini/NotebookLM, couvrant la transformation IA de la Squad DAI."`
+### `DESCRIPTION.md`
 
-`type: markdown`
-`---`
+Chaque artefact doit contenir un fichier `DESCRIPTION.md` à sa racine, au format frontmatter :
 
-Cahque artefact doit avoir à sa racine un fichier config.yaml avec différentes informations techniques comme :
-- nom du design system
-- url du site (si éligible)
+```yaml
+---
+titre: "Titre de l'artefact"
+description: "Description courte du contenu et de la méthode de génération."
+type: markdown | html | app | slides
+principes_regeneration: |
+  Principes en langage naturel que l'agent doit respecter à chaque régénération
+  de cet artefact. Exemple : conserver le ton sobre et factuel, ne jamais afficher
+  le nom complet de l'utilisateur, toujours recalculer les KPIs depuis les données
+  brutes, respecter la palette de couleurs du design system retenu.
+---
+```
 
-## Design
-Plusieurs design system sont disponibles pour la création des artefacts. 
-Ils sont localisés dans design-systems/
+La propriété `principes_regeneration` est optionnelle mais recommandée dès que l'artefact est amené à être régénéré. Elle sert de mémoire éditoriale et technique persistante pour l'agent.
 
-## Déploiement et hébergement distant des *produits finis*
-- Toujours demander confirmation avant de déployer
-- Le mode de déploiement par défaut est vers amplify
+### `config.yaml`
+
+Chaque artefact doit également contenir un fichier `config.yaml` à sa racine :
+
+```yaml
+design_system: nom-du-design-system
+url: https://... # si hébergé
+```
+
+---
+
+## Design systems
+
+Disponibles dans `./design-systems/`. Sélectionner le design system adapté à chaque artefact avant de commencer sa création.
+
+---
+
+## Déploiement
+
+- **Toujours demander confirmation avant de déployer.**
+- Mode de déploiement par défaut : AWS Amplify.
+
+### Fichiers de configuration à créer dans le dossier de l'artefact
 
 **`DEPLOYMENT.md`** — informations non-sensibles :
 ```
@@ -48,30 +79,16 @@ hosted_product_url:****
 hosted_product_region:****
 ```
 
-**`SECRETS.md`** — credentials sensibles (username/password) :
+**`SECRETS.md`** — credentials (ne pas versionner) :
 ```
 hosted_product_username:****
 hosted_product_password:****
 ```
 
-Exemple `DEPLOYMENT.md` :
-```
-hosted_product_cloud_provider:aws_amplify
-hosted_product_url:https://main.d3rn8pl4ofbmbg.amplifyapp.com
-hosted_product_region:eu-west-1
-```
+### AWS Amplify
 
-Exemple `SECRETS.md` :
-```
-hosted_product_username:admin
-hosted_product_password:mypassword
-```
+Créer un projet Amplify dédié s'il n'existe pas. Les assets (images, audio) sont hébergés sur S3.
 
-### Si choix : GCP
-Créer un projet GCP dédié, à créer s'il n'existe pas.
-Le produit créé, s'il est un site, doit être stocké dans Firebase Hosting.
-Les assets audio et images qu'utilisent le site doivent être stockés dans Google Cloud Storage
+### GCP
 
-### Si choix : AWS Amplify
-Créer un projet Amplify dédié, à créer s'il n'existe pas.
-Les assets audio et images qu'utilisent le site doivent être stockés dans S3
+Créer un projet GCP dédié s'il n'existe pas. Le site est hébergé sur Firebase Hosting. Les assets sont stockés dans Google Cloud Storage.
