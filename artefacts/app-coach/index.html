@@ -498,7 +498,7 @@
   <div class="flex items-end justify-between mb-xl">
     <div>
       <h1 class="font-black uppercase tracking-tighter text-4xl md:text-5xl text-black leading-none">Analyse<br>Entraînement</h1>
-      <p class="text-body-md font-body-md text-secondary mt-sm">4 mois · janvier → avril 2026 · J-32 du marathon</p>
+      <p class="text-body-md font-body-md text-secondary mt-sm">4 mois · janvier → avril 2026 · <span id="analyse-jours"></span> du marathon</p>
     </div>
     <div class="hidden md:block text-right">
       <div class="text-4xl font-black tracking-tighter text-primary leading-none">360</div>
@@ -667,7 +667,7 @@
           <div class="font-label-bold text-[10px] uppercase tracking-widest" style="color:#f59e0b;">Risque modéré</div>
         </div>
       </div>
-      <p class="text-[13px] font-label-sm text-secondary leading-relaxed">156 km en mars + 141 km en avril = charge élevée. L'affûtage doit être respecté scrupuleusement. Ne pas "compenser" par des séances de dernière minute.</p>
+      <p class="text-[13px] font-label-sm text-secondary leading-relaxed">157 km en mars + 150 km en avril = charge élevée. L'affûtage doit être respecté scrupuleusement. Ne pas "compenser" par des séances de dernière minute.</p>
     </div>
 
     <div class="bg-white border-2 border-black p-lg relative md:col-span-2">
@@ -875,13 +875,15 @@
   const daysLeft = Math.max(0, Math.ceil((marathon - today) / (1000*60*60*24)));
   document.getElementById('days-left').textContent = daysLeft;
   document.getElementById('header-days').textContent = daysLeft;
+  const analyseJours = document.getElementById('analyse-jours');
+  if (analyseJours) analyseJours.textContent = 'J-' + daysLeft;
 
   /* ── Runs data ── */
   const runs = [
     { date:'24/04', name:'Course à pied du midi',            dist:10.13, time:'46:50', pace:277, type:'endurance' },
     { date:'23/04', name:"Course dans l'après-midi",         dist:10.16, time:'46:10', pace:273, type:'endurance' },
     { date:'22/04', name:'Course à pied du midi',            dist:10.06, time:'44:28', pace:265, type:'tempo'     },
-    { date:'19/04', name:'Course à pied du midi',            dist:20.14, time:'1:40:00',pace:298,type:'longue'    },
+    { date:'19/04', name:'Course à pied du midi',            dist:20.14, time:'1:40:34',pace:300,type:'longue'    },
     { date:'17/04', name:'Course à pied (rapide)',           dist: 5.03, time:'21:23', pace:255, type:'tempo'     },
     { date:'17/04', name:"Course dans l'après-midi",         dist: 5.18, time:'25:46', pace:299, type:'endurance' },
     { date:'15/04', name:"Course dans l'après-midi",         dist: 9.12, time:'50:35', pace:333, type:'récup'     },
@@ -977,9 +979,9 @@
   /* ── Analyse page monthly bars ── */
   const analyseMonthly = [
     { label:'Jan 2026', km: 26.2,  note:'Reprise progressive' },
-    { label:'Fév 2026', km: 36.8,  note:'Montée en charge' },
-    { label:'Mar 2026', km:156.0,  note:'Pic entraînement' },
-    { label:'Avr 2026', km:141.5,  note:'Affûtage amorcé' },
+    { label:'Fév 2026', km: 30.7,  note:'Montée en charge' },
+    { label:'Mar 2026', km:156.6,  note:'Pic entraînement' },
+    { label:'Avr 2026', km:150.0,  note:'Affûtage amorcé' },
   ];
   const amMax = Math.max(...analyseMonthly.map(m => m.km));
   const amEl = document.getElementById('analyse-monthly-bars');
@@ -1006,9 +1008,9 @@
   /* ── Monthly volume ── */
   const monthly = [
     { label:'Jan 2026', km: 26.2 },
-    { label:'Fév 2026', km: 36.8 },
-    { label:'Mar 2026', km:156.0 },
-    { label:'Avr 2026', km:141.5 },
+    { label:'Fév 2026', km: 30.7 },
+    { label:'Mar 2026', km:156.6 },
+    { label:'Avr 2026', km:150.0 },
   ];
   const maxKm = Math.max(...monthly.map(m => m.km));
   const mbEl = document.getElementById('monthly-bars');
