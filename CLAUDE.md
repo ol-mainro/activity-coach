@@ -25,6 +25,41 @@ Dès qu'un processus récurrent peut être automatisé sans IA générative, cr�
 
 ---
 
+## Base de connaissances
+
+Avant toute production d'artefact, l'IA génère ou met à jour des fichiers de connaissances synthétiques dans `./knowledge/`.
+
+### Structure
+
+```
+./knowledge/
+  {theme}/
+    DESCRIPTION.md   ← décrit ce que doit contenir la connaissance de ce thème
+    KNOWLEDGE.md     ← généré par l'IA, mis à jour à chaque régénération
+```
+
+### `DESCRIPTION.md`
+
+Fichier rédigé manuellement, il décrit en langage naturel le périmètre et les intentions éditoriales du thème. L'IA s'y réfère pour savoir quoi produire dans `KNOWLEDGE.md`.
+
+### `KNOWLEDGE.md`
+
+Fichier généré par l'IA à partir :
+- des données brutes Strava (`./raw-data/strava/*.json`)
+- de connaissances propres à l'IA sur le thème (botanique, physiologie, etc.)
+- d'inférences et d'analyses contextualisées aux activités de Romain
+
+Il est **plus exhaustif que l'artefact final** — c'est la couche de synthèse intermédiaire. Les artefacts doivent lire ce fichier comme source principale de contenu, plutôt que de générer le contenu à la volée.
+
+### Règles
+
+- **Toute production d'artefact est précédée de la mise à jour du ou des `KNOWLEDGE.md` pertinents.**
+- Chaque thème est indépendant : un artefact peut s'appuyer sur un ou plusieurs thèmes.
+- Ne pas coder de chiffres ou de faits en dur dans les artefacts : ils doivent toujours provenir des données brutes ou du `KNOWLEDGE.md`.
+- Si un nouveau thème est nécessaire, créer le sous-dossier et son `DESCRIPTION.md` avant de générer le `KNOWLEDGE.md`.
+
+---
+
 ## Création d'artefacts
 
 Les artefacts finalisés sont stockés dans `./artefacts`.
