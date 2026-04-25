@@ -1,7 +1,13 @@
 ## Objectif
 Utiliser le mcp Strava en vue d'analyser mes sorties et m'aider à préparer au mieux mes objectifs à venir, dont mon marathon à Auxerre le 26 mai 2026.
 
+M'identifier seulement par mon prénom, l'application doit reste anonyme.
+
+
 Plusieurs mini apps et support de présentation sont destinés à être crées en tant qu'artefacts.
+
+## Préférer l'utisation de scripts pluôt que de l'IA quand c'est possible
+Dans une optique d'optimisation de la consommation d'outils et des tokens, dès que des processus récurrents pouvant être générés sans ia générative sont identifiés, il faut créer des scripts dans le dossier ./scripts réalisant la même tâche et l'utiliser quand nécessaire.
 
 ## Création d'artefacts
 Ils doivent être stockés, après aboutissement, dans le dossier ../artefacts

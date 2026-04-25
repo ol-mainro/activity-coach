@@ -6,3 +6,6 @@
 
 # Sensitive credentials (never commit)
 SECRETS.md
+
+# Deploy
+app-coach-deploy.zip
