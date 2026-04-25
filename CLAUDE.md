@@ -59,6 +59,17 @@ url: https://... # si hébergé
 
 ---
 
+## Navigation entre artefacts
+
+Chaque artefact doit comporter, en bas de page, un bouton de navigation permettant d'accéder aux autres artefacts.
+
+- **Placement** : dans le `<footer>` de la page — créer un footer si absent.
+- **Lien dynamique** : toujours utiliser des chemins relatifs (`../nom-de-lartefact/`) — jamais de domaine ou de chemin absolu codé en dur. Cela garantit que les liens fonctionnent quel que soit le domaine ou le sous-dossier d'hébergement.
+- **Style** : respecter le design system de l'artefact courant (couleurs, typographie, bordures).
+- **Mise à jour** : à chaque création d'un nouvel artefact, ajouter le lien vers ce nouvel artefact dans le footer de tous les artefacts existants, et vice-versa.
+
+---
+
 ## Design systems
 
 Disponibles dans `./design-systems/`. Sélectionner le design system adapté à chaque artefact avant de commencer sa création.
