@@ -1093,10 +1093,50 @@ const PLANTS = {
     description: "Les torillis sont de petites ombellifères annuelles aux fleurs blanches en ombelles composées et aux fruits hérissés de petits crochets qui s'accrochent aux vêtements et aux poils des animaux — un ingénieux système de dissémination. Très communes en bords de chemins urbains et ruraux.",
     anecdote: "Le nom 'Torilis' vient du latin 'torquere' (tordre), en référence à leurs petits fruits courbés et épineux. Ces petits fruits s'accrochant aux chaussettes de coureurs sont la signature discrète de ces plantes des chemins.",
     runs: ["18237676883"]
+  },
+  "viorne lantane": {
+    latin: "Viburnum lantana", famille: "Adoxaceae", icon: "🌿",
+    floraison: "Avr–juin", habitat: "Haies calcaires, lisières, taillis sur sols calcaires",
+    description: "La viorne lantane est un arbuste caractéristique des haies et lisières sur sols calcaires. Ses corymbes de petites fleurs blanches attirent de nombreux insectes au printemps. Ses feuilles douces et rugueuses lui ont valu le surnom de 'mancienne'. Elle est typique des paysages bourguignons et du calcaire de l'Yonne.",
+    anecdote: "Ses baies, d'abord rouges puis noires à maturité, sont légèrement toxiques crues mais servent de ressource importante pour les oiseaux en automne.",
+    runs: ["18269750961"]
+  },
+  "chèvrefeuille à balais": {
+    latin: "Lonicera xylosteum", famille: "Caprifoliaceae", icon: "🌸",
+    floraison: "Avr–juin", habitat: "Lisières, haies, sous-bois calcicoles, talus ombragés",
+    description: "Le chèvrefeuille des haies (ou à balais) est un arbuste commun des lisières et haies calcaires. Ses petites fleurs crème à deux lèvres sont discrètes mais mellifères. Ses baies rouge vif par paires sont très toxiques, en particulier pour les enfants.",
+    anecdote: "Contrairement au chèvrefeuille des jardins, ce chèvrefeuille arbustif est dressé et non grimpant. Ses branches souples étaient autrefois utilisées pour fabriquer des balais — d'où son nom populaire.",
+    runs: ["18269750961"]
+  },
+  "stellaire holostée": {
+    latin: "Stellaria holostea", famille: "Caryophyllaceae", icon: "⭐",
+    floraison: "Avr–juin", habitat: "Haies, lisières ombragées fraîches, talus",
+    description: "La stellaire holostée est la plus grande et la plus élégante des stellaires. Ses fleurs blanches aux pétales profondément divisés en deux donnent l'illusion de 10 pétales. Elle forme souvent de beaux tapis blancs dans les haies et lisières fraîches au printemps.",
+    anecdote: "Le genre 'Stellaria' vient du latin 'stella' (étoile) — ses fleurs profondément découpées évoquent des étoiles à 10 branches. Elle est aussi appelée 'herbe à la langue' ou 'langue-de-serpent' dans certaines régions.",
+    runs: ["18269750961"]
+  },
+  "passerage des champs": {
+    latin: "Lepidium campestre", famille: "Brassicaceae", icon: "🌱",
+    floraison: "Avr–juil", habitat: "Champs, friches calcaires, chemins, bords de routes",
+    description: "Petite plante annuelle ou bisannuelle des milieux ouverts et calcaires, la passerage des champs se reconnaît à ses silicules ovales munies d'une petite aile et d'un style court. Elle affectionne les terrains caillouteux et les champs de céréales. Typique des plateaux calcaires bourguignons.",
+    anecdote: "Le genre Lepidium donne son nom à de nombreuses espèces dont la moutarde-des-champs et le cresson alénois, condiment poivré utilisé en cuisine.",
+    runs: ["18269750961"]
   }
 };
 
 const RUNS = [
+  {
+    id: "18269750961",
+    date: "2026-04-26",
+    title: "Randonnée vers Vézelay",
+    lieu: "Vézelay et alentours",
+    region: "Yonne, Bourgogne",
+    lieuf: "vezelay",
+    habitat: "Chemins et haies calcaires vers Vézelay — milieu bocager ouvert et calcicole",
+    distance: 12.35,
+    plants: ["viorne lantane","chèvrefeuille à balais","stellaire holostée","passerage des champs"],
+    description: "Sortie trail vers Vézelay — flore typique des haies et lisières sur sol calcaire bourguignon, avec 4 espèces caractéristiques du calcicole."
+  },
   {
     id: "18237676883",
     date: "2026-04-24",
