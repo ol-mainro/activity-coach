@@ -536,7 +536,7 @@
     <p class="font-label-bold text-label-bold uppercase tracking-widest text-secondary mb-lg">Progression mensuelle du volume</p>
     <div id="analyse-monthly-bars"></div>
     <div class="mt-lg pt-lg border-t border-surface-container-high text-[12px] font-label-sm text-secondary leading-relaxed">
-      <strong class="text-black">Lecture :</strong> Jan–Fév = phase de reprise progressive (+40 %). Mar = montée en charge maximale (×4 par rapport à Jan). Avr = légère décrue amorçant l'affûtage. Progression saine et contrôlée.
+      <strong class="text-black">Lecture :</strong> Jan–Fév = phase de reprise progressive (+40 %). Mar = montée en charge maximale (×4 par rapport à Jan). Avr = volume record (174 km), dépassant mars — affûtage à initier impérativement dans les dernières semaines. Progression ambitieuse.
     </div>
   </div>
 
@@ -667,7 +667,7 @@
           <div class="font-label-bold text-[10px] uppercase tracking-widest" style="color:#f59e0b;">Risque modéré</div>
         </div>
       </div>
-      <p class="text-[13px] font-label-sm text-secondary leading-relaxed">157 km en mars + 150 km en avril = charge élevée. L'affûtage doit être respecté scrupuleusement. Ne pas "compenser" par des séances de dernière minute.</p>
+      <p class="text-[13px] font-label-sm text-secondary leading-relaxed">157 km en mars + 174 km en avril = charge élevée. L'affûtage doit être respecté scrupuleusement. Ne pas "compenser" par des séances de dernière minute.</p>
     </div>
 
     <div class="bg-white border-2 border-black p-lg relative md:col-span-2">
@@ -981,9 +981,9 @@
   /* ── Analyse page monthly bars ── */
   const analyseMonthly = [
     { label:'Jan 2026', km: 26.2,  note:'Reprise progressive' },
-    { label:'Fév 2026', km: 30.7,  note:'Montée en charge' },
-    { label:'Mar 2026', km:156.6,  note:'Pic entraînement' },
-    { label:'Avr 2026', km:150.0,  note:'Affûtage amorcé' },
+    { label:'Fév 2026', km: 30.8,  note:'Montée en charge' },
+    { label:'Mar 2026', km:156.8,  note:'Pic entraînement' },
+    { label:'Avr 2026', km:173.9,  note:'Affûtage amorcé' },
   ];
   const amMax = Math.max(...analyseMonthly.map(m => m.km));
   const amEl = document.getElementById('analyse-monthly-bars');
@@ -1010,9 +1010,9 @@
   /* ── Monthly volume ── */
   const monthly = [
     { label:'Jan 2026', km: 26.2 },
-    { label:'Fév 2026', km: 30.7 },
-    { label:'Mar 2026', km:156.6 },
-    { label:'Avr 2026', km:150.0 },
+    { label:'Fév 2026', km: 30.8 },
+    { label:'Mar 2026', km:156.8 },
+    { label:'Avr 2026', km:173.9 },
   ];
   const maxKm = Math.max(...monthly.map(m => m.km));
   const mbEl = document.getElementById('monthly-bars');

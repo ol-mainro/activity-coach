@@ -1,6 +1,6 @@
 # Connaissance Botanique — Flore des parcours de Romain
 
-_Généré le 2026-04-27 depuis les descriptions d'activités Strava._
+_Généré le 2026-04-28 depuis les descriptions d'activités Strava._
 
 ---
 
