@@ -1,0 +1,12 @@
+version: 1
+frontend:
+  phases:
+    build:
+      commands:
+        - node scripts/build-data.js
+  artifacts:
+    baseDirectory: artefacts
+    files:
+      - '**/*'
+  cache:
+    paths: []
