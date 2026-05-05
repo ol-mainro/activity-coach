@@ -880,6 +880,7 @@
 
   /* ── Runs data ── */
   const runs = [
+    { date:'03/05', name:'Course matinale',                  dist:22.07, time:'1:56:36',pace:317, type:'longue'   },
     { date:'26/04', name:'Randonnée vers Vézelay',           dist:12.35, time:'1:16:13',pace:370, type:'récup'    },
     { date:'26/04', name:"Course dans l'après-midi",         dist:11.49, time:'1:44:06',pace:543, type:'récup'    },
     { date:'24/04', name:'Course à pied du midi',            dist:10.13, time:'46:50', pace:277, type:'endurance' },
@@ -981,9 +982,10 @@
   /* ── Analyse page monthly bars ── */
   const analyseMonthly = [
     { label:'Jan 2026', km: 26.2,  note:'Reprise progressive' },
-    { label:'Fév 2026', km: 30.8,  note:'Montée en charge' },
-    { label:'Mar 2026', km:156.8,  note:'Pic entraînement' },
-    { label:'Avr 2026', km:173.9,  note:'Affûtage amorcé' },
+    { label:'Fév 2026', km: 30.7,  note:'Montée en charge' },
+    { label:'Mar 2026', km:156.6,  note:'Pic entraînement' },
+    { label:'Avr 2026', km:173.8,  note:'Affûtage amorcé' },
+    { label:'Mai 2026', km: 22.1,  note:'Tapering · J-21' },
   ];
   const amMax = Math.max(...analyseMonthly.map(m => m.km));
   const amEl = document.getElementById('analyse-monthly-bars');
@@ -1010,9 +1012,10 @@
   /* ── Monthly volume ── */
   const monthly = [
     { label:'Jan 2026', km: 26.2 },
-    { label:'Fév 2026', km: 30.8 },
-    { label:'Mar 2026', km:156.8 },
-    { label:'Avr 2026', km:173.9 },
+    { label:'Fév 2026', km: 30.7 },
+    { label:'Mar 2026', km:156.6 },
+    { label:'Avr 2026', km:173.8 },
+    { label:'Mai 2026', km: 22.1 },
   ];
   const maxKm = Math.max(...monthly.map(m => m.km));
   const mbEl = document.getElementById('monthly-bars');
