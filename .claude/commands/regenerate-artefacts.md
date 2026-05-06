@@ -33,7 +33,7 @@ Pour chaque sous-dossier dans `./knowledge/` :
 1. **Lire `DESCRIPTION.md`** — il décrit le périmètre éditorial du thème et ce que `KNOWLEDGE.md` doit contenir.
 
 2. **Générer ou mettre à jour `KNOWLEDGE.md`** en combinant :
-   - Les données brutes Strava (`./raw-data/strava/*.json`) filtrées et analysées selon le thème.
+   - Les données brutes Strava (`./raw-data/strava/*.json`) filtrées et analysées selon le thème — **y compris le champ `private_note`** (note cachée de l'activité) qui peut contenir des informations contextuelles précieuses sur l'état physique, la météo ou le ressenti.
    - Les connaissances propres à l'IA sur ce thème (botanique, physiologie, etc.), contextualisées aux activités de Romain.
    - Des inférences, patterns et analyses qui enrichissent la compréhension au-delà du chiffre brut.
 
