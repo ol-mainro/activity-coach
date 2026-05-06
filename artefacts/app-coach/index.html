@@ -985,7 +985,7 @@
     { label:'Fév 2026', km: 30.7,  note:'Montée en charge' },
     { label:'Mar 2026', km:156.6,  note:'Pic entraînement' },
     { label:'Avr 2026', km:173.8,  note:'Affûtage amorcé' },
-    { label:'Mai 2026', km: 22.1,  note:'Tapering · J-21' },
+    { label:'Mai 2026', km: 22.1,  note:'Tapering · J-' + daysLeft },
   ];
   const amMax = Math.max(...analyseMonthly.map(m => m.km));
   const amEl = document.getElementById('analyse-monthly-bars');

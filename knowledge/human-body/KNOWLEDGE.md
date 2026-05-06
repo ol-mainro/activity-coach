@@ -1,12 +1,12 @@
 # Connaissance Physiologie — Corps de coureur de Romain
 
-_Généré le 2026-05-05 depuis les données Strava et connaissances physiologiques._
+_Généré le 2026-05-06 depuis les données Strava et connaissances physiologiques._
 
 ---
 
 ## Profil actuel
 
-- **Objectif principal** : Marathon d'Auxerre, 26 mai 2026 (dans 21 jours)
+- **Objectif principal** : Marathon d'Auxerre, 26 mai 2026 (dans 20 jours)
 - **Niveau** : coureur expérimenté, entraînement sérieux depuis mars 2026
 - **Kilométrage total** : ~675 km (toutes données Strava)
 - **Kilométrage 2026** : 409,5 km
@@ -25,7 +25,7 @@ _Généré le 2026-05-05 depuis les données Strava et connaissances physiologiq
 | Mai 2026 (au 05/05) | 22,1 km |
 | **Total 2026** | **409,5 km** |
 
-**Analyse** : Montée en charge très marquée et rapide entre février et mars (+410 %), maintenue en avril. Un volume de ~170 km/mois représente un niveau sérieux (environ 40 km/semaine). Le tapering commence en mai avec le marathon dans 21 jours.
+**Analyse** : Montée en charge très marquée et rapide entre février et mars (+410 %), maintenue en avril. Un volume de ~170 km/mois représente un niveau sérieux (environ 40 km/semaine). Le tapering commence en mai avec le marathon dans 20 jours.
 
 ### Répartition des types de sorties (toutes données)
 | Type | Nb | Description |
