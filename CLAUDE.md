@@ -13,9 +13,12 @@ Plusieurs mini-apps, pages web et supports de présentation sont destinés à ê
 Les données importées depuis Strava sont stockées dans `./raw-data/strava`.
 
 - **Import incrémental uniquement** : ne réimporter que les activités absentes du dossier (comparer par `activity_id`) et celles de moins de 7 jours (ces denrnières peuvent avoir été modifiées), sauf si de nouveaux champs sont nécessaires pour les besoin des applications.
+- **Visibilité** : importer toutes les activités quelle que soit leur visibilité, y compris les activités non publiques (visibles uniquement par moi) — le champ Strava `visibility` ou `private` permet de les identifier.
+- **Notes cachées** : le champ `private_note` (note cachée de l'activité) doit être importé et conservé dans le JSON brut. Il peut contenir des informations contextuelles précieuses (état physique, météo, ressenti, etc.).
 - **Format** : un fichier JSON par activité, nommé `{activity_id}.json`, contenant les champs bruts Strava et leurs descriptions.
 - **Source de vérité** : le front-end lit ses données depuis ce dossier (via script de build ou fetch au chargement) — jamais de données codées en dur dans le HTML.
 - **Script de build** : `./scripts/build-data.js` transforme `./raw-data/strava/*.json` en `./artefacts/app-coach/data/runs.json`.
+- **Filtre par type** : l'application coach (`app-coach`) ne prend en compte que les activités de type course à pied (champ Strava `type: "Run"` ou `sport_type: "Run"`). Les autres types d'activités sont ignorés lors du build.
 
 ---
 
