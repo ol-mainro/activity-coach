@@ -526,8 +526,8 @@
     </div>
     <div class="bg-white border-2 border-black p-lg relative card-accent">
       <p class="font-label-bold text-[10px] uppercase tracking-widest text-secondary mb-xs">Pic mensuel</p>
-      <div class="text-3xl font-black tracking-tighter text-black leading-none">156 <span class="text-base font-bold text-primary">km</span></div>
-      <p class="text-[10px] font-label-sm uppercase tracking-widest text-secondary mt-sm">Mars 2026</p>
+      <div class="text-3xl font-black tracking-tighter text-black leading-none">174 <span class="text-base font-bold text-primary">km</span></div>
+      <p class="text-[10px] font-label-sm uppercase tracking-widest text-secondary mt-sm">Avril 2026</p>
     </div>
   </div>
 
@@ -880,6 +880,7 @@
 
   /* ── Runs data ── */
   const runs = [
+    { date:'06/05', name:"Course dans l'après-midi",         dist:12.02, time:'1:00:41',pace:303, type:'endurance'},
     { date:'03/05', name:'Course matinale',                  dist:22.07, time:'1:56:36',pace:317, type:'longue'   },
     { date:'26/04', name:'Randonnée vers Vézelay',           dist:12.35, time:'1:16:13',pace:370, type:'récup'    },
     { date:'26/04', name:"Course dans l'après-midi",         dist:11.49, time:'1:44:06',pace:543, type:'récup'    },
@@ -985,7 +986,7 @@
     { label:'Fév 2026', km: 30.7,  note:'Montée en charge' },
     { label:'Mar 2026', km:156.6,  note:'Pic entraînement' },
     { label:'Avr 2026', km:173.8,  note:'Affûtage amorcé' },
-    { label:'Mai 2026', km: 22.1,  note:'Tapering · J-' + daysLeft },
+    { label:'Mai 2026', km: 34.1,  note:'Tapering · J-' + daysLeft },
   ];
   const amMax = Math.max(...analyseMonthly.map(m => m.km));
   const amEl = document.getElementById('analyse-monthly-bars');
@@ -1015,7 +1016,7 @@
     { label:'Fév 2026', km: 30.7 },
     { label:'Mar 2026', km:156.6 },
     { label:'Avr 2026', km:173.8 },
-    { label:'Mai 2026', km: 22.1 },
+    { label:'Mai 2026', km: 34.1 },
   ];
   const maxKm = Math.max(...monthly.map(m => m.km));
   const mbEl = document.getElementById('monthly-bars');

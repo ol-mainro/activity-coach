@@ -48,11 +48,17 @@
       "Bash(nlm login *)",
       "WebFetch(domain:docs.google.com)",
       "Bash(zip -r ../deploy.zip . -x \"*.DS_Store\")",
-      "Bash(GIT_EDITOR=true git rebase --continue)"
+      "Bash(GIT_EDITOR=true git rebase --continue)",
+      "Bash(ssh *)",
+      "Bash(rtk git *)",
+      "Bash(rtk ls *)",
+      "Bash(rtk read *)",
+      "mcp__strava__get-recent-activities",
+      "Bash(node *)"
     ]
   },
   "sandbox": {
-    "enabled": false,
-    "autoAllowBashIfSandboxed": false
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true
   }
 }
