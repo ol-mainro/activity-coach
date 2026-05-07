@@ -751,9 +751,11 @@
     <div class="filter-bar">
       <span class="filter-label">Lieu</span>
       <button class="filter-btn active" data-lieu="tous">Tous</button>
-      <button class="filter-btn" data-lieu="canal">Canal Saint-Denis</button>
+      <button class="filter-btn" data-lieu="campagne">Prairie calcicole</button>
       <button class="filter-btn" data-lieu="trilport">Trilport</button>
       <button class="filter-btn" data-lieu="sousbois">Sous-bois</button>
+      <button class="filter-btn" data-lieu="canal">Canal Saint-Denis</button>
+      <button class="filter-btn" data-lieu="vezelay">Vézelay</button>
     </div>
 
     <div class="runs-timeline" id="runs-list"></div>
@@ -1121,10 +1123,83 @@ const PLANTS = {
     description: "Petite plante annuelle ou bisannuelle des milieux ouverts et calcaires, la passerage des champs se reconnaît à ses silicules ovales munies d'une petite aile et d'un style court. Elle affectionne les terrains caillouteux et les champs de céréales. Typique des plateaux calcaires bourguignons.",
     anecdote: "Le genre Lepidium donne son nom à de nombreuses espèces dont la moutarde-des-champs et le cresson alénois, condiment poivré utilisé en cuisine.",
     runs: ["18269750961"]
+  },
+  "orchis bouc": {
+    latin: "Himantoglossum hircinum", famille: "Orchidaceae", icon: "🌸",
+    floraison: "Mai–juil", habitat: "Pelouses calcaires sèches, talus ensoleillés non fertilisés",
+    description: "L'orchis bouc est l'une des orchidées sauvages les plus remarquables de France. Son labelle, très allongé et souvent torsadé en spirale, est unique parmi les orchidées européennes. Elle émet une odeur forte de bouc caractéristique — d'où son nom — destinée à attirer ses pollinisateurs. Strictement inféodée aux pelouses calcaires non perturbées, sa présence est un bioindicateur exceptionnel de qualité écologique.",
+    anecdote: "Espèce protégée en France (cueillette et déterrage interdits). Son observation sur le parcours du 03/05/2026 en grande couronne parisienne est une rencontre rare et précieuse — preuve que certains talus de Seine-et-Marne conservent une flore d'exception.",
+    runs: ["18357568867"]
+  },
+  "sainfoin cultivé": {
+    latin: "Onobrychis viciifolia", famille: "Fabaceae", icon: "🌺",
+    floraison: "Mai–juil", habitat: "Prairies et talus calcaires ensoleillés, bords de chemins ruraux",
+    description: "Le sainfoin est une légumineuse aux épis dressés de fleurs rose vif à nervures plus foncées, d'une grande élégance. Jadis largement cultivée comme fourrage mellifère sur les sols calcaires, elle s'est naturalisée sur de nombreux talus. Sa présence indique un sol bien drainé, non fertilisé, d'origine calcaire.",
+    anecdote: "Son nom vient du vieux français 'sain foin' (foin sain), en référence à ses vertus fourragères supérieures à d'autres graminées. Elle était considérée comme le 'foin de qualité' des prairies naturelles.",
+    runs: ["18357568867"]
+  },
+  "euphorbe à tête d'or": {
+    latin: "Euphorbia polychroma", famille: "Euphorbiaceae", icon: "💛",
+    floraison: "Avr–mai", habitat: "Lisières de bois calcaires, pelouses semi-ombragées",
+    description: "L'euphorbe à tête d'or se distingue par ses bractées jaune vif très voyantes qui entourent les petites cyathies (structures florales typiques des euphorbes). Cette couleur intense – responsable de son nom – attire les pollinisateurs et peut faire confondre la plante avec une grande fleur jaune. Espèce d'Europe centrale, assez rare en Île-de-France.",
+    anecdote: "Comme toutes les euphorbes, elle contient un latex blanc très irritant et toxique. À ne pas confondre avec ses cousines plus communes comme l'euphorbe réveil-matin.",
+    runs: ["18357568867"]
+  },
+  "fétuque faux-roseau": {
+    latin: "Schedonorus arundinaceus", famille: "Poaceae", icon: "🌾",
+    floraison: "Juin–août", habitat: "Prairies, bords de routes, fossés, talus frais",
+    description: "La fétuque faux-roseau est l'une des plus grandes graminées prairiales d'Île-de-France, pouvant dépasser 1,5 m. Très résistante à la sécheresse, au piétinement et à la tonte, elle est souvent semée sur les talus routiers et les terrains de sport. Sa robustesse en fait une des graminées les plus ubiquistes des bords de routes.",
+    anecdote: "Elle est parfois parasitée par un champignon endophyte (Epichloë coenophiala) qui la rend toxique pour les herbivores — un exemple fascinant de symbiose plante-champignon.",
+    runs: ["18357568867"]
+  },
+  "brome mou": {
+    latin: "Bromus hordeaceus", famille: "Poaceae", icon: "🌾",
+    floraison: "Mai–juil", habitat: "Pelouses, prairies fauchées, terrains piétinés",
+    description: "Le brome mou est une graminée annuelle très commune des pelouses et prairies. Contrairement au brome stérile aux épis retombants, le brome mou porte des épis dressés et velus d'apparence douce. Très tolérant au piétinement, il est fréquent dans les pelouses sportives et les terrains vagues.",
+    anecdote: "Son nom 'mou' (en latin 'hordeaceus' = ressemblant à l'orge) fait référence à la texture veloutée de ses épis, agréable au toucher.",
+    runs: ["18398189680"]
+  },
+  "dactyle aggloméré": {
+    latin: "Dactylis glomerata", famille: "Poaceae", icon: "🌾",
+    floraison: "Mai–juil", habitat: "Prairies, bords de chemins, pelouses, haies",
+    description: "Le dactyle aggloméré est l'une des graminées prairiales les plus reconnaissables : ses épillets sont groupés en amas compacts et unilatéraux, caractéristiques. C'est une espèce très commune des prairies et bords de routes, robuste et résistante à la sécheresse. Régulièrement présent dans les mélanges de semences pour gazons sportifs.",
+    anecdote: "En anglais, il se nomme 'cock's foot' (pied de coq) — ses inflorescences évoquent la forme d'une patte d'oiseau. C'est l'une des principales graminées allergisantes en Europe.",
+    runs: ["18398189680"]
+  },
+  "paturin des prés": {
+    latin: "Poa pratensis", famille: "Poaceae", icon: "🌾",
+    floraison: "Avr–juin", habitat: "Pelouses, gazons, prairies, bords de chemins",
+    description: "Le paturin des prés est la graminée de base des gazons sportifs et des terrains de football dans le monde entier. Ses rhizomes lui permettent de se régénérer efficacement après la tonte ou le piétinement intense. Sa présence dans la pelouse du stade de Trilport est logique — il y est très probablement semé intentionnellement.",
+    anecdote: "Le paturin du Kentucky (Poa pratensis) est le gazon emblématique du Kentucky Derby (États-Unis), où il tapisse les hippodromes. La région a été surnommée 'Bluegrass State' à cause de sa teinte bleutée printanière.",
+    runs: ["18398189680"]
   }
 };
 
 const RUNS = [
+  {
+    id: "18398189680",
+    date: "2026-05-06",
+    title: "Pelouse du stade de Trilport — mai",
+    lieu: "Stade de Trilport",
+    region: "Trilport, Seine-et-Marne",
+    lieuf: "trilport",
+    habitat: "Pelouse piétinée du stade — flore des terrains compactés et asphyxiés. Fauvettes à tête noire et pouillot véloce chantant à midi.",
+    distance: 12.02,
+    plants: ["porcelles enracinées","brome mou","dactyle aggloméré","paturin des prés","plantains","pâquerettes","trèfle des prés","cardamines hirsute","céraistes","capselles bourse-à-pasteur","chélidoines"],
+    description: "Retour sur le stade de Trilport — 11 espèces dont 3 graminées nouvellement identifiées (brome mou, dactyle aggloméré, paturin des prés) caractéristiques des gazons sportifs."
+  },
+  {
+    id: "18357568867",
+    date: "2026-05-03",
+    title: "Course matinale — prairie calcicole",
+    lieu: "Campagne Seine-et-Marne",
+    region: "Vallée de la Marne, Seine-et-Marne",
+    lieuf: "campagne",
+    habitat: "Prairie calcicole, talus ensoleillés et chemins herbeux — flore riche de mai avec orchidée protégée",
+    distance: 22.07,
+    plants: ["sainfoin cultivé","euphorbe à tête d'or","fétuque faux-roseau","orchis bouc"],
+    description: "Longue sortie de 22 km avec la rencontre exceptionnelle d'un Orchis bouc — orchidée protégée des pelouses calcaires. 3 autres espèces caractéristiques des prairies calcaires de mai."
+  },
   {
     id: "18269750961",
     date: "2026-04-26",

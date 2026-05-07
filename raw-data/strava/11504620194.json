@@ -1,8 +1,1154 @@
 {
-  "id": 11504620194,
+  "resource_state": 3,
+  "athlete": {
+    "id": 12778566,
+    "resource_state": 1
+  },
   "name": "Vélo en soirée",
-  "date": "2024-05-26",
-  "distance": 15610,
+  "distance": 15614.9,
   "moving_time": 3071,
-  "sport_type": "Ride"
+  "elapsed_time": 3088,
+  "total_elevation_gain": 314.9,
+  "type": "Ride",
+  "sport_type": "Ride",
+  "workout_type": 0,
+  "device_name": "Strava App",
+  "id": 11504620194,
+  "start_date": "2024-05-26T17:52:34Z",
+  "start_date_local": "2024-05-26T19:52:34Z",
+  "timezone": "(GMT+01:00) Europe/Paris",
+  "utc_offset": 7200,
+  "location_city": null,
+  "location_state": null,
+  "location_country": null,
+  "achievement_count": 20,
+  "kudos_count": 1,
+  "comment_count": 0,
+  "athlete_count": 1,
+  "photo_count": 0,
+  "map": {
+    "id": "a11504620194",
+    "polyline": "qnwiHmi}PLEFB|@r@`Aj@z@b@r@RfBXl@DRDb@Ab@HJ@THX@jAVf@Bl@PX@~@LzAz@pB~AHLv@n@j@l@FBn@j@ZTRX|@v@z@\\RFLATHZ?JBN@XGH?FCPBHCb@AFEF@NCF@TEJINCZSHAXWJA\\IVE\\OF@LC^?REZ?x@Nt@XT@PFJN\\TFHRJVR`AFTNB@FA`@TXBXHd@H@BHCFB@DJ@FCB@NIDBHAJGbAUD@FDLCTKb@MNIFDVIJ@HCN@NI`@EHBVIJCD@FCt@?DGDCN?PEL?FCH?XEF@\\IR?TIL?`AURMVEPMp@Q\\Gp@GZ?LBl@Ch@I~@W^G~@A^Bb@Hl@RjAJb@?JCXC\\KrAo@NB^Gn@Cb@IN?LEPIb@i@f@SzBq@r@_@p@c@R]`@k@BQJ[LSNMb@s@b@g@l@]hAcANOf@{@hAkCP[dBgEJe@`@eCNiBZwBf@yBp@{C~AqGXcCJcBRcAR}@N_@FUJWZc@@I?WDaADURs@?GNi@Xk@J_@DeAI}@EGAYLs@O_@QQIWQe@Mw@CIEEUe@q@i@Um@ESUa@MMAIa@w@AGGCCQ?IIOCM?YEEEQM_AAe@GQDk@LYDW?a@NwAj@wDP_BBGF_@L_BHa@Fu@Du@BUHOJwAHg@Dq@Jc@?i@j@}D?OE?CNAd@Gj@IVGh@]hDSnAWlCw@lGEp@u@fGSjAIVg@d@a@l@GRa@v@}BzDa@~@Sz@GLOLGJOd@s@tAWr@]l@O`@[p@ERAx@OrASvCSnAWv@]r@_@n@[p@W^IPmAhDYlAC~@SxBAj@GTCjAGTA^@l@Bh@~AdINdAB|CA`BEJGD]MWSO?QG{@@OE]AI@EDSIe@Ea@@_@Nc@JOJI@OAQHm@J_@GO@]EIEQDYQG?KGLDt@B\\Hf@?l@SdAGXEpAMT?Z@d@LZAJBn@Af@RFFDJLHL@RMDG?GFLN@\\It@@d@Tb@j@NJf@j@ZPx@~@@FELq@f@_@RSPMFcAfAGLKFGNe@\\OTIh@o@zA[ZKNa@NM@GBEAUPKP[JQPMD]TU@w@j@KCUH[@QAEG_@CWNI@AFIHWHK?@GE@[RYACKQOODM?a@Ik@Fa@E]?WA]Fc@@k@HO?_@De@AMBMAm@De@?CFODKAM@MLc@Di@RS?m@IU?aC\\sAVsD~@mEz@e@FeAXKFw@Mu@SgAQaDiAg@e@QIQCmAa@g@Ek@Ai@Dm@PgBv@o@RWDyBLo@AgAUm@WYO}@s@kAcAq@s@aCmB_@a@a@[]Uw@_@oAY{CUgCa@uAKaAMeAUa@Ou@_@o@k@{@m@a@a@KCCRBBD?XNzAfA|@j@lA`@nBVtADp@LXJh@Fv@P~BTZFf@Lv@b@t@f@|BpB~@p@r@p@\\TFHhA~@dAh@r@RNBNC`@DJARDTCLB\\GJGRBNGH?x@Y^ILQHEF?pA_@ZE`@AF@L?R@JDR?LBZJLHn@NTZFAr@\\T@JNZ?p@XDATNT@BFZBHBDAN@JH^JdASL?XBHELALGR?b@MN?LGN?\\OZELIF@`@An@MZ@PCN?TGr@Ez@Q^ADEXAJGTARIPEZMNONFBG\\KHGXAVKP?@ECCMPMCw@R[NB?CFg@LwCXkEv@uBVk@Le@Ds@VMAKDk@FS@GEYaA@GAEEHD^AH@FDBBTING@i@GWIIIuCo@gBq@g@a@_@Q_Bg@WCg@AaAJi@N_Ad@m@TwAVo@Hs@Bm@Gq@Oo@Wo@[}@s@yDiDiByAa@a@OKeAe@}B[a@Cy@Kc@Ka@AK@s@K[IwASoB]s@WOIu@g@]S{@o@aA{@yAyASISOsAy@{AeAm@[YIeBQ[Ka@a@kAuAMGkDqDm@_@k@q@uCsAUScAe@s@a@WUUKa@_@]U_@[SMq@mAK]CyACGe@QO?UGe@CGaA?WMi@Gy@CeA?aAEq@CcBG}@?{@MS?GKKI?QIQESMMDKGY?GAIGY]QGOCICKBKC[AIF",
+    "resource_state": 3,
+    "summary_polyline": "aawiHqc}Pb@AjInA\\LlAr@pB~AlBjBrAdApApAnAd@zALj@KfAG^?vAi@XW`AQ\\OdBGvCr@|AnA`AFTNJ?`@TzAZ^FZK~A[LFLChAc@FDVId@?NIj@Ap@Ot@?JKtCWdB_@|@a@nAYhCGhCi@~A@pA\\jAJhAGpB{@NBpC[PIb@i@bDeAdBcAt@iANm@`AuAb@g@l@]hAcAv@kA`EoJl@kDNiBZwBxDgPXcCJcBRcAj@sBf@{@LyBb@eBd@kADeAQ_BLs@a@q@IWc@gB[k@q@i@[aAc@o@e@iAGCC[M]?YKWOeBGQDk@Rq@?a@NwAhA_I^wDDu@Le@T_CDq@Jc@?i@j@mEE?CNIpAQ`AgCfUu@fGSjAIVg@d@a@l@i@jA}BzDa@~@Sz@_@f@Od@s@tAWr@]l@k@rAERAx@OrASvCSnAu@jB}ArCmAhDYlAC~@UdDGTCjAGT?lABh@~AdINdAB|CA`BMPu@a@a@G{@@m@GOFy@Oa@@sAf@Y?_ATwAQQDm@Y`BRf@?l@SfE[`ANvA?f@RZ\\L@RMDOFLN@\\It@@d@Tb@j@v@v@ZPx@~@@FELsBtAcAfA[d@e@\\OTIh@o@zA[ZKNa@N[Ba@b@[J}@l@U@w@j@}@FQAe@Ka@PKPWHK?CE[RYACKQO]Da@Ik@FwAG}CXuCDSLY?MLmAXwAIaC\\gGvAsFbAqA`@uDs@aDiAg@e@QI_Be@g@EuABuChAgAXiDJgAUgAg@_KwIuAu@oAY{LqAeAUwAo@kByAa@a@KCAF@N^NxCrBtAb@lBVnABlDr@~BTbATlBjA`JtHdAh@r@R`BHd@Af@MRBlBi@\\Yl@Qj@M|@GvALxAd@TZFAr@\\T@JNZ?lAf@XHz@Fj@TdASf@Bd@OdBUfA_@xAM|@AdDa@fBa@ZMNONFBGf@SbAM@ECCMPMCw@R[NB?CFg@LwCXkEv@gEj@s@VeAJ[CYaA@GAEEHD^AHFJBTQPi@Ga@SuCo@gBq@gAs@wBk@iBHwCjAgC`@iA?aB_@{Ay@_KsIqAi@qFs@aBKcF{@s@W_DuB{CuC{BsA{AeAgAe@aC]mBwBMGkDqDm@_@k@q@uCsAUSwBgAaDaCq@mAK]CyACGe@QkAKGyAMi@Gy@KuF"
+  },
+  "trainer": false,
+  "commute": false,
+  "manual": false,
+  "private": false,
+  "visibility": "everyone",
+  "flagged": false,
+  "gear_id": null,
+  "start_latlng": [
+    48.949699122458696,
+    2.9405546095222235
+  ],
+  "end_latlng": [
+    48.95933596417308,
+    2.9507154878228903
+  ],
+  "average_speed": 5.085,
+  "max_speed": 18.596,
+  "has_heartrate": false,
+  "heartrate_opt_out": false,
+  "display_hide_heartrate_option": false,
+  "elev_high": 154.8,
+  "elev_low": 50.3,
+  "upload_id": 12281662889,
+  "upload_id_str": "12281662889",
+  "external_id": "8BF0CAE5-FE34-44EC-A835-B11E0FE2FC8F-activity.fit",
+  "from_accepted_tag": false,
+  "pr_count": 10,
+  "total_photo_count": 0,
+  "has_kudoed": false,
+  "description": null,
+  "calories": 0,
+  "perceived_exertion": null,
+  "prefer_perceived_exertion": null,
+  "segment_efforts": [
+    {
+      "id": 3229883533538775000,
+      "resource_state": 2,
+      "name": "Montée Fublaines Nord",
+      "activity": {
+        "id": 11504620194,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 403,
+      "moving_time": 370,
+      "start_date": "2024-05-26T17:53:50Z",
+      "start_date_local": "2024-05-26T19:53:50Z",
+      "distance": 1194.6,
+      "start_index": 76,
+      "end_index": 473,
+      "device_watts": false,
+      "segment": {
+        "id": 14344924,
+        "resource_state": 2,
+        "name": "Montée Fublaines Nord",
+        "activity_type": "Ride",
+        "distance": 1194.6,
+        "average_grade": 6.3,
+        "maximum_grade": 13.7,
+        "elevation_high": 97.2,
+        "elevation_low": 18.6,
+        "start_latlng": [
+          48.945215,
+          2.93898
+        ],
+        "end_latlng": [
+          48.935062,
+          2.937027
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Fublaines",
+        "state": "Île-de-France",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": 1,
+      "achievements": [
+        {
+          "type_id": 3,
+          "type": "pr",
+          "rank": 1
+        }
+      ],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3386992744148773000,
+      "resource_state": 2,
+      "name": "Colline Fublaines",
+      "activity": {
+        "id": 11504620194,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 234,
+      "moving_time": 215,
+      "start_date": "2024-05-26T17:54:41Z",
+      "start_date_local": "2024-05-26T19:54:41Z",
+      "distance": 612.6,
+      "start_index": 127,
+      "end_index": 356,
+      "device_watts": false,
+      "segment": {
+        "id": 39782514,
+        "resource_state": 2,
+        "name": "Colline Fublaines",
+        "activity_type": "Ride",
+        "distance": 612.6,
+        "average_grade": 8.2,
+        "maximum_grade": 12.6,
+        "elevation_high": 110.2,
+        "elevation_low": 60.2,
+        "start_latlng": [
+          48.942824,
+          2.937085
+        ],
+        "end_latlng": [
+          48.937485,
+          2.936402
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Fublaines",
+        "state": "Seine-et-Marne",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": 1,
+      "achievements": [
+        {
+          "type_id": 3,
+          "type": "pr",
+          "rank": 1
+        }
+      ],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3229883533537688600,
+      "resource_state": 2,
+      "name": "Rue de Trilport",
+      "activity": {
+        "id": 11504620194,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 150,
+      "moving_time": 145,
+      "start_date": "2024-05-26T17:54:49Z",
+      "start_date_local": "2024-05-26T19:54:49Z",
+      "distance": 435.265,
+      "start_index": 135,
+      "end_index": 281,
+      "device_watts": false,
+      "segment": {
+        "id": 1663486,
+        "resource_state": 2,
+        "name": "Rue de Trilport",
+        "activity_type": "Ride",
+        "distance": 435.265,
+        "average_grade": 5,
+        "maximum_grade": 8.3,
+        "elevation_high": 77.4,
+        "elevation_low": 55.6,
+        "start_latlng": [
+          48.9425733,
+          2.9368858
+        ],
+        "end_latlng": [
+          48.9393245,
+          2.9364236
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Fublaines",
+        "state": "Île-de-France",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": 1,
+      "achievements": [
+        {
+          "type_id": 3,
+          "type": "pr",
+          "rank": 1
+        }
+      ],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3229883533535912000,
+      "resource_state": 2,
+      "name": "côte de Fublaines",
+      "activity": {
+        "id": 11504620194,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 231,
+      "moving_time": 204,
+      "start_date": "2024-05-26T17:57:26Z",
+      "start_date_local": "2024-05-26T19:57:26Z",
+      "distance": 587.697,
+      "start_index": 288,
+      "end_index": 517,
+      "device_watts": false,
+      "segment": {
+        "id": 2170214,
+        "resource_state": 2,
+        "name": "côte de Fublaines",
+        "activity_type": "Ride",
+        "distance": 587.697,
+        "average_grade": 7.6,
+        "maximum_grade": 10.4,
+        "elevation_high": 131,
+        "elevation_low": 86.1,
+        "start_latlng": [
+          48.938824,
+          2.936875
+        ],
+        "end_latlng": [
+          48.93364,
+          2.937408
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Fublaines",
+        "state": "Île-de-France",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": 1,
+      "achievements": [
+        {
+          "type_id": 3,
+          "type": "pr",
+          "rank": 1
+        }
+      ],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3229883533537002500,
+      "resource_state": 2,
+      "name": "bosse de fublaines",
+      "activity": {
+        "id": 11504620194,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 143,
+      "moving_time": 132,
+      "start_date": "2024-05-26T17:58:48Z",
+      "start_date_local": "2024-05-26T19:58:48Z",
+      "distance": 379.1,
+      "start_index": 369,
+      "end_index": 511,
+      "device_watts": false,
+      "segment": {
+        "id": 6883093,
+        "resource_state": 2,
+        "name": "bosse de fublaines",
+        "activity_type": "Ride",
+        "distance": 379.1,
+        "average_grade": 7.6,
+        "maximum_grade": 12.4,
+        "elevation_high": 149.8,
+        "elevation_low": 120.8,
+        "start_latlng": [
+          48.937249,
+          2.936505
+        ],
+        "end_latlng": [
+          48.933889,
+          2.937312
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Fublaines",
+        "state": "IDF",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": 1,
+      "achievements": [
+        {
+          "type_id": 3,
+          "type": "pr",
+          "rank": 1
+        }
+      ],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3229883533538618400,
+      "resource_state": 2,
+      "name": "côte fublaines vers saint fiacre",
+      "activity": {
+        "id": 11504620194,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 164,
+      "moving_time": 164,
+      "start_date": "2024-05-26T18:03:45Z",
+      "start_date_local": "2024-05-26T20:03:45Z",
+      "distance": 688.2,
+      "start_index": 664,
+      "end_index": 827,
+      "device_watts": false,
+      "segment": {
+        "id": 17240692,
+        "resource_state": 2,
+        "name": "côte fublaines vers saint fiacre",
+        "activity_type": "Ride",
+        "distance": 688.2,
+        "average_grade": 5.1,
+        "maximum_grade": 12.8,
+        "elevation_high": 129.5,
+        "elevation_low": 94.5,
+        "start_latlng": [
+          48.924194,
+          2.944068
+        ],
+        "end_latlng": [
+          48.92198,
+          2.952599
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Saint-Fiacre",
+        "state": "Île-de-France",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3229883533535439000,
+      "resource_state": 2,
+      "name": "St-Fiacre Bosse de l'école",
+      "activity": {
+        "id": 11504620194,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 160,
+      "moving_time": 160,
+      "start_date": "2024-05-26T18:06:40Z",
+      "start_date_local": "2024-05-26T20:06:40Z",
+      "distance": 680.9,
+      "start_index": 838,
+      "end_index": 997,
+      "device_watts": false,
+      "segment": {
+        "id": 16774034,
+        "resource_state": 2,
+        "name": "St-Fiacre Bosse de l'école",
+        "activity_type": "Ride",
+        "distance": 680.9,
+        "average_grade": 3.2,
+        "maximum_grade": 12.9,
+        "elevation_high": 141,
+        "elevation_low": 119,
+        "start_latlng": [
+          48.922083,
+          2.952963
+        ],
+        "end_latlng": [
+          48.922557,
+          2.961097
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Saint-Fiacre",
+        "state": "Île-de-France",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3229883533538598000,
+      "resource_state": 2,
+      "name": "Fublaines Pont_chateau d'eau",
+      "activity": {
+        "id": 11504620194,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 274,
+      "moving_time": 262,
+      "start_date": "2024-05-26T18:17:00Z",
+      "start_date_local": "2024-05-26T20:17:00Z",
+      "distance": 956.9,
+      "start_index": 1454,
+      "end_index": 1726,
+      "device_watts": false,
+      "segment": {
+        "id": 6182299,
+        "resource_state": 2,
+        "name": "Fublaines Pont_chateau d'eau",
+        "activity_type": "Ride",
+        "distance": 956.9,
+        "average_grade": 4,
+        "maximum_grade": 14.3,
+        "elevation_high": 134.5,
+        "elevation_low": 96.5,
+        "start_latlng": [
+          48.925906,
+          2.940645
+        ],
+        "end_latlng": [
+          48.933781,
+          2.937298
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Fublaines",
+        "state": "IDF",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3229883533538010000,
+      "resource_state": 2,
+      "name": "Montée Fublaines Nord",
+      "activity": {
+        "id": 11504620194,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 433,
+      "moving_time": 394,
+      "start_date": "2024-05-26T18:26:37Z",
+      "start_date_local": "2024-05-26T20:26:37Z",
+      "distance": 1194.6,
+      "start_index": 2014,
+      "end_index": 2443,
+      "device_watts": false,
+      "segment": {
+        "id": 14344924,
+        "resource_state": 2,
+        "name": "Montée Fublaines Nord",
+        "activity_type": "Ride",
+        "distance": 1194.6,
+        "average_grade": 6.3,
+        "maximum_grade": 13.7,
+        "elevation_high": 97.2,
+        "elevation_low": 18.6,
+        "start_latlng": [
+          48.945215,
+          2.93898
+        ],
+        "end_latlng": [
+          48.935062,
+          2.937027
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Fublaines",
+        "state": "Île-de-France",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": 2,
+      "achievements": [
+        {
+          "type_id": 3,
+          "type": "pr",
+          "rank": 2
+        }
+      ],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3386992744147774500,
+      "resource_state": 2,
+      "name": "Colline Fublaines",
+      "activity": {
+        "id": 11504620194,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 250,
+      "moving_time": 228,
+      "start_date": "2024-05-26T18:27:35Z",
+      "start_date_local": "2024-05-26T20:27:35Z",
+      "distance": 612.6,
+      "start_index": 2071,
+      "end_index": 2319,
+      "device_watts": false,
+      "segment": {
+        "id": 39782514,
+        "resource_state": 2,
+        "name": "Colline Fublaines",
+        "activity_type": "Ride",
+        "distance": 612.6,
+        "average_grade": 8.2,
+        "maximum_grade": 12.6,
+        "elevation_high": 110.2,
+        "elevation_low": 60.2,
+        "start_latlng": [
+          48.942824,
+          2.937085
+        ],
+        "end_latlng": [
+          48.937485,
+          2.936402
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Fublaines",
+        "state": "Seine-et-Marne",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": 2,
+      "achievements": [
+        {
+          "type_id": 3,
+          "type": "pr",
+          "rank": 2
+        }
+      ],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3229883533537673000,
+      "resource_state": 2,
+      "name": "Rue de Trilport",
+      "activity": {
+        "id": 11504620194,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 158,
+      "moving_time": 149,
+      "start_date": "2024-05-26T18:27:45Z",
+      "start_date_local": "2024-05-26T20:27:45Z",
+      "distance": 435.265,
+      "start_index": 2081,
+      "end_index": 2238,
+      "device_watts": false,
+      "segment": {
+        "id": 1663486,
+        "resource_state": 2,
+        "name": "Rue de Trilport",
+        "activity_type": "Ride",
+        "distance": 435.265,
+        "average_grade": 5,
+        "maximum_grade": 8.3,
+        "elevation_high": 77.4,
+        "elevation_low": 55.6,
+        "start_latlng": [
+          48.9425733,
+          2.9368858
+        ],
+        "end_latlng": [
+          48.9393245,
+          2.9364236
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Fublaines",
+        "state": "Île-de-France",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": 2,
+      "achievements": [
+        {
+          "type_id": 3,
+          "type": "pr",
+          "rank": 2
+        }
+      ],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3229883533536558000,
+      "resource_state": 2,
+      "name": "côte de Fublaines",
+      "activity": {
+        "id": 11504620194,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 249,
+      "moving_time": 219,
+      "start_date": "2024-05-26T18:30:30Z",
+      "start_date_local": "2024-05-26T20:30:30Z",
+      "distance": 587.697,
+      "start_index": 2245,
+      "end_index": 2492,
+      "device_watts": false,
+      "segment": {
+        "id": 2170214,
+        "resource_state": 2,
+        "name": "côte de Fublaines",
+        "activity_type": "Ride",
+        "distance": 587.697,
+        "average_grade": 7.6,
+        "maximum_grade": 10.4,
+        "elevation_high": 131,
+        "elevation_low": 86.1,
+        "start_latlng": [
+          48.938824,
+          2.936875
+        ],
+        "end_latlng": [
+          48.93364,
+          2.937408
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Fublaines",
+        "state": "Île-de-France",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": 2,
+      "achievements": [
+        {
+          "type_id": 3,
+          "type": "pr",
+          "rank": 2
+        }
+      ],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3229883533537210400,
+      "resource_state": 2,
+      "name": "bosse de fublaines",
+      "activity": {
+        "id": 11504620194,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 148,
+      "moving_time": 131,
+      "start_date": "2024-05-26T18:31:59Z",
+      "start_date_local": "2024-05-26T20:31:59Z",
+      "distance": 379.1,
+      "start_index": 2333,
+      "end_index": 2480,
+      "device_watts": false,
+      "segment": {
+        "id": 6883093,
+        "resource_state": 2,
+        "name": "bosse de fublaines",
+        "activity_type": "Ride",
+        "distance": 379.1,
+        "average_grade": 7.6,
+        "maximum_grade": 12.4,
+        "elevation_high": 149.8,
+        "elevation_low": 120.8,
+        "start_latlng": [
+          48.937249,
+          2.936505
+        ],
+        "end_latlng": [
+          48.933889,
+          2.937312
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Fublaines",
+        "state": "IDF",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": 2,
+      "achievements": [
+        {
+          "type_id": 3,
+          "type": "pr",
+          "rank": 2
+        }
+      ],
+      "visibility": "everyone",
+      "hidden": false
+    }
+  ],
+  "splits_metric": [
+    {
+      "distance": 1001.3,
+      "elapsed_time": 189,
+      "elevation_difference": 18.4,
+      "moving_time": 189,
+      "split": 1,
+      "average_speed": 5.3,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1000.1,
+      "elapsed_time": 351,
+      "elevation_difference": 65.5,
+      "moving_time": 351,
+      "split": 2,
+      "average_speed": 2.85,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1002.6,
+      "elapsed_time": 103,
+      "elevation_difference": -37.8,
+      "moving_time": 103,
+      "split": 3,
+      "average_speed": 9.73,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    },
+    {
+      "distance": 998.9,
+      "elapsed_time": 234,
+      "elevation_difference": 36.2,
+      "moving_time": 234,
+      "split": 4,
+      "average_speed": 4.27,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1000.4,
+      "elapsed_time": 204,
+      "elevation_difference": 10.5,
+      "moving_time": 204,
+      "split": 5,
+      "average_speed": 4.9,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1005.4,
+      "elapsed_time": 124,
+      "elevation_difference": -24.5,
+      "moving_time": 124,
+      "split": 6,
+      "average_speed": 8.11,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    },
+    {
+      "distance": 991.4,
+      "elapsed_time": 186,
+      "elevation_difference": -22.4,
+      "moving_time": 185,
+      "split": 7,
+      "average_speed": 5.36,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1000.7,
+      "elapsed_time": 280,
+      "elevation_difference": 31.9,
+      "moving_time": 280,
+      "split": 8,
+      "average_speed": 3.57,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1008.5,
+      "elapsed_time": 132,
+      "elevation_difference": -47.5,
+      "moving_time": 132,
+      "split": 9,
+      "average_speed": 7.64,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    },
+    {
+      "distance": 995,
+      "elapsed_time": 97,
+      "elevation_difference": -28,
+      "moving_time": 97,
+      "split": 10,
+      "average_speed": 10.26,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    },
+    {
+      "distance": 997.2,
+      "elapsed_time": 192,
+      "elevation_difference": 2.1,
+      "moving_time": 177,
+      "split": 11,
+      "average_speed": 5.63,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1000.8,
+      "elapsed_time": 405,
+      "elevation_difference": 79.2,
+      "moving_time": 405,
+      "split": 12,
+      "average_speed": 2.47,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1000.2,
+      "elapsed_time": 198,
+      "elevation_difference": -52.9,
+      "moving_time": 198,
+      "split": 13,
+      "average_speed": 5.05,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1002.1,
+      "elapsed_time": 100,
+      "elevation_difference": -28.5,
+      "moving_time": 100,
+      "split": 14,
+      "average_speed": 10.02,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    },
+    {
+      "distance": 996.3,
+      "elapsed_time": 135,
+      "elevation_difference": 3.3,
+      "moving_time": 135,
+      "split": 15,
+      "average_speed": 7.38,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    },
+    {
+      "distance": 614,
+      "elapsed_time": 156,
+      "elevation_difference": 1.7,
+      "moving_time": 154,
+      "split": 16,
+      "average_speed": 3.99,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    }
+  ],
+  "splits_standard": [
+    {
+      "distance": 1612,
+      "elapsed_time": 431,
+      "elevation_difference": 69.8,
+      "moving_time": 431,
+      "split": 1,
+      "average_speed": 3.74,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1609.7,
+      "elapsed_time": 259,
+      "elevation_difference": -15.2,
+      "moving_time": 259,
+      "split": 2,
+      "average_speed": 6.22,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1613.7,
+      "elapsed_time": 372,
+      "elevation_difference": 43.2,
+      "moving_time": 372,
+      "split": 3,
+      "average_speed": 4.34,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1605.6,
+      "elapsed_time": 204,
+      "elevation_difference": -52.6,
+      "moving_time": 204,
+      "split": 4,
+      "average_speed": 7.87,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1606.5,
+      "elapsed_time": 415,
+      "elevation_difference": 33.9,
+      "moving_time": 414,
+      "split": 5,
+      "average_speed": 3.88,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1609.8,
+      "elapsed_time": 175,
+      "elevation_difference": -78.9,
+      "moving_time": 175,
+      "split": 6,
+      "average_speed": 9.2,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1610.2,
+      "elapsed_time": 330,
+      "elevation_difference": 21.8,
+      "moving_time": 315,
+      "split": 7,
+      "average_speed": 5.11,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1618.5,
+      "elapsed_time": 497,
+      "elevation_difference": 17.8,
+      "moving_time": 497,
+      "split": 8,
+      "average_speed": 3.26,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1604,
+      "elapsed_time": 178,
+      "elevation_difference": -35.4,
+      "moving_time": 178,
+      "split": 9,
+      "average_speed": 9.01,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1124.9,
+      "elapsed_time": 225,
+      "elevation_difference": 2.8,
+      "moving_time": 223,
+      "split": 10,
+      "average_speed": 5.04,
+      "average_grade_adjusted_speed": null,
+      "pace_zone": 0
+    }
+  ],
+  "laps": [
+    {
+      "id": 40164917636,
+      "resource_state": 2,
+      "name": "Lap 1",
+      "activity": {
+        "id": 11504620194,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 3088,
+      "moving_time": 3071,
+      "start_date": "2024-05-26T17:52:34Z",
+      "start_date_local": "2024-05-26T19:52:34Z",
+      "distance": 15614.9,
+      "average_speed": 5.08,
+      "max_speed": 18.596,
+      "lap_index": 1,
+      "split": 1,
+      "start_index": 0,
+      "end_index": 2920,
+      "total_elevation_gain": 314.9,
+      "device_watts": false
+    }
+  ],
+  "photos": {
+    "primary": null,
+    "count": 0
+  },
+  "stats_visibility": [
+    {
+      "type": "heart_rate",
+      "visibility": "everyone"
+    },
+    {
+      "type": "pace",
+      "visibility": "everyone"
+    },
+    {
+      "type": "power",
+      "visibility": "everyone"
+    },
+    {
+      "type": "speed",
+      "visibility": "everyone"
+    },
+    {
+      "type": "calories",
+      "visibility": "everyone"
+    }
+  ],
+  "hide_from_home": false,
+  "embed_token": "3edb435b4da7666f69581678768fc9d88770ead9",
+  "available_zones": []
 }

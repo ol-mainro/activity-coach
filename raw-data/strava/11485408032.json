@@ -1,8 +1,1119 @@
 {
-  "id": 11485408032,
+  "resource_state": 3,
+  "athlete": {
+    "id": 12778566,
+    "resource_state": 1
+  },
   "name": "Course à pied dans l'après-midi",
-  "date": "2024-05-24",
-  "distance": 7750,
+  "distance": 7746.6,
   "moving_time": 2275,
-  "sport_type": "Run"
+  "elapsed_time": 2275,
+  "total_elevation_gain": 32.1,
+  "type": "Run",
+  "sport_type": "Run",
+  "workout_type": 0,
+  "device_name": "Strava App",
+  "id": 11485408032,
+  "start_date": "2024-05-24T10:46:16Z",
+  "start_date_local": "2024-05-24T12:46:16Z",
+  "timezone": "(GMT+01:00) Europe/Paris",
+  "utc_offset": 7200,
+  "location_city": null,
+  "location_state": null,
+  "location_country": null,
+  "achievement_count": 2,
+  "kudos_count": 1,
+  "comment_count": 0,
+  "athlete_count": 1,
+  "photo_count": 0,
+  "map": {
+    "id": "a11485408032",
+    "polyline": "{zliHklpMc@a@YIKO[IEI_@[i@m@g@_@K@QHQRS@WTc@REDG@OLSF_@PMJILSJiAJONCCIQQJETKLc@XYVIRED_@TIBEDWJEEe@d@]LMJo@XYZOHEHG@Or@KPQLKCSMMDQC[JYTgBt@IJIF_@JSPUJMLc@R[RYJ_Ar@c@J}@d@WHYT[Ja@\\MDIHK@MFCFE?eAh@c@^OHGCIKG?e@Ru@Ti@d@{@`@IH_@RMB]PGHwAn@w@j@o@ZEDa@HQLIAEBKAGHOHK\\]\\MDIHMDc@Xc@Ni@^KBMPYLw@h@MBKHYF]NMBSJw@j@MBWE[J]V]PQNYR]F_@L[TSHGEM@e@VQ^KF{@Na@p@e@Ze@Ra@^YLQGGHAJGL]V]LqAv@eAb@]TULE@_@Ze@VGFO\\UP[@ODa@?KBCFCAULQD_Aj@u@ZSDUPm@XQNg@XK@QFIFE?SRmAt@QFg@H]Lw@f@MBa@PEFMBs@b@kBz@WFQN[ISLE?EDKBCFE`@GRq@`@EFG@i@b@c@PKHQJWRI@MDOLMBQTOJCFUJWTK@EEEBIAGDu@T]P]X{@^MPI@YRKDy@f@cAf@o@`@]Ja@XK@WTSBONUHOLgAj@c@PG@CECAE@ELNVVRP\\PXNFV@b@MVSDG@QDENCHKPBhAq@tAo@\\UNCZSt@[VQNGNMv@g@XGlAo@^_@XQ`@CJCB@NKXIb@e@PGPIJMLEHMl@[l@U^Ud@QZUXIv@g@RE\\Op@c@TGRS\\IHKTINOPEz@m@TKn@_@^K^Yn@_@x@Wn@YfAs@FAXURGTOj@YLMz@]DEP[ZIb@QDEb@UTOLAPKlAs@z@_@|BkAJAHID?LG`@[t@_@DEr@a@JSASFGL?TBVMNARQ~@_@LMv@ULGRCFIr@[BGr@WHKXGPKVELGRSTMJCRONSFA^[VGNIXALKXYLE\\WHAXSHCVOROJOxAk@HKXO@YLIBIVLNEFINALGLCRO\\MLAXDTAHKJGFBNCv@aA\\WNCb@QDGZIZSp@QXQRGPSJCJKJADGHA`@Uf@OXURKZYFO\\yATGHIRId@QRQb@O`@WRW`@S`@Wh@YDLEFKHAFJ`@FB~@e@r@e@z@a@^WKNm@VEI@K`@g@^Ol@e@DBPGJ?JODa@JIV]RABGTKPE|@g@DGNG\\[ZKD?TKJQb@a@FMh@]NEVQP[PIDEDUDEPBAUL@VVZALEX?\\O^WZKNMFAPQVMj@M`@AHEVPF@Zh@FRD@DHL\\AP",
+    "resource_state": 3,
+    "summary_polyline": "u_miHippM[[MIUSO?WNKLS@WTi@XG@OLSF_@PMJILSJiAJONCCIQQJETKLc@XYVIRED_@Tg@TEEe@d@]LMJo@XYZOHEHG@Or@KPQLKCSMMDQC[JYTgBt@IJIF_@JSPUJMLc@R[RYJ_Ar@c@J}@d@WHYT[Ja@\\MDIHK@MFCFE?eAh@s@h@GCIKG?{Ah@i@d@{@`@IH_@RMB]PGHwAn@w@j@o@ZEDa@HQL[?GHOHK\\]\\MDIHMDc@Xc@Ni@^KBMPYLw@h@MBKHw@VMBSJw@j@MBWE[J{@h@QNYR}@T[TSHGEM@e@VQ^KF{@Na@p@e@Ze@Ra@^YLQGGHAJGL]V]LqAv@eAb@]TULE@_@Ze@VGFO\\UP[@ODm@BCFCAULQD_Aj@u@ZSDUPm@XQNg@XK@a@NSRmAt@QFg@H]Lw@f@o@TEFMBs@b@kBz@WFQN[ISLWHCFE`@GRq@`@EFg@ZIHc@P]TWRI@MDOLMBQTOJCFUJWTK@EEEBIAGDu@T]P]X{@^MPI@YRKDy@f@cAf@o@`@]Ja@XK@WTSBONUHwAx@c@PG@CECAE@ELNVVRP\\PXNFV@h@OPQDG@QDENCHKPBhAq@tAo@\\UNCZSt@[VQNGNMv@g@XGlAo@^_@XQp@ENKXIb@e@PGPIJMLEHMl@[l@U^Ud@QZUXIv@g@RE\\Op@c@TGRS\\IHKTINOPEz@m@TKn@_@^K^Yn@_@x@Wn@YfAs@FAXURGTOj@YLMz@]DEP[ZIb@QDEb@UTO^MlAs@z@_@|BkAJAHIRG`@[t@_@x@g@JSASFGb@BVMNARQ~@_@LMv@ULGRCFIr@[BGr@WHKXGPKd@MRS`@QRONSFA^[VGNIXALKXYLE\\WdAi@ROJOxAk@HKXO@YLIBIVLNEFINAZKRO\\M|@@HKJGFBNCv@aA\\WNCb@QDGZIZSp@QXQRGPSJCJKJADGj@Wf@OhA{@FO\\yATG\\Sd@QRQb@O`@WRW`@S`@Wh@YDLEFKHAFJ`@FB~@e@r@e@z@a@^WKNm@VEI@K`@g@^Ol@e@DBPGJ?JODa@JIV]RABGTKPE|@g@DGNG\\[v@WJQb@a@FMh@]NEVQP[PIDEDUDEPBAUL@VVbAG\\O^Wr@[PQVMVG"
+  },
+  "trainer": false,
+  "commute": false,
+  "manual": false,
+  "private": false,
+  "visibility": "everyone",
+  "flagged": false,
+  "gear_id": null,
+  "start_latlng": [
+    48.895345916971564,
+    2.3829412925988436
+  ],
+  "end_latlng": [
+    48.89541322365403,
+    2.382731745019555
+  ],
+  "average_speed": 3.405,
+  "max_speed": 8.646,
+  "has_heartrate": false,
+  "heartrate_opt_out": false,
+  "display_hide_heartrate_option": false,
+  "elev_high": 52.3,
+  "elev_low": 36.9,
+  "upload_id": 12261822510,
+  "upload_id_str": "12261822510",
+  "external_id": "80E15FFD-190C-4076-8D27-54C2F683C07E-activity.fit",
+  "from_accepted_tag": false,
+  "pr_count": 1,
+  "total_photo_count": 0,
+  "has_kudoed": false,
+  "description": null,
+  "calories": 750.4,
+  "perceived_exertion": null,
+  "prefer_perceived_exertion": null,
+  "segment_efforts": [
+    {
+      "id": 3229048088513326600,
+      "resource_state": 2,
+      "name": "retour auberland",
+      "activity": {
+        "id": 11485408032,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 281,
+      "moving_time": 277,
+      "start_date": "2024-05-24T10:47:06Z",
+      "start_date_local": "2024-05-24T12:47:06Z",
+      "distance": 950.5,
+      "start_index": 49,
+      "end_index": 328,
+      "device_watts": false,
+      "segment": {
+        "id": 16409305,
+        "resource_state": 2,
+        "name": "retour auberland",
+        "activity_type": "Run",
+        "distance": 950.5,
+        "average_grade": -0.7,
+        "maximum_grade": 8.3,
+        "elevation_high": 55,
+        "elevation_low": 48,
+        "start_latlng": [
+          48.896605,
+          2.383796
+        ],
+        "end_latlng": [
+          48.904431,
+          2.378869
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Paris-19E-Arrondissement",
+        "state": "Île-de-France",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3295767070046959000,
+      "resource_state": 2,
+      "name": "Canal St Denis : Périphérique → métro Aimé Césaire",
+      "activity": {
+        "id": 11485408032,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 230,
+      "moving_time": 229,
+      "start_date": "2024-05-24T10:49:39Z",
+      "start_date_local": "2024-05-24T12:49:39Z",
+      "distance": 791.7,
+      "start_index": 202,
+      "end_index": 430,
+      "device_watts": false,
+      "segment": {
+        "id": 38190703,
+        "resource_state": 2,
+        "name": "Canal St Denis : Périphérique → métro Aimé Césaire",
+        "activity_type": "Run",
+        "distance": 791.7,
+        "average_grade": -0.3,
+        "maximum_grade": 0.4,
+        "elevation_high": 44.5,
+        "elevation_low": 41.9,
+        "start_latlng": [
+          48.900796,
+          2.381086
+        ],
+        "end_latlng": [
+          48.90732,
+          2.377007
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Paris",
+        "state": "Paris",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": 3,
+      "achievements": [
+        {
+          "type_id": 3,
+          "type": "pr",
+          "rank": 3
+        }
+      ],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3328702418828245000,
+      "resource_state": 2,
+      "name": "Descente écluse - aimé Césaire",
+      "activity": {
+        "id": 11485408032,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 123,
+      "moving_time": 121,
+      "start_date": "2024-05-24T10:51:35Z",
+      "start_date_local": "2024-05-24T12:51:35Z",
+      "distance": 423.8,
+      "start_index": 316,
+      "end_index": 439,
+      "device_watts": false,
+      "segment": {
+        "id": 38640414,
+        "resource_state": 2,
+        "name": "Descente écluse - aimé Césaire",
+        "activity_type": "Run",
+        "distance": 423.8,
+        "average_grade": -0.4,
+        "maximum_grade": 0.2,
+        "elevation_high": 43.8,
+        "elevation_low": 41.9,
+        "start_latlng": [
+          48.904004,
+          2.379103
+        ],
+        "end_latlng": [
+          48.907519,
+          2.376888
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Aubervilliers",
+        "state": "Seine-Saint-Denis",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3229048088509507000,
+      "resource_state": 2,
+      "name": "Canal sprint long",
+      "activity": {
+        "id": 11485408032,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 254,
+      "moving_time": 251,
+      "start_date": "2024-05-24T10:52:07Z",
+      "start_date_local": "2024-05-24T12:52:07Z",
+      "distance": 903,
+      "start_index": 348,
+      "end_index": 602,
+      "device_watts": false,
+      "segment": {
+        "id": 18567798,
+        "resource_state": 2,
+        "name": "Canal sprint long",
+        "activity_type": "Run",
+        "distance": 903,
+        "average_grade": 0,
+        "maximum_grade": 8,
+        "elevation_high": 40,
+        "elevation_low": 39,
+        "start_latlng": [
+          48.904941,
+          2.378633
+        ],
+        "end_latlng": [
+          48.912385,
+          2.374089
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Aubervilliers",
+        "state": "Île-de-France",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3229048088510548500,
+      "resource_state": 2,
+      "name": "Canal sprint",
+      "activity": {
+        "id": 11485408032,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 134,
+      "moving_time": 132,
+      "start_date": "2024-05-24T10:52:14Z",
+      "start_date_local": "2024-05-24T12:52:14Z",
+      "distance": 468,
+      "start_index": 355,
+      "end_index": 489,
+      "device_watts": false,
+      "segment": {
+        "id": 18567692,
+        "resource_state": 2,
+        "name": "Canal sprint",
+        "activity_type": "Run",
+        "distance": 468,
+        "average_grade": 0,
+        "maximum_grade": 6.3,
+        "elevation_high": 40,
+        "elevation_low": 39,
+        "start_latlng": [
+          48.905183,
+          2.378517
+        ],
+        "end_latlng": [
+          48.90906,
+          2.376097
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Aubervilliers",
+        "state": "Île-de-France",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3295758274103204400,
+      "resource_state": 2,
+      "name": "Canal St Denis : métro Aimé Césaire → rue du Landy",
+      "activity": {
+        "id": 11485408032,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 257,
+      "moving_time": 256,
+      "start_date": "2024-05-24T10:53:43Z",
+      "start_date_local": "2024-05-24T12:53:43Z",
+      "distance": 897.2,
+      "start_index": 444,
+      "end_index": 701,
+      "device_watts": false,
+      "segment": {
+        "id": 38190710,
+        "resource_state": 2,
+        "name": "Canal St Denis : métro Aimé Césaire → rue du Landy",
+        "activity_type": "Run",
+        "distance": 897.2,
+        "average_grade": -0.3,
+        "maximum_grade": 0.2,
+        "elevation_high": 41.8,
+        "elevation_low": 39.1,
+        "start_latlng": [
+          48.907669,
+          2.37673
+        ],
+        "end_latlng": [
+          48.91507,
+          2.372111
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Aubervilliers",
+        "state": "Seine-Saint-Denis",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": 1,
+      "achievements": [
+        {
+          "type_id": 3,
+          "type": "pr",
+          "rank": 1
+        }
+      ],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3229048088511431000,
+      "resource_state": 2,
+      "name": "Canal St Denis - retour Paris",
+      "activity": {
+        "id": 11485408032,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 575,
+      "moving_time": 572,
+      "start_date": "2024-05-24T10:54:09Z",
+      "start_date_local": "2024-05-24T12:54:09Z",
+      "distance": 1982.4,
+      "start_index": 470,
+      "end_index": 1044,
+      "device_watts": false,
+      "segment": {
+        "id": 6621269,
+        "resource_state": 2,
+        "name": "Canal St Denis - retour Paris",
+        "activity_type": "Run",
+        "distance": 1982.4,
+        "average_grade": -0.3,
+        "maximum_grade": 4.7,
+        "elevation_high": 43,
+        "elevation_low": 30.3,
+        "start_latlng": [
+          48.908459,
+          2.376331
+        ],
+        "end_latlng": [
+          48.924858,
+          2.366162
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Aubervilliers",
+        "state": "IDF",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3295763919288678000,
+      "resource_state": 2,
+      "name": "Canal St Denis : rue du Landy → pont des Bergeries (RER B)",
+      "activity": {
+        "id": 11485408032,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 177,
+      "moving_time": 175,
+      "start_date": "2024-05-24T10:58:11Z",
+      "start_date_local": "2024-05-24T12:58:11Z",
+      "distance": 599,
+      "start_index": 712,
+      "end_index": 888,
+      "device_watts": false,
+      "segment": {
+        "id": 38190721,
+        "resource_state": 2,
+        "name": "Canal St Denis : rue du Landy → pont des Bergeries (RER B)",
+        "activity_type": "Run",
+        "distance": 599,
+        "average_grade": -0.3,
+        "maximum_grade": 0.2,
+        "elevation_high": 39.2,
+        "elevation_low": 37.1,
+        "start_latlng": [
+          48.91539,
+          2.371828
+        ],
+        "end_latlng": [
+          48.920386,
+          2.369132
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Aubervilliers",
+        "state": "Seine-Saint-Denis",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3229048088510792000,
+      "resource_state": 2,
+      "name": "Parc Eli Lotar -> Pont Tournant",
+      "activity": {
+        "id": 11485408032,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 272,
+      "moving_time": 271,
+      "start_date": "2024-05-24T10:59:48Z",
+      "start_date_local": "2024-05-24T12:59:48Z",
+      "distance": 950.4,
+      "start_index": 809,
+      "end_index": 1080,
+      "device_watts": false,
+      "segment": {
+        "id": 19552743,
+        "resource_state": 2,
+        "name": "Parc Eli Lotar -> Pont Tournant",
+        "activity_type": "Run",
+        "distance": 950.4,
+        "average_grade": -0.1,
+        "maximum_grade": 3.4,
+        "elevation_high": 36.6,
+        "elevation_low": 34.8,
+        "start_latlng": [
+          48.918208,
+          2.370488
+        ],
+        "end_latlng": [
+          48.925862,
+          2.365588
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Aubervilliers",
+        "state": "Île-de-France",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3229048088512095700,
+      "resource_state": 2,
+      "name": "ibis budget - Paris Aubervilliers",
+      "activity": {
+        "id": 11485408032,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 87,
+      "moving_time": 87,
+      "start_date": "2024-05-24T11:01:36Z",
+      "start_date_local": "2024-05-24T13:01:36Z",
+      "distance": 287.9,
+      "start_index": 916,
+      "end_index": 1003,
+      "device_watts": false,
+      "segment": {
+        "id": 25016975,
+        "resource_state": 2,
+        "name": "ibis budget - Paris Aubervilliers",
+        "activity_type": "Run",
+        "distance": 287.9,
+        "average_grade": -0.2,
+        "maximum_grade": -0.2,
+        "elevation_high": 37.3,
+        "elevation_low": 36.8,
+        "start_latlng": [
+          48.921318,
+          2.36841
+        ],
+        "end_latlng": [
+          48.92371,
+          2.36691
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Aubervilliers",
+        "state": "Île-de-France",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3440743475755356700,
+      "resource_state": 2,
+      "name": "Canal Saint-Denis Rive droite -> Paris",
+      "activity": {
+        "id": 11485408032,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 352,
+      "moving_time": 351,
+      "start_date": "2024-05-24T11:05:13Z",
+      "start_date_local": "2024-05-24T13:05:13Z",
+      "distance": 1199,
+      "start_index": 1133,
+      "end_index": 1484,
+      "device_watts": false,
+      "segment": {
+        "id": 40705305,
+        "resource_state": 2,
+        "name": "Canal Saint-Denis Rive droite -> Paris",
+        "activity_type": "Run",
+        "distance": 1199,
+        "average_grade": 0.6,
+        "maximum_grade": 5.5,
+        "elevation_high": 44.2,
+        "elevation_low": 36.6,
+        "start_latlng": [
+          48.92534,
+          2.365099
+        ],
+        "end_latlng": [
+          48.9154,
+          2.371339
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Saint-Denis",
+        "state": "Seine-Saint-Denis",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3229048088512503300,
+      "resource_state": 2,
+      "name": "Quai de la Gironde version courte",
+      "activity": {
+        "id": 11485408032,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 129,
+      "moving_time": 129,
+      "start_date": "2024-05-24T11:21:28Z",
+      "start_date_local": "2024-05-24T13:21:28Z",
+      "distance": 442.9,
+      "start_index": 2105,
+      "end_index": 2234,
+      "device_watts": false,
+      "segment": {
+        "id": 25459517,
+        "resource_state": 2,
+        "name": "Quai de la Gironde version courte",
+        "activity_type": "Run",
+        "distance": 442.9,
+        "average_grade": 1.6,
+        "maximum_grade": 5,
+        "elevation_high": 50.9,
+        "elevation_low": 43.8,
+        "start_latlng": [
+          48.899582,
+          2.381215
+        ],
+        "end_latlng": [
+          48.896198,
+          2.383562
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Paris",
+        "state": "Île-de-France",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "only_me",
+      "hidden": false
+    }
+  ],
+  "splits_metric": [
+    {
+      "distance": 1001.3,
+      "elapsed_time": 296,
+      "elevation_difference": -7.4,
+      "moving_time": 296,
+      "split": 1,
+      "average_speed": 3.38,
+      "average_grade_adjusted_speed": 3.34,
+      "pace_zone": 0
+    },
+    {
+      "distance": 999.8,
+      "elapsed_time": 281,
+      "elevation_difference": -2.6,
+      "moving_time": 281,
+      "split": 2,
+      "average_speed": 3.56,
+      "average_grade_adjusted_speed": 3.54,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1000.3,
+      "elapsed_time": 286,
+      "elevation_difference": -2.7,
+      "moving_time": 286,
+      "split": 3,
+      "average_speed": 3.5,
+      "average_grade_adjusted_speed": 3.48,
+      "pace_zone": 0
+    },
+    {
+      "distance": 999,
+      "elapsed_time": 309,
+      "elevation_difference": -1.6,
+      "moving_time": 309,
+      "split": 4,
+      "average_speed": 3.23,
+      "average_grade_adjusted_speed": 3.36,
+      "pace_zone": 0
+    },
+    {
+      "distance": 999.8,
+      "elapsed_time": 285,
+      "elevation_difference": 2.9,
+      "moving_time": 285,
+      "split": 5,
+      "average_speed": 3.51,
+      "average_grade_adjusted_speed": 3.53,
+      "pace_zone": 0
+    },
+    {
+      "distance": 999.9,
+      "elapsed_time": 290,
+      "elevation_difference": 1.8,
+      "moving_time": 290,
+      "split": 6,
+      "average_speed": 3.45,
+      "average_grade_adjusted_speed": 3.49,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1001,
+      "elapsed_time": 309,
+      "elevation_difference": 5.7,
+      "moving_time": 309,
+      "split": 7,
+      "average_speed": 3.24,
+      "average_grade_adjusted_speed": 3.33,
+      "pace_zone": 0
+    },
+    {
+      "distance": 745.5,
+      "elapsed_time": 219,
+      "elevation_difference": 3.9,
+      "moving_time": 219,
+      "split": 8,
+      "average_speed": 3.4,
+      "average_grade_adjusted_speed": 3.48,
+      "pace_zone": 0
+    }
+  ],
+  "splits_standard": [
+    {
+      "distance": 1611.9,
+      "elapsed_time": 469,
+      "elevation_difference": -9.7,
+      "moving_time": 469,
+      "split": 1,
+      "average_speed": 3.44,
+      "average_grade_adjusted_speed": 3.4,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1607.3,
+      "elapsed_time": 452,
+      "elevation_difference": -4.8,
+      "moving_time": 452,
+      "split": 2,
+      "average_speed": 3.56,
+      "average_grade_adjusted_speed": 3.54,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1609.1,
+      "elapsed_time": 484,
+      "elevation_difference": 1.9,
+      "moving_time": 484,
+      "split": 3,
+      "average_speed": 3.32,
+      "average_grade_adjusted_speed": 3.42,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1609.1,
+      "elapsed_time": 478,
+      "elevation_difference": 4.5,
+      "moving_time": 478,
+      "split": 4,
+      "average_speed": 3.37,
+      "average_grade_adjusted_speed": 3.43,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1309.2,
+      "elapsed_time": 392,
+      "elevation_difference": 8.1,
+      "moving_time": 392,
+      "split": 5,
+      "average_speed": 3.34,
+      "average_grade_adjusted_speed": 3.42,
+      "pace_zone": 0
+    }
+  ],
+  "laps": [
+    {
+      "id": 40088489803,
+      "resource_state": 2,
+      "name": "Lap 1",
+      "activity": {
+        "id": 11485408032,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 2279,
+      "moving_time": 2279,
+      "start_date": "2024-05-24T10:46:16Z",
+      "start_date_local": "2024-05-24T12:46:16Z",
+      "distance": 7746.57,
+      "average_speed": 3.4,
+      "max_speed": 8.646,
+      "lap_index": 1,
+      "split": 1,
+      "start_index": 0,
+      "end_index": 2204,
+      "total_elevation_gain": 32.1,
+      "device_watts": false,
+      "pace_zone": 0
+    }
+  ],
+  "best_efforts": [
+    {
+      "id": 49176494672,
+      "resource_state": 2,
+      "name": "400m",
+      "activity": {
+        "id": 11485408032,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 107,
+      "moving_time": 107,
+      "start_date": "2024-05-24T10:46:16Z",
+      "start_date_local": "2024-05-24T12:46:16Z",
+      "distance": 400,
+      "pr_rank": 1,
+      "achievements": [
+        {
+          "type_id": 3,
+          "type": "pr",
+          "rank": 1
+        }
+      ],
+      "start_index": 845,
+      "end_index": 951
+    },
+    {
+      "id": 49176494673,
+      "resource_state": 2,
+      "name": "1/2 mile",
+      "activity": {
+        "id": 11485408032,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 220,
+      "moving_time": 220,
+      "start_date": "2024-05-24T10:46:16Z",
+      "start_date_local": "2024-05-24T12:46:16Z",
+      "distance": 805,
+      "pr_rank": 1,
+      "achievements": [
+        {
+          "type_id": 3,
+          "type": "pr",
+          "rank": 1
+        }
+      ],
+      "start_index": 439,
+      "end_index": 659
+    },
+    {
+      "id": 49176494674,
+      "resource_state": 2,
+      "name": "1K",
+      "activity": {
+        "id": 11485408032,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 278,
+      "moving_time": 278,
+      "start_date": "2024-05-24T10:46:16Z",
+      "start_date_local": "2024-05-24T12:46:16Z",
+      "distance": 1000,
+      "pr_rank": 1,
+      "achievements": [
+        {
+          "type_id": 3,
+          "type": "pr",
+          "rank": 1
+        }
+      ],
+      "start_index": 353,
+      "end_index": 631
+    },
+    {
+      "id": 49176494669,
+      "resource_state": 2,
+      "name": "1 mile",
+      "activity": {
+        "id": 11485408032,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 448,
+      "moving_time": 448,
+      "start_date": "2024-05-24T10:46:16Z",
+      "start_date_local": "2024-05-24T12:46:16Z",
+      "distance": 1609,
+      "pr_rank": 1,
+      "achievements": [
+        {
+          "type_id": 3,
+          "type": "pr",
+          "rank": 1
+        }
+      ],
+      "start_index": 185,
+      "end_index": 631
+    },
+    {
+      "id": 49176494670,
+      "resource_state": 2,
+      "name": "2 mile",
+      "activity": {
+        "id": 11485408032,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 913,
+      "moving_time": 913,
+      "start_date": "2024-05-24T10:46:16Z",
+      "start_date_local": "2024-05-24T12:46:16Z",
+      "distance": 3219,
+      "pr_rank": 1,
+      "achievements": [
+        {
+          "type_id": 3,
+          "type": "pr",
+          "rank": 1
+        }
+      ],
+      "start_index": 60,
+      "end_index": 970
+    },
+    {
+      "id": 49176494671,
+      "resource_state": 2,
+      "name": "5K",
+      "activity": {
+        "id": 11485408032,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 1449,
+      "moving_time": 1449,
+      "start_date": "2024-05-24T10:46:16Z",
+      "start_date_local": "2024-05-24T12:46:16Z",
+      "distance": 5000,
+      "pr_rank": 1,
+      "achievements": [
+        {
+          "type_id": 3,
+          "type": "pr",
+          "rank": 1
+        }
+      ],
+      "start_index": 179,
+      "end_index": 1622
+    }
+  ],
+  "photos": {
+    "primary": null,
+    "count": 0
+  },
+  "stats_visibility": [
+    {
+      "type": "heart_rate",
+      "visibility": "everyone"
+    },
+    {
+      "type": "pace",
+      "visibility": "everyone"
+    },
+    {
+      "type": "power",
+      "visibility": "everyone"
+    },
+    {
+      "type": "speed",
+      "visibility": "everyone"
+    },
+    {
+      "type": "calories",
+      "visibility": "everyone"
+    }
+  ],
+  "hide_from_home": false,
+  "embed_token": "a65007174352a0247a1579ac0e9eca074dc55d95",
+  "similar_activities": {
+    "effort_count": 1,
+    "average_speed": 3.4050989010989015,
+    "min_average_speed": 3.4050989010989015,
+    "mid_average_speed": 3.4050989010989015,
+    "max_average_speed": 3.4050989010989015,
+    "pr_rank": null,
+    "frequency_milestone": null,
+    "trend": {
+      "speeds": [
+        3.4050989010989015
+      ],
+      "current_activity_index": 0,
+      "min_speed": 3.4050989010989015,
+      "mid_speed": 3.4050989010989015,
+      "max_speed": 3.4050989010989015,
+      "direction": 0
+    },
+    "resource_state": 2
+  },
+  "available_zones": []
 }

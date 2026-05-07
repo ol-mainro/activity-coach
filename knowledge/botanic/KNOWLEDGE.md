@@ -1,6 +1,6 @@
 # Connaissance Botanique — Flore des parcours de Romain
 
-_Généré le 2026-04-28 depuis les descriptions d'activités Strava._
+_Généré le 2026-05-07 depuis les descriptions d'activités Strava._
 
 ---
 
@@ -99,6 +99,47 @@ Contexte : flore des **pelouses tonsées et piétinées** — espèces adaptées
 
 ---
 
+### 3 mai 2026 — Longue sortie matinale (22,1 km, +137 m)
+**Lieu** : campagne, chemins herbeux et talus calcaires (vallée de la Marne / Seine-et-Marne)
+
+Contexte : milieu de **prairie calcicole et talus ensoleillés** — flore riche de mai, en pleine floraison.
+
+| Espèce | Habitat | Note |
+|---|---|---|
+| Sainfoin cultivé (*Onobrychis viciifolia*) | Prairies et talus calcaires | Légumineuse rose très décorative, anciennement cultivée comme fourrage |
+| Euphorbe à tête d'or (*Euphorbia polychroma*) | Lisières et pelouses calcaires | Bractées jaune d'or caractéristiques, espèce de sous-bois calcicoles |
+| Fétuque faux-roseau (*Festuca arundinacea* / *Schedonorus arundinaceus*) | Prairies fraîches, bords de route, fossés | Grande graminée robuste, très résistante au piétinement et à la sécheresse |
+| **Orchis bouc** (*Himantoglossum hircinum*) | **Pelouses calcaires sèches, talus ensoleillés** | **Orchidée protégée ! Odeur de bouc caractéristique. Labelle allongé et torsadé. Espèce indicatrice d'un sol calcaire non perturbé.** |
+
+> 🌸 **Observation remarquable** : l'Orchis bouc est une orchidée sauvage protégée en France, strictement inféodée aux pelouses calcaires non fertilisées. Sa présence confirme la qualité écologique du milieu traversé lors de cette sortie.
+
+---
+
+### 6 mai 2026 — Course à pied dans l'après-midi (12,0 km)
+**Lieu** : pelouse du stade de Trilport — terrain piétinés et asphyxiés (retour sur site, cf. 23/04)
+
+Contexte : nouvelle visite du stade de Trilport. Observations plus précises des graminées, avec deux espèces nouvelles identifiées par rapport à la sortie du 23 avril.
+
+| Espèce | Adaptation | Note |
+|---|---|---|
+| Porcelle enracinée (*Hypochaeris radicata*) | Rosette basse résistante à la tonte | Déjà observée le 23/04 |
+| Brome mou (*Bromus hordeaceus*) | Graminée annuelle, tolère le piétinement | Distinct du brome stérile : épis dressés et velus |
+| Dactyle aggloméré (*Dactylis glomerata*) | Graminée des prairies, très commune | Inflorescences en amas compacts unilatéraux très reconnaissables |
+| Paturin des prés (*Poa pratensis*) | Graminée des gazons, sol compacté | Espèce de base des pelouses de stade, résistante au piétinement |
+| Plantain (*Plantago* sp.) | Résistance au piétinement | Déjà observé le 23/04 |
+| Pâquerette (*Bellis perennis*) | Rosette basse | Déjà observée le 23/04 |
+| Trèfle (*Trifolium* sp.) | Fixateur d'azote | Déjà observé le 23/04 |
+| Cardamine hirsute (*Cardamine hirsuta*) | Annuelle de printemps | Déjà observée le 23/04 |
+| Céraiste (*Cerastium* sp.) | Poils glanduleux, tolérant tonte | Déjà observé le 23/04 |
+| Capselle bourse-à-pasteur (*Capsella bursa-pastoris*) | Nitrophile, perturbé | Déjà observée le 23/04 |
+| Chélidoine (*Chelidonium majus*) | Murs, bords, décombres | Déjà observée le 23/04 |
+
+**Faune observée** :
+- Fauvette à tête noire (*Sylvia atricapilla*) — chant puissant caractéristique
+- Pouillot véloce (*Phylloscopus collybita*) — "tchif-tchaf" répété
+
+---
+
 ## Synthèse floristique
 
 ### Espèces récurrentes (observées ≥ 2 sorties)
@@ -107,19 +148,26 @@ Contexte : flore des **pelouses tonsées et piétinées** — espèces adaptées
 - **Pâquerette** (*Bellis perennis*) — pelouses et bords partout
 - **Laiterons** (*Sonchus* sp.) — milieux nitrophiles et décombres
 - **Géraniums** (*Geranium* sp.) — talus divers
+- **Plantain** (*Plantago* sp.) — sols tassés et piétinés (stade de Trilport, 23/04 et 06/05)
+- **Fauvette à tête noire + Pouillot véloce** — chanteurs des jardins de Trilport (23/04 et 06/05)
+
+### Observation remarquable — Orchis bouc (03/05/2026)
+L'**Orchis bouc** (*Himantoglossum hircinum*) est l'observation botanique la plus remarquable de la saison. Orchidée sauvage protégée au niveau national, elle indique un sol calcaire ancien, non fertilisé et non perturbé. Sa présence sur le parcours du 03/05 révèle un milieu d'exception dans la campagne seine-et-marnaise.
 
 ### Habitats croisés
 | Habitat | Espèces caractéristiques |
 |---|---|
 | **Sous-bois** | Anémones, jacinthes, bugles, gaillet gratteron, consoude |
 | **Bords de canal (urbain)** | Roquette jaune, orge des rats, laiterons, torilis, salicaire |
-| **Pelouse piétinée** | Plantain, porcelle, capselle, céraiste, cardamine hirsute |
+| **Pelouse piétinée** | Plantain, porcelle, capselle, céraiste, cardamine hirsute, brome mou, dactyle, paturin |
 | **Calcicole ouvert (Yonne)** | Viorne lantane, chèvrefeuille à balais, passerage des champs |
+| **Prairie calcicole (Seine-et-Marne)** | Sainfoin cultivé, euphorbe à tête d'or, fétuque faux-roseau, **orchis bouc** |
 
-### Phénologie avril 2026
-- **En plein floraison** : jacinthes, cerfeuils, bugles, véroniques, pâquerettes, roquette jaune, marguerites, trèfles
+### Phénologie avril–mai 2026
+- **En plein floraison (mai)** : sainfoin, euphorbe à tête d'or, orchis bouc, pâquerettes, trèfles, roquette jaune, dactyle
+- **En plein floraison (avril)** : jacinthes, cerfeuils, bugles, véroniques, marguerites
 - **Fin de saison** : anémones sylvies, cardamines des prés, primevères, lamier pourpre
-- **À venir** : berces, cirses, bardanes, consoudes, salicaires
+- **À venir (été)** : berces, cirses, bardanes, consoudes, salicaires
 
 ---
 
@@ -157,3 +205,39 @@ Contexte : flore des **pelouses tonsées et piétinées** — espèces adaptées
 - **Famille** : Brassicacées
 - **Floraison** : janvier–décembre
 - **Habitat** : cosmopolite des sols perturbés, trottoirs, potagers, stades. Sa silique en forme de cœur inversé la rend immédiatement reconnaissable.
+
+### Orchis bouc (*Himantoglossum hircinum*)
+- **Famille** : Orchidacées
+- **Floraison** : mai–juillet
+- **Habitat** : pelouses calcaires sèches, coteaux ensoleillés, talus non fertilisés. Strictement inféodée aux sols calcaires non perturbés — sa présence est un bioindicateur de qualité écologique remarquable.
+- **Particularité** : odeur de bouc prononcée (d'où son nom). Le labelle, très allongé et souvent torsadé, est unique parmi les orchidées françaises. **Espèce protégée** en France : il est interdit de la cueillir ou de la déterrer. Observée lors du long run du 03/05/2026 — rencontre exceptionnelle pour un coureur en Île-de-France / grande couronne.
+
+### Sainfoin cultivé (*Onobrychis viciifolia*)
+- **Famille** : Fabacées (légumineuses)
+- **Floraison** : mai–juillet
+- **Habitat** : prairies et talus calcaires ensoleillés, bords de chemin en milieu rural calcicole. Jadis cultivée comme plante fourragère, elle s'est naturalisée sur de nombreux talus.
+- **Particularité** : fleurs rose vif en épis dressés, très mellifères. Indicatrice de sol calcaire bien drainé.
+
+### Euphorbe à tête d'or (*Euphorbia polychroma*)
+- **Famille** : Euphorbiacées
+- **Floraison** : avril–mai
+- **Habitat** : lisières de bois calcaires, pelouses semi-ombragées. Espèce d'Europe centrale et méridionale, assez peu commune en Île-de-France.
+- **Particularité** : bractées jaune d'or très voyantes qui font souvent confondre cette euphorbe avec une plante à grandes fleurs jaunes — ce sont en réalité des feuilles modifiées entourant de petites cyathies.
+
+### Dactyle aggloméré (*Dactylis glomerata*)
+- **Famille** : Poacées
+- **Floraison** : mai–juillet
+- **Habitat** : prairies, bords de route, pelouses, friches. L'une des graminées les plus communes d'Europe, résistante à la sécheresse et au piétinement modéré. Colonise facilement les pelouses de stade.
+- **Particularité** : inflorescences en amas compacts unilatéraux ("agglomérés"), facilement reconnaissables, qui lui valent le nom anglais de "cock's foot" (pied de coq).
+
+### Paturin des prés (*Poa pratensis*)
+- **Famille** : Poacées
+- **Floraison** : mai–juillet
+- **Habitat** : pelouses, gazons, prairies, bords de chemin. Graminée de base des pelouses sportives et des stades — elle est semée intentionnellement dans les terrains de football pour sa résistance au piétinement.
+- **Particularité** : forme des rhizomes qui lui permettent de se régénérer après la tonte ou le piétinement intense.
+
+### Brome mou (*Bromus hordeaceus*)
+- **Famille** : Poacées
+- **Floraison** : mai–juillet
+- **Habitat** : pelouses piétinées, prairies, bords de chemin, terres cultivées. Très commun, souvent associé aux sols compactés des stades et espaces publics verts.
+- **Particularité** : à distinguer du brome stérile par ses épis dressés (non retombants) et velus. Plus tolérant au piétinement que son cousin des milieux plus secs.

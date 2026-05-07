@@ -1,9 +1,786 @@
 {
-  "id": 18267220041,
+  "resource_state": 3,
+  "athlete": {
+    "id": 12778566,
+    "resource_state": 1
+  },
   "name": "Course à pied dans l'après-midi",
-  "date": "2026-04-26",
   "distance": 11490.1,
   "moving_time": 6246,
+  "elapsed_time": 9511,
+  "total_elevation_gain": 304.2,
+  "type": "Run",
   "sport_type": "Run",
-  "total_elevation_gain": 304
+  "workout_type": null,
+  "device_name": "Strava App",
+  "id": 18267220041,
+  "start_date": "2026-04-26T11:53:46Z",
+  "start_date_local": "2026-04-26T13:53:46Z",
+  "timezone": "(GMT+01:00) Europe/Paris",
+  "utc_offset": 7200,
+  "location_city": null,
+  "location_state": null,
+  "location_country": null,
+  "achievement_count": 0,
+  "kudos_count": 0,
+  "comment_count": 0,
+  "athlete_count": 1,
+  "photo_count": 0,
+  "map": {
+    "id": "a18267220041",
+    "polyline": "s``aHkevUT`@HJDJF@GFAHC@?AAA?@@BEV@ZCJGDQ\\OLCL]XAj@B@?BELBVGXFv@ELDPAx@DZC\\BH?VDh@BH?N@?Lb@CH?f@KDADOBAFOFQNMPGNUR@FAJKRIAGFIBEBGKDq@Ck@BMOcBBSCe@PeAIIKAOOC@ACEACBOMMCMKCMMAWMH@@AEBEAEG?@@E?JBC@ECBSEKIO?c@I]BKCe@HM?OHK@UJIHmAh@GACEKu@GQWkAISASOYG_@O[Oi@UoAGOOs@KK@IBBCA@CIMGc@?g@Fs@dAkFF?A@?K@UTy@Hq@DMBW?WEIw@_@yCgAIG@@IOk@uEMg@Cm@Ow@?QYsA?QQaAGQOy@e@{@SKOa@MKMYAKKUMi@C@K[Ok@D?OWIYMUCEC@?KSa@K_@OSw@}Bs@uASU]m@M_@Bu@Ga@@MCqAImC?m@CK@}@E{@@[A]CCB[AwB@OHOHCr@CREXALGF@JEV?\\?l@TF@BAT@@A@@d@CR?CGf@HzACREXEPGR@j@QHAJ@DGAQFH\\@@AVEDCJALKGw@@WK]?SG_@A[Mm@Ci@EICs@?OE_@@EEU?]Ma@DMDATId@ENIDIRMDQ?m@EMCq@CMGs@CKASI_@OmBBGFAD@@ENKLCRI@@T_@?[CEBKBA@@HKFALIDO@KEWGeBCM?WGi@?u@AHBFJWBCH@BELADCEE@DBBTIRCL@^I\\CNGPEN?PGJAAD@GHCDB?B@CAEGEESKOAWG?BQD@?CEIC@AEECAFIDDID@ABF?@JE?BC?CDHGAEECIIJB@DK@UCUM_@Qs@EGGa@a@w@ECEW[]Oa@KOEQMKEK@GF@BCNAPGX@DDT?FMHJMCACBAB@RKXADCP?JED?DCVAFIDBZIJ@@@@CH?T@PGDER?DC@BJCD@@KHBFIN@BCD?BDb@LHAHDHABENBBCFDJCF@DJHAHFZ?VJj@HDB@A@DB?DM@BBANFZDPLJ@DFHABFLBHLXFHALBFGTDVMRBLEB@DAHM?JAIBEHC@K\\w@PWZ}@\\URCFDFAAUAB@AA@AA@GADZ@LGv@GRMb@BDQhA{@RJBCIHWAXY\\AVOn@UFG\\EHKJ@@KH?C@^Kd@G\\Ld@@XHB?FFRFTVRJTTF?PHXGJGZ_@^WZOHAD?NNBNOn@@PHJJAFBFCHBCTBVHXFHB^@ABB?CFG?FE@?DFQB@?GCSB?@BDECB@DEEFAG?GD?B?ADFE@BA@EAGCEGj@BI?MBC?IEAB@AEBBA??C?@AADCV[F@FJXTBCPJN@?CDCA?Lg@@CGE@DBC@?D]HKD@?CB??G@A?ABE?IDAACFY?IJQL{BH_@?KHSLKFAE?b@sAHKb@_BPa@@I^m@FCBU?@HGHOHGF?JBHNPHZ?FD^ARFT@\\?HGLADCNa@BABCAA`@i@Ne@PMHUFEN[X[HSJGLAPB?AB?HHZIDECAAAPBBEB@FCZFJELBBALDF?TLF??D?K?F@EDALH?FA?A@DBJGAB@D@ABJAEBECF?AL?JBBDVPNDDDD@FLB?C@DATN@HBGNDFHD?BDd@JCDTDTAHDP?z@Lx@?NBNAJDNCPDNHMKD@?C@@A@@?BHH?HH?KD?@JFDDFXF^RTDFHAIC?FB\\\\DALJPB@D`@TC]H@AD@FBIAPHJLFA@PF@ANNH?@BD?HH@EB@JLXRTE@CBAT[@Gb@g@`@YFAHKn@[NCFCAER?d@SXI@GEA@EADBAA?BC@DB@?EH?f@SPENKTK\\GPIh@GX?PEPBDEH@FEDB`@Ar@B^Gl@BFANDFCRFR@FBR@|@RP?FF\\?FBDA\\@NAP@TE`@@VGJBLC`AAN@RHP?JF^FJALDR?HBb@Bf@LF?VNF@JHf@TTP\\Ht@`@RP@ARFT@FCNNT@FDFBHAJBR?J@VCF@DC`@HDCb@LFJN?NHDEHDJBDDDAVPDCRDR@HBf@HRHP?FBPAZ@r@VP?HDb@FDDVA^HV?x@L^LFCF@j@LRJz@PFDDCH@DBJJ\\BNLf@H^JN@TLJ?XHNAD@DCh@NNCH@JCTFH?ZHBJKNEVEBCZIRGXH`@BHFDN?RGDEZAHGZKTMF?PId@ELOZGZ[@KJK@QFIBMJO@GHKLGBIJE@GD?RSF@n@UPAJGX@nAQFCLMPEPKHALUJCD@DDP@PKDAHBNKJ?FGH?FGPGH?BE`@LBFBCVBHCd@JJAFBNEPBNC^FH?F@TAJFJAVJ\\FPEXBXAHCBD^?TINAJDHADAZFJ?BDF?TLH?JHHHJDd@Vb@OPOHAX]LKDB@DFBHEHBHCHBHCFFJA?DN?DCRPNDFF\\ANHJAF?HER@JE@IPSP_@FGDQLGNYj@o@PCPS^JFANFFAD@~@b@LD@CD@FBC@@EDA?BA@B?C??@CABAB@BL@??E?EEBBB@GCB?E@BCAAFB??E@AB?\\ZHAb@RXNj@TJJRF\\PXLBBzA^r@LFDLBXJBAFFF?HDJNH@BB@I?BB@DEb@DTC`ABPEv@ACAR?HCD@`@EJ@NIBBVCFAFGVE\\?HAd@AHCLBV?D@`@_@DAd@e@n@Oh@KN@RAR?HAHHD?BCR@BGLEL@NEF@DGF?@BAE?B?CB?C@H?FDJABBDE@@FAFDLBFFDC@?DNJLD@@HHJAFFH?FP^ZfALRBHNVC?BNP^?LNBFRJDFLF@H?@@?ABJDHLF@LTTFD?@D@JNHDLRHF\\l@PNT`@?JFBD?A@FFGAB@PB?@JFR?HBFC@EDGJCLSDB\\WLC@ICRJPD@PA@ZBBBNAJJX@LJHDFND@CIE?BAED@E?ADF?A??BIE?A?FACBE@BCAAH?CB@C@BC",
+    "resource_state": 3,
+    "summary_polyline": "gb`aHquuUBPHbCNb@Cp@aAn@k@t@?RKRa@LGKDkBOcB?y@PeAIIs@Ua@UEQk@S@DDIwAU}AHiCjAKGw@{DWy@_@eAUoAc@oA@IBBSw@?g@Fs@dAkFF??_@d@yBBo@}@i@yCgAQUy@}FSwBcAsFe@{@SKk@gA[kAOYOk@D?g@gAGCgB_FsByDBu@Ga@Q}LEa@B[AwBJ_@dD[\\?t@VvACCGbCDtCc@BYd@Jx@YGw@@WK][gDEIM}CMa@DMpA[XWDQImB[aCOmBfAe@T_@?m@d@WDOWyE?u@AHDFHWd@MEEDHv@K~Cg@[o@AWG?BQDAEIKGKLJGDB@JE?BGDHQQIJHIAk@e@{AGa@g@{@EW[]a@cAMKCSl@Kt@FFMHJOG|B]FIpACVMl@A@Kd@G`AVt@ELLn@DlA\\NKj@LbBv@lAMd@?LM@HAILIlAyC\\Ub@?C[CD\\@xA]b@BDQhA{@VFIHWAXY\\AnAm@\\ETI@KjAQ`BXzAhAXHd@Oz@w@j@QNNBNOn@@PHJd@@?l@Pb@B^LIENJOC[JAAHEEFAG?GDDHE@DGGMEj@F[CO\\_@h@b@d@HPo@EIF@D]RMJ]Dg@JQL{BR_ATME?dBkFf@q@BURUPGf@\\lBLt@I|@wANe@PMdAgBXI^JZIDEEC`@CnAH\\R?KF?LHCHDBJGDR@KEDZBv@d@JLC@ZL@HRAPNd@JCDbCVtBB`@NMKDADLRH?KD?@JLLvAj@AIC?d@`@d@L\\XD?C[H@?LBIAPTT~@b@DCd@`@ZKz@kAbBcAhBk@AOHFhBw@xAYtAKhE@`En@pFM`BZzAJn@LfFfC\\At@ZbCBb@LFJfAPVPlC^l@?xBj@xD`@dD~@zCv@`ADh@Nd@Ez@PBJWj@UhAH`@JNdAOz@a@~@Oh@Wh@s@@QXo@bA_AtA]hBObAe@LUh@DPKN@tAi@d@T~AHxB@lAXtDKrAZfAp@~@a@f@i@NLdADTCj@^`ADh@Ir@wALGz@iAPCPSdAPxAl@FGEDF?BL@KE?@FFEZXl@P`D|AbE`Ar@b@@IdCDvCOrAYbCAlAgAn@OlAK\\Ab@FTMt@EAEPF`@Cb@LDN\\d@AFt@xB`@t@?NP^?LNBZf@R@HTLF@L\\Z"
+  },
+  "trainer": false,
+  "commute": false,
+  "manual": false,
+  "private": true,
+  "visibility": "only_me",
+  "flagged": false,
+  "gear_id": null,
+  "start_latlng": [
+    47.518983,
+    3.723266
+  ],
+  "end_latlng": [
+    47.46604,
+    3.747063
+  ],
+  "average_speed": 1.84,
+  "max_speed": 4.6,
+  "has_heartrate": false,
+  "heartrate_opt_out": false,
+  "display_hide_heartrate_option": false,
+  "elev_high": 296.1,
+  "elev_low": 153.1,
+  "upload_id": 19370458056,
+  "upload_id_str": "19370458056",
+  "external_id": "3C07A12D-3173-4E37-A54A-CBB6E1D90F90-activity.fit",
+  "from_accepted_tag": false,
+  "pr_count": 0,
+  "total_photo_count": 0,
+  "has_kudoed": false,
+  "description": "",
+  "calories": 1196.2,
+  "perceived_exertion": null,
+  "prefer_perceived_exertion": null,
+  "segment_efforts": [
+    {
+      "id": 3483491794679082000,
+      "resource_state": 2,
+      "name": "Auxerre-Vézelay Vaudonjon=>Vézelay (Club alpin Auxerre)",
+      "activity": {
+        "id": 18267220041,
+        "visibility": "only_me",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 3844,
+      "moving_time": 2168,
+      "start_date": "2026-04-26T13:21:42Z",
+      "start_date_local": "2026-04-26T15:21:42Z",
+      "distance": 5630.6,
+      "start_index": 5262,
+      "end_index": 9094,
+      "device_watts": false,
+      "segment": {
+        "id": 34293622,
+        "resource_state": 2,
+        "name": "Auxerre-Vézelay Vaudonjon=>Vézelay (Club alpin Auxerre)",
+        "activity_type": "Run",
+        "distance": 5630.6,
+        "average_grade": 2.1,
+        "maximum_grade": 18.9,
+        "elevation_high": 293.7,
+        "elevation_low": 154.1,
+        "start_latlng": [
+          47.51182,
+          3.74853
+        ],
+        "end_latlng": [
+          47.46669,
+          3.74757
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Montillot",
+        "state": "Yonne",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "only_me",
+      "hidden": false
+    },
+    {
+      "id": 3483491794681787400,
+      "resource_state": 2,
+      "name": "Côte d'Asquins",
+      "activity": {
+        "id": 18267220041,
+        "visibility": "only_me",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 1504,
+      "moving_time": 590,
+      "start_date": "2026-04-26T13:30:00Z",
+      "start_date_local": "2026-04-26T15:30:00Z",
+      "distance": 1361.7,
+      "start_index": 5759,
+      "end_index": 7260,
+      "device_watts": false,
+      "segment": {
+        "id": 7101659,
+        "resource_state": 2,
+        "name": "Côte d'Asquins",
+        "activity_type": "Run",
+        "distance": 1361.7,
+        "average_grade": 4.3,
+        "maximum_grade": 81.8,
+        "elevation_high": 232.2,
+        "elevation_low": 171.8,
+        "start_latlng": [
+          47.507753,
+          3.753061
+        ],
+        "end_latlng": [
+          47.496101,
+          3.752314
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Asquins",
+        "state": "Burgandy",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "only_me",
+      "hidden": false
+    },
+    {
+      "id": 3483491794681843700,
+      "resource_state": 2,
+      "name": "Descente vers Asquins",
+      "activity": {
+        "id": 18267220041,
+        "visibility": "only_me",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 699,
+      "moving_time": 684,
+      "start_date": "2026-04-26T13:54:35Z",
+      "start_date_local": "2026-04-26T15:54:35Z",
+      "distance": 1944,
+      "start_index": 7231,
+      "end_index": 7925,
+      "device_watts": false,
+      "segment": {
+        "id": 7109529,
+        "resource_state": 2,
+        "name": "Descente vers Asquins",
+        "activity_type": "Run",
+        "distance": 1944,
+        "average_grade": -2.7,
+        "maximum_grade": 15.2,
+        "elevation_high": 213.3,
+        "elevation_low": 152.2,
+        "start_latlng": [
+          47.496833,
+          3.752328
+        ],
+        "end_latlng": [
+          47.480843,
+          3.750633
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Asquins",
+        "state": "Burgandy",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "only_me",
+      "hidden": false
+    },
+    {
+      "id": 3483491794681301000,
+      "resource_state": 2,
+      "name": "La Cordelle intégrale",
+      "activity": {
+        "id": 18267220041,
+        "visibility": "only_me",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 1124,
+      "moving_time": 637,
+      "start_date": "2026-04-26T14:07:24Z",
+      "start_date_local": "2026-04-26T16:07:24Z",
+      "distance": 1580.3,
+      "start_index": 7995,
+      "end_index": 9116,
+      "device_watts": false,
+      "segment": {
+        "id": 7101673,
+        "resource_state": 2,
+        "name": "La Cordelle intégrale",
+        "activity_type": "Run",
+        "distance": 1580.3,
+        "average_grade": 8.7,
+        "maximum_grade": 44.8,
+        "elevation_high": 309.6,
+        "elevation_low": 164,
+        "start_latlng": [
+          47.479168,
+          3.750582
+        ],
+        "end_latlng": [
+          47.466461,
+          3.747816
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 1,
+        "city": "Asquins",
+        "state": "Burgandy",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "only_me",
+      "hidden": false
+    },
+    {
+      "id": 3483491794678224000,
+      "resource_state": 2,
+      "name": "La Cordelle - Vézelay",
+      "activity": {
+        "id": 18267220041,
+        "visibility": "only_me",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 399,
+      "moving_time": 215,
+      "start_date": "2026-04-26T14:20:12Z",
+      "start_date_local": "2026-04-26T16:20:12Z",
+      "distance": 429.7,
+      "start_index": 8762,
+      "end_index": 9159,
+      "device_watts": false,
+      "segment": {
+        "id": 3964111,
+        "resource_state": 2,
+        "name": "La Cordelle - Vézelay",
+        "activity_type": "Run",
+        "distance": 429.7,
+        "average_grade": 19.2,
+        "maximum_grade": 247.1,
+        "elevation_high": 283.2,
+        "elevation_low": 200.6,
+        "start_latlng": [
+          47.469602,
+          3.750674
+        ],
+        "end_latlng": [
+          47.465984,
+          3.747602
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 1,
+        "city": "Vézelay",
+        "state": "Burgandy",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "only_me",
+      "hidden": false
+    }
+  ],
+  "splits_metric": [
+    {
+      "distance": 1001.6,
+      "elapsed_time": 872,
+      "elevation_difference": -11.4,
+      "moving_time": 649,
+      "split": 1,
+      "average_speed": 1.54,
+      "average_grade_adjusted_speed": 1.53,
+      "pace_zone": 0
+    },
+    {
+      "distance": 999.3,
+      "elapsed_time": 872,
+      "elevation_difference": 2.7,
+      "moving_time": 611,
+      "split": 2,
+      "average_speed": 1.64,
+      "average_grade_adjusted_speed": 1.67,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1002.2,
+      "elapsed_time": 803,
+      "elevation_difference": 25.6,
+      "moving_time": 646,
+      "split": 3,
+      "average_speed": 1.55,
+      "average_grade_adjusted_speed": 1.69,
+      "pace_zone": 0
+    },
+    {
+      "distance": 997.1,
+      "elapsed_time": 1026,
+      "elevation_difference": 6.9,
+      "moving_time": 596,
+      "split": 4,
+      "average_speed": 1.67,
+      "average_grade_adjusted_speed": 1.76,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1001,
+      "elapsed_time": 783,
+      "elevation_difference": -79.7,
+      "moving_time": 576,
+      "split": 5,
+      "average_speed": 1.74,
+      "average_grade_adjusted_speed": 1.57,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1000.2,
+      "elapsed_time": 1313,
+      "elevation_difference": -16.9,
+      "moving_time": 645,
+      "split": 6,
+      "average_speed": 1.55,
+      "average_grade_adjusted_speed": 1.57,
+      "pace_zone": 0
+    },
+    {
+      "distance": 999.7,
+      "elapsed_time": 1125,
+      "elevation_difference": 53.4,
+      "moving_time": 644,
+      "split": 7,
+      "average_speed": 1.55,
+      "average_grade_adjusted_speed": 1.94,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1000.8,
+      "elapsed_time": 630,
+      "elevation_difference": -17.6,
+      "moving_time": 393,
+      "split": 8,
+      "average_speed": 2.55,
+      "average_grade_adjusted_speed": 2.53,
+      "pace_zone": 0
+    },
+    {
+      "distance": 999.3,
+      "elapsed_time": 342,
+      "elevation_difference": -32.4,
+      "moving_time": 342,
+      "split": 9,
+      "average_speed": 2.92,
+      "average_grade_adjusted_speed": 2.76,
+      "pace_zone": 0
+    },
+    {
+      "distance": 999.3,
+      "elapsed_time": 356,
+      "elevation_difference": 4.9,
+      "moving_time": 356,
+      "split": 10,
+      "average_speed": 2.81,
+      "average_grade_adjusted_speed": 2.95,
+      "pace_zone": 0
+    },
+    {
+      "distance": 999.5,
+      "elapsed_time": 761,
+      "elevation_difference": 80.6,
+      "moving_time": 486,
+      "split": 11,
+      "average_speed": 2.06,
+      "average_grade_adjusted_speed": 2.85,
+      "pace_zone": 0
+    },
+    {
+      "distance": 490.1,
+      "elapsed_time": 628,
+      "elevation_difference": 51.8,
+      "moving_time": 302,
+      "split": 12,
+      "average_speed": 1.62,
+      "average_grade_adjusted_speed": 2.62,
+      "pace_zone": 0
+    }
+  ],
+  "splits_standard": [
+    {
+      "distance": 1609.9,
+      "elapsed_time": 1469,
+      "elevation_difference": -11,
+      "moving_time": 1021,
+      "split": 1,
+      "average_speed": 1.58,
+      "average_grade_adjusted_speed": 1.57,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1610.8,
+      "elapsed_time": 1232,
+      "elevation_difference": 35.2,
+      "moving_time": 1036,
+      "split": 2,
+      "average_speed": 1.55,
+      "average_grade_adjusted_speed": 1.68,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1608.2,
+      "elapsed_time": 1546,
+      "elevation_difference": -60.4,
+      "moving_time": 927,
+      "split": 3,
+      "average_speed": 1.73,
+      "average_grade_adjusted_speed": 1.66,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1610.6,
+      "elapsed_time": 1866,
+      "elevation_difference": -26.3,
+      "moving_time": 1027,
+      "split": 4,
+      "average_speed": 1.57,
+      "average_grade_adjusted_speed": 1.63,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1607.8,
+      "elapsed_time": 1328,
+      "elevation_difference": 21.9,
+      "moving_time": 766,
+      "split": 5,
+      "average_speed": 2.1,
+      "average_grade_adjusted_speed": 2.33,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1610.9,
+      "elapsed_time": 559,
+      "elevation_difference": -23,
+      "moving_time": 559,
+      "split": 6,
+      "average_speed": 2.88,
+      "average_grade_adjusted_speed": 2.85,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1608.9,
+      "elapsed_time": 1076,
+      "elevation_difference": 120,
+      "moving_time": 785,
+      "split": 7,
+      "average_speed": 2.05,
+      "average_grade_adjusted_speed": 2.87,
+      "pace_zone": 0
+    },
+    {
+      "distance": 223,
+      "elapsed_time": 435,
+      "elevation_difference": 11.5,
+      "moving_time": 125,
+      "split": 8,
+      "average_speed": 1.78,
+      "average_grade_adjusted_speed": 2.3,
+      "pace_zone": 0
+    }
+  ],
+  "laps": [
+    {
+      "id": 65356861622,
+      "resource_state": 2,
+      "name": "Lap 1",
+      "activity": {
+        "id": 18267220041,
+        "visibility": "only_me",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 9531,
+      "moving_time": 9511,
+      "start_date": "2026-04-26T11:53:46Z",
+      "start_date_local": "2026-04-26T13:53:46Z",
+      "distance": 11490.1,
+      "average_speed": 1.21,
+      "max_speed": 4.6,
+      "lap_index": 1,
+      "split": 1,
+      "start_index": 0,
+      "end_index": 8773,
+      "total_elevation_gain": 304.2,
+      "device_watts": false,
+      "pace_zone": 0
+    }
+  ],
+  "best_efforts": [
+    {
+      "id": 76800045598,
+      "resource_state": 2,
+      "name": "400m",
+      "activity": {
+        "id": 18267220041,
+        "visibility": "only_me",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 133,
+      "moving_time": 133,
+      "start_date": "2026-04-26T11:53:46Z",
+      "start_date_local": "2026-04-26T13:53:46Z",
+      "distance": 400,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 7485,
+      "end_index": 7617
+    },
+    {
+      "id": 76800045599,
+      "resource_state": 2,
+      "name": "1/2 mile",
+      "activity": {
+        "id": 18267220041,
+        "visibility": "only_me",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 273,
+      "moving_time": 273,
+      "start_date": "2026-04-26T11:53:46Z",
+      "start_date_local": "2026-04-26T13:53:46Z",
+      "distance": 805,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 7478,
+      "end_index": 7749
+    },
+    {
+      "id": 76800045600,
+      "resource_state": 2,
+      "name": "1K",
+      "activity": {
+        "id": 18267220041,
+        "visibility": "only_me",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 341,
+      "moving_time": 341,
+      "start_date": "2026-04-26T11:53:46Z",
+      "start_date_local": "2026-04-26T13:53:46Z",
+      "distance": 1000,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 7420,
+      "end_index": 7759
+    },
+    {
+      "id": 76800045594,
+      "resource_state": 2,
+      "name": "1 mile",
+      "activity": {
+        "id": 18267220041,
+        "visibility": "only_me",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 557,
+      "moving_time": 557,
+      "start_date": "2026-04-26T11:53:46Z",
+      "start_date_local": "2026-04-26T13:53:46Z",
+      "distance": 1609,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 7503,
+      "end_index": 8056
+    },
+    {
+      "id": 76800045595,
+      "resource_state": 2,
+      "name": "2 mile",
+      "activity": {
+        "id": 18267220041,
+        "visibility": "only_me",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 1331,
+      "moving_time": 1331,
+      "start_date": "2026-04-26T11:53:46Z",
+      "start_date_local": "2026-04-26T13:53:46Z",
+      "distance": 3219,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 7053,
+      "end_index": 8377
+    },
+    {
+      "id": 76800045596,
+      "resource_state": 2,
+      "name": "5K",
+      "activity": {
+        "id": 18267220041,
+        "visibility": "only_me",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 3085,
+      "moving_time": 3085,
+      "start_date": "2026-04-26T11:53:46Z",
+      "start_date_local": "2026-04-26T13:53:46Z",
+      "distance": 5000,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 6058,
+      "end_index": 9132
+    },
+    {
+      "id": 76800045597,
+      "resource_state": 2,
+      "name": "10K",
+      "activity": {
+        "id": 18267220041,
+        "visibility": "only_me",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 7840,
+      "moving_time": 7840,
+      "start_date": "2026-04-26T11:53:46Z",
+      "start_date_local": "2026-04-26T13:53:46Z",
+      "distance": 10000,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 1371,
+      "end_index": 9187
+    }
+  ],
+  "photos": {
+    "primary": null,
+    "count": 0
+  },
+  "stats_visibility": [
+    {
+      "type": "heart_rate",
+      "visibility": "everyone"
+    },
+    {
+      "type": "pace",
+      "visibility": "everyone"
+    },
+    {
+      "type": "power",
+      "visibility": "everyone"
+    },
+    {
+      "type": "speed",
+      "visibility": "everyone"
+    },
+    {
+      "type": "calories",
+      "visibility": "everyone"
+    }
+  ],
+  "hide_from_home": false,
+  "embed_token": "39426573e5f219beb96e054153f5bee2bb18b26d",
+  "similar_activities": {
+    "effort_count": 1,
+    "average_speed": 1.839593339737432,
+    "min_average_speed": 1.839593339737432,
+    "mid_average_speed": 1.8395933397374318,
+    "max_average_speed": 1.839593339737432,
+    "pr_rank": null,
+    "frequency_milestone": null,
+    "trend": {
+      "speeds": [
+        1.8395933397374318
+      ],
+      "current_activity_index": 0,
+      "min_speed": 1.839593339737432,
+      "mid_speed": 1.8395933397374318,
+      "max_speed": 1.839593339737432,
+      "direction": 0
+    },
+    "resource_state": 2
+  },
+  "available_zones": []
 }

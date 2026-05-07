@@ -26,6 +26,11 @@ Les données importées depuis Strava sont stockées dans `./raw-data/strava`.
 
 Dès qu'un processus récurrent peut être automatisé sans IA générative, créer un script dans `./scripts` et l'utiliser systématiquement. Objectif : réduire la consommation de tokens et d'appels d'outils.
 
+### Scripts existants
+
+- **`./scripts/import-strava.js`** — import Strava via API REST directe (credentials `~/.config/strava-mcp/config.json`, token auto-refresh). Récupère les champs complets dont `private_note`. Import incrémental avec détection auto des fichiers sparse. Flags : `--force-all`.
+- **`./scripts/build-data.js`** — transforme `./raw-data/strava/*.json` → `./artefacts/app-coach/data/runs.json`.
+
 ---
 
 ## Base de connaissances

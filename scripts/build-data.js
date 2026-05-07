@@ -42,13 +42,14 @@ for (const a of activities) {
 
   const distKm = (a.distance || 0) / 1000;
   const paceSecPerKm = distKm > 0 ? Math.round((a.moving_time || 0) / distKm) : 0;
-  const dateObj = new Date(a.date);
+  const isoDate = a.start_date_local || a.start_date || a.date || '';
+  const dateObj = new Date(isoDate);
   const dd = String(dateObj.getDate()).padStart(2, '0');
   const mm = String(dateObj.getMonth() + 1).padStart(2, '0');
 
   runs.push({
     id: a.id,
-    date: a.date,
+    date: isoDate,
     date_display: `${dd}/${mm}`,
     name: a.name,
     dist: Math.round(distKm * 100) / 100,
@@ -57,7 +58,8 @@ for (const a of activities) {
     type,
     sport_type: a.sport_type,
     ...(a.total_elevation_gain != null && a.total_elevation_gain > 0 ? { elevation: a.total_elevation_gain } : {}),
-    ...(a.description ? { description: a.description } : {})
+    ...(a.description ? { description: a.description } : {}),
+    ...(a.private_note ? { private_note: a.private_note } : {})
   });
 }
 

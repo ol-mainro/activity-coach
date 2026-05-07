@@ -1,8 +1,875 @@
 {
-  "id": 11966922031,
+  "resource_state": 3,
+  "athlete": {
+    "id": 12778566,
+    "resource_state": 1
+  },
   "name": "Course à pied matinale",
-  "date": "2024-07-24",
-  "distance": 15590,
-  "moving_time": 5340,
-  "sport_type": "Run"
+  "distance": 15589,
+  "moving_time": 5341,
+  "elapsed_time": 6200,
+  "total_elevation_gain": 309.2,
+  "type": "Run",
+  "sport_type": "Run",
+  "workout_type": 0,
+  "device_name": "Strava App",
+  "id": 11966922031,
+  "start_date": "2024-07-24T06:27:25Z",
+  "start_date_local": "2024-07-24T08:27:25Z",
+  "timezone": "(GMT+01:00) Europe/Paris",
+  "utc_offset": 7200,
+  "location_city": null,
+  "location_state": null,
+  "location_country": null,
+  "achievement_count": 0,
+  "kudos_count": 1,
+  "comment_count": 1,
+  "athlete_count": 1,
+  "photo_count": 0,
+  "map": {
+    "id": "a11966922031",
+    "polyline": "cl{eHr}vZi@[C@WWm@WUBQFKAIBGEKBIF}@ZOLQ@_@RE?IDKBQHMC]JGEMBIAK?EDEEE?y@@eA]GGSC_@Yy@]c@a@OSIg@C_@@KN[He@CWEQQa@W]m@k@KEi@]g@Ik@BMHCEQVMJMZBHNFHKEDQIMFe@f@[RWFEGUC[M_@]QEQGU@_@EMBSN[J_AnAi@d@e@ZIJKBCFEBUBe@Ry@NOHUF[Ng@P_@Dq@Pk@l@Wd@m@x@GFKBOJSDIFa@Bk@KWOe@QQMGGc@UQQaAg@u@oASOW[y@oAs@iBMm@c@eAa@c@iAc@IIUIUUMEi@i@_@UaBsAi@{@IEgBuBKIWg@OKe@q@c@a@QKOSE?SQICMSSQoAsAGOm@k@SYMK[_@]QGKc@GM?c@KKGKAWQOEa@]OGMKkBgAOSKCWSi@k@MIOQa@_@m@a@_Ag@gAu@_@Sm@e@[OQOQEmAk@q@Uy@]kAo@QQ]QuAq@QEMIOEOA@FJ?LEEYIOUG_@Cq@?IBKCi@?[MMOQIOYQGSY[u@c@YGIu@IcAYGIe@SIW@BBGE@@BD@@Rh@VAj@Rh@@ZADIWGKEYCAABDH?JFXCXGAK_@IICIDv@AXC?GYC`@EHAACi@AAKZC?EE?KEOIJEBKHB@J`@FDDXA`@JVFx@JRLn@Th@D\\JTJZP~@?JDRL`@Hv@Fd@FJ?\\BBHz@P\\\\|AJJ?LDTCPFd@Xp@Nh@HNBVDPBf@CV?VQ~AO|AXzAVv@Dr@Ld@RVBH`@ZPAFC?VRf@h@v@h@`@h@RTRX`@H\\LTNl@Bj@FHR@RJ^^PFDFFRAf@F^ATGXCV@|@ABGBOLCF?RFXAf@Br@Nh@?ZBP?XDl@?ZJ`A?b@Jt@A^HrACRB~@DV?b@A@I?ML?GEAFHFGHAFJJjAVlB?l@Fh@G\\QLCFG`@a@bAMrA?VJNDRHNTdA^r@^NL?ZHT?HBN@FDJ@J^D\\J\\BREJQVEJBPh@d@Zj@l@JFLDZJRLJVDRPD?NVHFT\\FNHHLF^l@@HC`@?l@ITBNJXPJJ\\DH?n@HRJRJFJVHDFPF@FDBJAP@HN\\DXFHDj@P~@`@x@RXPJHNVPDNRFHTNVLL?VPZNJF?DBb@r@^VHRDDV@D@BNIZBJFD?XFFRGX\\RNJDRVZPJ\\NNNz@`A|@DPLN@b@DTBr@HRJPJd@DBDFCPH^?^Jv@B`ALZD^JNPh@@PEN@h@CNDRAHDTDNXL?F?bBFh@DN?HDBHTCv@BbAA~@Fv@AH@XDZCf@GX?LFE\\BJANBRHf@a@^UD@PNTJFPXRFJLLFRAFBD@JBDLFFJB?A@?CRc@VKp@kARUH_@P]LJb@RDDTJZ^^T^^DDF\\HNBZNXNNHND@FTCRFLTNFVLNb@RNNRHHAJFHPRT@NAHEFCN@JBHJHTp@@NLPFTBXK^?n@HR?PJ\\N|@Nh@FFNDD^FFDAHMDLEJ@@?KBAWdAC\\Bd@f@|AZVHj@LPFNZRNd@FLDDHVDDDAPDDAXMNCNQJBJ@LELQNEPKD@h@ORC\\MBEVGTKXED@N\\D?CAABB@A??BHXl@fARR`@RJHH@XZL@HDd@DJCPGZAJERBLFNDHFd@RDF^LRBd@Xn@RJJ`@JRLZDJHTFD@PIZC^Q|@uAL_@HEBGNOHY?FDHJ?LF@DGCEIOIEG?KD?@KDC?KRm@R_@Da@Tw@V]n@[LEp@_@HQ?c@CMFQNDABFACKAJBXPXJh@DFJ@HCJ@JV`@PNARBJAPJF?LEL?TWD?LMHUFKjAq@J[HEHMNG^o@NIH[d@[DIt@_@VSHOHEZWRKHIB_@`@e@FORMPANFR@`@HHFXFDHFGJBXQACDB@CUJAFBMLGn@KVPDLD@HJTHNNTJZ\\NFf@AJCDBJCB@VWDDHKH?h@_@TAJIFMLIHKFCTGLID?HBNCJ@LG^Wb@TDNJJz@Rv@^D@FE^@TGH?BEDCP?DAH@\\IRa@D?FFGODOB[EWAWKOGqA@IFGB?BPJNJEHWLOBBAD?E?DJHNJH@DFJ@NJBFJ@CBNBAFFLDAXb@HHFC@FBBCJGHANDP@x@Fd@?ROl@@A@BERBFHDCBEGESDO?YCi@EW@?DYEYPg@AMKOCSIOSQCKMK?GMCQKQQQEKIKO@KLE^@FEJ?Ja@BAHc@@i@JO?CPJFJd@V^DBI?ICKFSNQBc@DKfB{Ab@UDKHCBETMFGFAVS^[RI`@BNBb@ENDL?JF\\HXPDAPDJCTFXPDJJDP@NFl@DRAP@LGB?PGD@RETFDCRBBDLBPCRGD@HIJABGLCD?JCD@LA\\RZJTBLAHCDQDa@FMAKJq@FM?ILc@Zc@H]B[HSB]@q@CSQi@Gq@A]GSA]Ea@GQA_@HMNI@SE]DU^c@D]AGEA@EYADBD@YOGIIUA_@D{@N}@?w@[u@s@mAQq@KKCOFq@FWBKNSZYXa@XYJSl@u@l@m@JENQXUHC`@BBC\\JRLJ@\\LDAhA^P@l@i@\\a@FM~@}@bAk@P[Lk@BaA?oABYEiBBSCs@@WEe@?{AEm@Ay@B_@DO?a@Ha@A]BaAG]CIOMUGMB{ArBQNUZKFSGOQESAYOYKIKEM?EBCAIGEMOYKGEA@@CDWJGAo@PSJCFKDM?SBWAMHK@m@IEAG@g@CKDOQWI]e@OGII_@Qu@S]@]GKBGAE?GAQ?k@HMCe@Nc@ASHK?g@He@Dc@C[KUEe@a@]OEIk@a@OSm@YIQSQW_@]w@EGQo@Sa@CKO]Ie@Q]Uw@OYQo@Se@AKSSM]KG[_@SKMEYSG?OGCEa@SE@c@KUCOI]E[Oo@QkAe@i@OkAi@aBo@gAi@KEI?IAQOYIWOWG[OIKk@SKKiASMIK@e@Ei@?oATMDIHMFE?[HMCk@BYGKGWAg@SG?c@a@OGCEOKa@m@o@k@MGs@s@a@i@EOAMIUAMGH@@?QCA",
+    "resource_state": 3,
+    "summary_polyline": "ky{eHv~vZyB?_EcBo@s@Ig@C_@ZmAUcAkAqA}Am@}@Fm@~@RPHKWCgBjA{BeAcA?o@Z_AnAoB|AqHrBqBlCc@V_APk@KoEgC{CkEeB}Ea@c@mCsAkDsCuFgHiBwAkGyGuCu@kDyB}CsCqHyEkEeBqEeC}@OXEOi@cEYaA{@o@oAm@e@wBa@m@]E[DZh@VAj@TdA]y@FlAa@u@BpAKYIj@Ek@QXKa@[XVh@VlClA|Dd@`Cf@fEz@fCHzA|@tC?vAa@|DdAlFj@t@f@@R~@h@v@hBhAp@tARxA`B~@LZDfAMfA@|@YTCZHtBp@vIL~E?b@_@D`@Jj@pGG\\_AzBMjBp@xB^r@lCf@`@nBWb@A\\dApAl@JX|@~@b@nBlCG~Bn@lAHbAdArABf@\\`AVjB`@x@`B~Af@z@Pr@\\NlA~Ab@HEj@Jj@Z?hB|AZl@Nz@`A|@R`@JlBl@vATjEp@tBEzAHr@^d@?bB\\|AAzDLvBKnAtAHlAu@pAlA\\`AVTj@s@dAaBZ}@hDfCZnAn@z@Bh@d@t@jBbA\\f@G|@|@|BGx@?n@d@`CNh@VLD^\\DWdA?bAf@|AZVHj@T`@ZRf@pAb@Fx@c@VD|@i@lD_AZ^D`@l@fAdBnA|@LxAObJpDlA_@rBmD`@^]WESt@iBZyAV]nBaAHQCq@FQTFCK@d@b@jA`@?JV`@PdBDz@gAjAq@hBmC|DsCLi@|@cA`Cj@r@YWR`Aa@tCxBhACpB_Ar@q@nAOl@_@t@p@rBr@l@AhB[Ra@LFGOHk@S_AGqALQN`@b@m@dBhADTv@r@Md@NpBQvAHPK[Di@IaAFYEYNu@_AeBoAq@I[`AIXgAL}@~@n@^D?_@Ve@Ho@|FoEfCA|Bj@j@b@nANbBS`APdBe@|Ab@^IZ{BT{@Zc@ZkB@q@U}@c@uEXWCq@d@y@D]m@[Q_@B{ANuBoAcC]}@BaAJc@jB}BpCqCn@C|DhAtB}BnByAPs@FkDQsLTsEKg@s@QoCfDc@YGm@OYo@Mk@w@{Bz@sALoBG_BsAuAe@iD?wDf@uAUsDkCu@cAgEsLeAuA_Ai@mJwCoMyFwA]{ACwCv@y@?gC{@"
+  },
+  "trainer": false,
+  "commute": false,
+  "manual": false,
+  "private": false,
+  "visibility": "everyone",
+  "flagged": false,
+  "gear_id": null,
+  "start_latlng": [
+    48.314423030242324,
+    -4.546330953016877
+  ],
+  "end_latlng": [
+    48.3147110324353,
+    -4.548667576164007
+  ],
+  "average_speed": 2.919,
+  "max_speed": 4.74,
+  "has_heartrate": false,
+  "heartrate_opt_out": false,
+  "display_hide_heartrate_option": false,
+  "elev_high": 68.5,
+  "elev_low": 0.1,
+  "upload_id": 12758707810,
+  "upload_id_str": "12758707810",
+  "external_id": "ED6BB481-047E-4A40-A2BA-A2F6FE2CDADC-activity.fit",
+  "from_accepted_tag": false,
+  "pr_count": 0,
+  "total_photo_count": 0,
+  "has_kudoed": false,
+  "description": null,
+  "calories": 1593.6,
+  "perceived_exertion": null,
+  "prefer_perceived_exertion": null,
+  "segment_efforts": [
+    {
+      "id": 3251105080301495300,
+      "resource_state": 2,
+      "name": "La montée des Espagnols",
+      "activity": {
+        "id": 11966922031,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 766,
+      "moving_time": 763,
+      "start_date": "2024-07-24T06:34:26Z",
+      "start_date_local": "2024-07-24T08:34:26Z",
+      "distance": 2135.8,
+      "start_index": 421,
+      "end_index": 1187,
+      "device_watts": false,
+      "segment": {
+        "id": 7179723,
+        "resource_state": 2,
+        "name": "La montée des Espagnols",
+        "activity_type": "Run",
+        "distance": 2135.8,
+        "average_grade": 2,
+        "maximum_grade": 23.8,
+        "elevation_high": 71.6,
+        "elevation_low": 26.7,
+        "start_latlng": [
+          48.32324,
+          -4.546399
+        ],
+        "end_latlng": [
+          48.339896,
+          -4.535179
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Roscanvel",
+        "state": "Brittany",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3356319395083854000,
+      "resource_state": 2,
+      "name": "GR34 Pointe des Espagnols -> Tregoudan",
+      "activity": {
+        "id": 11966922031,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 4023,
+      "moving_time": 3033,
+      "start_date": "2024-07-24T06:47:31Z",
+      "start_date_local": "2024-07-24T08:47:31Z",
+      "distance": 8534.7,
+      "start_index": 1206,
+      "end_index": 5229,
+      "device_watts": false,
+      "segment": {
+        "id": 39143655,
+        "resource_state": 2,
+        "name": "GR34 Pointe des Espagnols -> Tregoudan",
+        "activity_type": "Run",
+        "distance": 8534.7,
+        "average_grade": -0.2,
+        "maximum_grade": 46.2,
+        "elevation_high": 71.6,
+        "elevation_low": 6,
+        "start_latlng": [
+          48.340322,
+          -4.534894
+        ],
+        "end_latlng": [
+          48.301021,
+          -4.56394
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Roscanvel",
+        "state": "Finistère",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3251105080301783000,
+      "resource_state": 2,
+      "name": "côte de Kergadiou",
+      "activity": {
+        "id": 11966922031,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 221,
+      "moving_time": 173,
+      "start_date": "2024-07-24T07:01:23Z",
+      "start_date_local": "2024-07-24T09:01:23Z",
+      "distance": 413.1,
+      "start_index": 2038,
+      "end_index": 2259,
+      "device_watts": false,
+      "segment": {
+        "id": 21318926,
+        "resource_state": 2,
+        "name": "côte de Kergadiou",
+        "activity_type": "Run",
+        "distance": 413.1,
+        "average_grade": 7.1,
+        "maximum_grade": 20,
+        "elevation_high": 65.4,
+        "elevation_low": 36,
+        "start_latlng": [
+          48.337617,
+          -4.545866
+        ],
+        "end_latlng": [
+          48.337177,
+          -4.551278
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Roscanvel",
+        "state": "Bretagne",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3356332708775031300,
+      "resource_state": 2,
+      "name": "GR34 Climb Fort de la Trinité -> Camaret",
+      "activity": {
+        "id": 11966922031,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 305,
+      "moving_time": 285,
+      "start_date": "2024-07-24T07:45:35Z",
+      "start_date_local": "2024-07-24T09:45:35Z",
+      "distance": 851.6,
+      "start_index": 4690,
+      "end_index": 4995,
+      "device_watts": false,
+      "segment": {
+        "id": 39143706,
+        "resource_state": 2,
+        "name": "GR34 Climb Fort de la Trinité -> Camaret",
+        "activity_type": "Run",
+        "distance": 851.6,
+        "average_grade": 5.9,
+        "maximum_grade": 80,
+        "elevation_high": 56.6,
+        "elevation_low": 6,
+        "start_latlng": [
+          48.307196,
+          -4.571761
+        ],
+        "end_latlng": [
+          48.300826,
+          -4.569414
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Roscanvel",
+        "state": "Finistère",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3251105080302958600,
+      "resource_state": 2,
+      "name": "Descente de la Rue des Fortifications",
+      "activity": {
+        "id": 11966922031,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 165,
+      "moving_time": 159,
+      "start_date": "2024-07-24T07:57:31Z",
+      "start_date_local": "2024-07-24T09:57:31Z",
+      "distance": 568.7,
+      "start_index": 5406,
+      "end_index": 5571,
+      "device_watts": false,
+      "segment": {
+        "id": 13284737,
+        "resource_state": 2,
+        "name": "Descente de la Rue des Fortifications",
+        "activity_type": "Run",
+        "distance": 568.7,
+        "average_grade": -6.2,
+        "maximum_grade": -1.7,
+        "elevation_high": 43.2,
+        "elevation_low": 7.8,
+        "start_latlng": [
+          48.29732,
+          -4.560772
+        ],
+        "end_latlng": [
+          48.298797,
+          -4.556384
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Roscanvel",
+        "state": "Bretagne",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    }
+  ],
+  "splits_metric": [
+    {
+      "distance": 1000.3,
+      "elapsed_time": 349,
+      "elevation_difference": 13.2,
+      "moving_time": 334,
+      "split": 1,
+      "average_speed": 2.99,
+      "average_grade_adjusted_speed": 3.16,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1001.6,
+      "elapsed_time": 359,
+      "elevation_difference": 14.6,
+      "moving_time": 359,
+      "split": 2,
+      "average_speed": 2.79,
+      "average_grade_adjusted_speed": 2.93,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1000.2,
+      "elapsed_time": 354,
+      "elevation_difference": 19.5,
+      "moving_time": 354,
+      "split": 3,
+      "average_speed": 2.83,
+      "average_grade_adjusted_speed": 3.04,
+      "pace_zone": 0
+    },
+    {
+      "distance": 999.4,
+      "elapsed_time": 537,
+      "elevation_difference": -29.1,
+      "moving_time": 416,
+      "split": 4,
+      "average_speed": 2.4,
+      "average_grade_adjusted_speed": 2.76,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1001.9,
+      "elapsed_time": 489,
+      "elevation_difference": 18.1,
+      "moving_time": 409,
+      "split": 5,
+      "average_speed": 2.45,
+      "average_grade_adjusted_speed": 2.94,
+      "pace_zone": 0
+    },
+    {
+      "distance": 997.4,
+      "elapsed_time": 397,
+      "elevation_difference": 7.1,
+      "moving_time": 370,
+      "split": 6,
+      "average_speed": 2.7,
+      "average_grade_adjusted_speed": 2.9,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1000.6,
+      "elapsed_time": 342,
+      "elevation_difference": 8.4,
+      "moving_time": 342,
+      "split": 7,
+      "average_speed": 2.93,
+      "average_grade_adjusted_speed": 3.09,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1000.3,
+      "elapsed_time": 338,
+      "elevation_difference": -5.6,
+      "moving_time": 320,
+      "split": 8,
+      "average_speed": 3.13,
+      "average_grade_adjusted_speed": 3.24,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1000.8,
+      "elapsed_time": 350,
+      "elevation_difference": 6.2,
+      "moving_time": 301,
+      "split": 9,
+      "average_speed": 3.32,
+      "average_grade_adjusted_speed": 3.44,
+      "pace_zone": 0
+    },
+    {
+      "distance": 999.7,
+      "elapsed_time": 434,
+      "elevation_difference": -5.4,
+      "moving_time": 351,
+      "split": 10,
+      "average_speed": 2.85,
+      "average_grade_adjusted_speed": 2.87,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1001.1,
+      "elapsed_time": 663,
+      "elevation_difference": -46.8,
+      "moving_time": 367,
+      "split": 11,
+      "average_speed": 2.73,
+      "average_grade_adjusted_speed": 2.79,
+      "pace_zone": 0
+    },
+    {
+      "distance": 997.2,
+      "elapsed_time": 380,
+      "elevation_difference": 48.8,
+      "moving_time": 362,
+      "split": 12,
+      "average_speed": 2.75,
+      "average_grade_adjusted_speed": 3.54,
+      "pace_zone": 0
+    },
+    {
+      "distance": 999.8,
+      "elapsed_time": 384,
+      "elevation_difference": -6,
+      "moving_time": 295,
+      "split": 13,
+      "average_speed": 3.39,
+      "average_grade_adjusted_speed": 3.36,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1002.4,
+      "elapsed_time": 313,
+      "elevation_difference": -43.2,
+      "moving_time": 307,
+      "split": 14,
+      "average_speed": 3.27,
+      "average_grade_adjusted_speed": 3.06,
+      "pace_zone": 0
+    },
+    {
+      "distance": 998.8,
+      "elapsed_time": 284,
+      "elevation_difference": 22.9,
+      "moving_time": 284,
+      "split": 15,
+      "average_speed": 3.52,
+      "average_grade_adjusted_speed": 3.84,
+      "pace_zone": 0
+    },
+    {
+      "distance": 614.5,
+      "elapsed_time": 227,
+      "elevation_difference": -19.2,
+      "moving_time": 170,
+      "split": 16,
+      "average_speed": 3.61,
+      "average_grade_adjusted_speed": 3.44,
+      "pace_zone": 0
+    }
+  ],
+  "splits_standard": [
+    {
+      "distance": 1611.5,
+      "elapsed_time": 566,
+      "elevation_difference": 18.8,
+      "moving_time": 551,
+      "split": 1,
+      "average_speed": 2.92,
+      "average_grade_adjusted_speed": 3.07,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1609.2,
+      "elapsed_time": 576,
+      "elevation_difference": 35,
+      "moving_time": 576,
+      "split": 2,
+      "average_speed": 2.79,
+      "average_grade_adjusted_speed": 3.01,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1608.5,
+      "elapsed_time": 867,
+      "elevation_difference": -26.3,
+      "moving_time": 673,
+      "split": 3,
+      "average_speed": 2.39,
+      "average_grade_adjusted_speed": 2.79,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1609.7,
+      "elapsed_time": 629,
+      "elevation_difference": 21.5,
+      "moving_time": 595,
+      "split": 4,
+      "average_speed": 2.71,
+      "average_grade_adjusted_speed": 2.98,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1609.2,
+      "elapsed_time": 541,
+      "elevation_difference": -0.2,
+      "moving_time": 523,
+      "split": 5,
+      "average_speed": 3.08,
+      "average_grade_adjusted_speed": 3.21,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1608.4,
+      "elapsed_time": 585,
+      "elevation_difference": 4.7,
+      "moving_time": 513,
+      "split": 6,
+      "average_speed": 3.14,
+      "average_grade_adjusted_speed": 3.22,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1610.5,
+      "elapsed_time": 993,
+      "elevation_difference": -32.1,
+      "moving_time": 619,
+      "split": 7,
+      "average_speed": 2.6,
+      "average_grade_adjusted_speed": 2.9,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1610.1,
+      "elapsed_time": 584,
+      "elevation_difference": 26,
+      "moving_time": 495,
+      "split": 8,
+      "average_speed": 3.25,
+      "average_grade_adjusted_speed": 3.48,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1608.9,
+      "elapsed_time": 474,
+      "elevation_difference": -49.1,
+      "moving_time": 468,
+      "split": 9,
+      "average_speed": 3.44,
+      "average_grade_adjusted_speed": 3.29,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1130,
+      "elapsed_time": 385,
+      "elevation_difference": 5.2,
+      "moving_time": 328,
+      "split": 10,
+      "average_speed": 3.45,
+      "average_grade_adjusted_speed": 3.63,
+      "pace_zone": 0
+    }
+  ],
+  "laps": [
+    {
+      "id": 41849296368,
+      "resource_state": 2,
+      "name": "Lap 1",
+      "activity": {
+        "id": 11966922031,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 6200,
+      "moving_time": 6200,
+      "start_date": "2024-07-24T06:27:25Z",
+      "start_date_local": "2024-07-24T08:27:25Z",
+      "distance": 15616,
+      "average_speed": 2.52,
+      "max_speed": 4.74,
+      "lap_index": 1,
+      "split": 1,
+      "start_index": 0,
+      "end_index": 6009,
+      "total_elevation_gain": 309.2,
+      "device_watts": false,
+      "pace_zone": 0
+    }
+  ],
+  "best_efforts": [
+    {
+      "id": 51046281266,
+      "resource_state": 2,
+      "name": "400m",
+      "activity": {
+        "id": 11966922031,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 102,
+      "moving_time": 102,
+      "start_date": "2024-07-24T06:27:25Z",
+      "start_date_local": "2024-07-24T08:27:25Z",
+      "distance": 400,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 6026,
+      "end_index": 6128
+    },
+    {
+      "id": 51046281267,
+      "resource_state": 2,
+      "name": "1/2 mile",
+      "activity": {
+        "id": 11966922031,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 213,
+      "moving_time": 213,
+      "start_date": "2024-07-24T06:27:25Z",
+      "start_date_local": "2024-07-24T08:27:25Z",
+      "distance": 805,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 5595,
+      "end_index": 5808
+    },
+    {
+      "id": 51046281268,
+      "resource_state": 2,
+      "name": "1K",
+      "activity": {
+        "id": 11966922031,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 268,
+      "moving_time": 268,
+      "start_date": "2024-07-24T06:27:25Z",
+      "start_date_local": "2024-07-24T08:27:25Z",
+      "distance": 1000,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 5593,
+      "end_index": 5861
+    },
+    {
+      "id": 51046281261,
+      "resource_state": 2,
+      "name": "1 mile",
+      "activity": {
+        "id": 11966922031,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 449,
+      "moving_time": 449,
+      "start_date": "2024-07-24T06:27:25Z",
+      "start_date_local": "2024-07-24T08:27:25Z",
+      "distance": 1609,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 5671,
+      "end_index": 6120
+    },
+    {
+      "id": 51046281262,
+      "resource_state": 2,
+      "name": "2 mile",
+      "activity": {
+        "id": 11966922031,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 948,
+      "moving_time": 948,
+      "start_date": "2024-07-24T06:27:25Z",
+      "start_date_local": "2024-07-24T08:27:25Z",
+      "distance": 3219,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 5183,
+      "end_index": 6131
+    },
+    {
+      "id": 51046281263,
+      "resource_state": 2,
+      "name": "5K",
+      "activity": {
+        "id": 11966922031,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 1784,
+      "moving_time": 1784,
+      "start_date": "2024-07-24T06:27:25Z",
+      "start_date_local": "2024-07-24T08:27:25Z",
+      "distance": 5000,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 2308,
+      "end_index": 4092
+    },
+    {
+      "id": 51046281264,
+      "resource_state": 2,
+      "name": "10K",
+      "activity": {
+        "id": 11966922031,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 3787,
+      "moving_time": 3787,
+      "start_date": "2024-07-24T06:27:25Z",
+      "start_date_local": "2024-07-24T08:27:25Z",
+      "distance": 10000,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 2344,
+      "end_index": 6131
+    },
+    {
+      "id": 51046281265,
+      "resource_state": 2,
+      "name": "15K",
+      "activity": {
+        "id": 11966922031,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 5930,
+      "moving_time": 5930,
+      "start_date": "2024-07-24T06:27:25Z",
+      "start_date_local": "2024-07-24T08:27:25Z",
+      "distance": 15000,
+      "pr_rank": 1,
+      "achievements": [
+        {
+          "type_id": 3,
+          "type": "pr",
+          "rank": 1
+        }
+      ],
+      "start_index": 207,
+      "end_index": 6137
+    }
+  ],
+  "photos": {
+    "primary": null,
+    "count": 0
+  },
+  "stats_visibility": [
+    {
+      "type": "heart_rate",
+      "visibility": "everyone"
+    },
+    {
+      "type": "pace",
+      "visibility": "everyone"
+    },
+    {
+      "type": "power",
+      "visibility": "everyone"
+    },
+    {
+      "type": "speed",
+      "visibility": "everyone"
+    },
+    {
+      "type": "calories",
+      "visibility": "everyone"
+    }
+  ],
+  "hide_from_home": false,
+  "embed_token": "5fc89ccc908f11b27000cb541956ed96754d3e48",
+  "similar_activities": {
+    "effort_count": 1,
+    "average_speed": 2.9187418086500654,
+    "min_average_speed": 2.9187418086500654,
+    "mid_average_speed": 2.9187418086500654,
+    "max_average_speed": 2.9187418086500654,
+    "pr_rank": null,
+    "frequency_milestone": null,
+    "trend": {
+      "speeds": [
+        2.9187418086500654
+      ],
+      "current_activity_index": 0,
+      "min_speed": 2.9187418086500654,
+      "mid_speed": 2.9187418086500654,
+      "max_speed": 2.9187418086500654,
+      "direction": 0
+    },
+    "resource_state": 2
+  },
+  "available_zones": []
 }

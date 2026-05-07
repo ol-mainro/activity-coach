@@ -1,8 +1,693 @@
 {
-  "id": 12054544042,
+  "resource_state": 3,
+  "athlete": {
+    "id": 12778566,
+    "resource_state": 1
+  },
   "name": "Course à pied le soir",
-  "date": "2024-08-03",
-  "distance": 7100,
+  "distance": 7103.4,
   "moving_time": 2386,
-  "sport_type": "Run"
+  "elapsed_time": 3381,
+  "total_elevation_gain": 48.1,
+  "type": "Run",
+  "sport_type": "Run",
+  "workout_type": 0,
+  "device_name": "Strava App",
+  "id": 12054544042,
+  "start_date": "2024-08-03T17:54:31Z",
+  "start_date_local": "2024-08-03T19:54:31Z",
+  "timezone": "(GMT+01:00) Europe/Paris",
+  "utc_offset": 7200,
+  "location_city": null,
+  "location_state": null,
+  "location_country": null,
+  "achievement_count": 0,
+  "kudos_count": 2,
+  "comment_count": 1,
+  "athlete_count": 1,
+  "photo_count": 0,
+  "map": {
+    "id": "a12054544042",
+    "polyline": "}x{dGaysQDA@EaAaAq@}@USOQ[Yc@g@WOY]_@[UMMEYSKCMMKCSUGBO?KMMAM@u@OQMQ[MGKCYNG?KUe@COIQA?EW?YK]?SMYK_AMm@c@]GQKIAUQc@?EBCLMGWHEA?EABMEUNGCK@IJQIm@Di@\\WB]AeA]i@w@s@wAWO_@_@WMKOWGE@e@XK?]PIBQ?eAZQ?SQQ@k@ZQ?IFS@YVELSN_@DQAOHILQFCFQPIVQNEFEV@NCNOVANGLUXQpAOp@OZOf@KFUb@Ix@a@n@KFKVUZGR_@d@KDIPY^G\\QPa@l@g@b@[JUXIZW`@ODMJSJMDW?KDGAIE_@BMCQ@QHEAKFITKHWJ]FWPILONMBWUGCO@ODOVMLCRS`@@PCLSZO^API\\Gd@BbBETAZ@d@HfASh@Kt@GJKb@c@dAKl@Q`@QnAW^CLEDSx@EDE\\MTCLQf@Ab@IRC\\Mb@?FKd@Ep@@x@MlAIV?NY`BSf@Gh@O\\G^Ft@AHITANKVSjBKZIn@U|@@ZLTDRAdAENSZQd@ETChAGLOx@QDEv@Qf@O`AIVOVc@jAOTKZEBW@vAgBE?@EEFBB?CB?Ne@@SZ}@BYLa@?KHSRcBJ_@Fe@FS?m@Fu@Cs@JgBVs@HOBUJQHWHs@Tw@Fe@AKIS?[Tw@P_@@UR_AB]BGBWDKJk@JkADeA?WJcAb@mB\\qAHO@Ob@sAR_@PcAN]BQRy@LWn@oBJk@D]@c@Ek@D_@DGAWD[Ty@EBFADa@H_@HGF_@R[Ts@LOVu@^UP[HCFGN@PMF?JGDCJ[f@St@@TATBXAJGF?DAVYN?JGJ[VSLUFGF?LQTOR[VSVi@JIL@JY?_@NID?JKFQ^k@@GTa@JIXk@Ba@Tg@PSFO@GNSL_@N{@D[Je@V_@Zw@V_@@OEUJSX[d@Yx@KXa@d@O^Gf@_@PCDBx@SPHBFL?b@LZBJDHMJYDAF?JPHXTFDBJLJPFDLNRJVA\\b@LCJHl@`@t@Rj@?l@_@ZITCZJRKJCJGL@BHTHN?V@ZCDERD\\LTLHBNJd@Nf@FJHVFFFZAz@JPNXD@HVP`@@?EGA?@AARHb@Az@b@H?PBBDL@NHL@JHZJl@l@RDRTj@^FPZRZZLFTZh@b@RVRPZb@NFPRD@FJTRD@JRTLb@^LHJ?HFXFJFd@PZUHUVc@JGJ?|@d@NBXRLCR@PHPQFB",
+    "resource_state": 3,
+    "summary_polyline": "{`|dGyatQe@a@UMMEYSKCMMKCSUGBO?KMMAM@u@OQMQ[MGKCYNG?KUe@COIQA?EW?YK]?SMYK_AMm@c@]GQKIAUQc@?EBCLMGWHEA?EABMEUNGCK@IJQIm@Di@\\OB_@Aq@SIAOGOSYc@s@wAWO_@_@WMKOWGE@e@XK?]PIBQ?eAZQ?SQQ@k@ZQ?IFS@YVELSN_@DQAOHILQFCFQPIVQNEFEV@NCNOVANGLUXQpAOp@OZOf@KFUb@Ix@a@n@KFKVUZGR_@d@KDIPY^G\\QPa@l@g@b@[JUXIZW`@ODMJSJMDW?KDGAIE_@BMCQ@QHEAKFITKHWJ]FWPILONMBWUGCO@ODOVMLCRS`@@PCLSZO^API\\Gd@BbBETAZ@d@HfASh@Kt@GJKb@c@dAKl@Q`@QnAW^CLEDSx@EDE\\MTCLQf@Ab@IRC\\Mb@?FKd@Ep@@x@MlAIV?NY`BSf@Gh@O\\G^Ft@AHITANKVSjBKZIn@U|@@ZLTDRAdAENSZQd@ETChAGLOx@QDEv@Qf@O`AIVOVc@jAOTKZEBW@vAgBE?@EEFBB?CB?Ne@@SZ}@BYLa@?KHSRcBJ_@Fe@FS?m@Fu@Cs@JgBVs@HOBUJQHWHs@Tw@Fe@AKIS?[Tw@P_@@UR_AB]BGBWDKJk@JkADeA?WJcAb@mB\\qAHO@Ob@sAR_@PcAN]BQRy@LWn@oBJk@D]@c@Ek@D_@DGAWD[Ty@EBFADa@H_@HGF_@R[Ts@LOVu@^UP[HCFGN@PMF?JGDCJ[f@St@@TATBXAJGF?DAVYN?JGJ[VSLUFGF?LQTOR[VSVi@JIL@JY?_@NID?JKFQ^k@@GTa@JIXk@Ba@Tg@PSFO@GNSL_@N{@D[Je@V_@Zw@V_@@OEUJSX[d@Yx@KXa@d@O^Gf@_@PCDBx@SPHBFL?b@LZBJDHMJYDAF?JPHXTFDBJLJPFDLNRJVA\\b@LCJHl@`@t@Rj@?l@_@ZITCZJRKJCJGL@BHTHN?V@ZCDERDr@ZHBNJd@Nf@FJHVFFFZAz@JPNXD@HVP`@@?EGA?@AARHb@Az@b@H?PBBDL@NHL@JHZJl@l@RDRTj@^FPZRZZLFTZh@b@RVRPZb@NFPRD@FJTRD@JRTLb@^LHJ?HFXFJFVJ"
+  },
+  "trainer": false,
+  "commute": false,
+  "manual": false,
+  "private": false,
+  "visibility": "everyone",
+  "flagged": false,
+  "gear_id": null,
+  "start_latlng": [
+    42.909753089770675,
+    3.0556916166096926
+  ],
+  "end_latlng": [
+    42.9073169734329,
+    3.0551389139145613
+  ],
+  "average_speed": 2.977,
+  "max_speed": 4.522,
+  "has_heartrate": false,
+  "heartrate_opt_out": false,
+  "display_hide_heartrate_option": false,
+  "elev_high": 52.9,
+  "elev_low": 30.9,
+  "upload_id": 12849847049,
+  "upload_id_str": "12849847049",
+  "external_id": "EEB11E2D-144A-4A84-9972-E8A143B0F42D-activity.fit",
+  "from_accepted_tag": false,
+  "pr_count": 0,
+  "total_photo_count": 0,
+  "has_kudoed": false,
+  "description": null,
+  "calories": 687.4,
+  "perceived_exertion": null,
+  "prefer_perceived_exertion": null,
+  "segment_efforts": [
+    {
+      "id": 3254890336263730000,
+      "resource_state": 2,
+      "name": "Phare Leucate à Falaise la Franqui",
+      "activity": {
+        "id": 12054544042,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 1021,
+      "moving_time": 994,
+      "start_date": "2024-08-03T17:56:10Z",
+      "start_date_local": "2024-08-03T19:56:10Z",
+      "distance": 3095.5,
+      "start_index": 99,
+      "end_index": 1120,
+      "device_watts": false,
+      "segment": {
+        "id": 20763240,
+        "resource_state": 2,
+        "name": "Phare Leucate à Falaise la Franqui",
+        "activity_type": "Run",
+        "distance": 3095.5,
+        "average_grade": -0.5,
+        "maximum_grade": 39.7,
+        "elevation_high": 42.5,
+        "elevation_low": 8.4,
+        "start_latlng": [
+          42.911685,
+          3.057635
+        ],
+        "end_latlng": [
+          42.929318,
+          3.039004
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": null,
+        "state": null,
+        "country": null,
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3254890336263970000,
+      "resource_state": 2,
+      "name": "Cap des Frères => Fort de la Hte Franqui",
+      "activity": {
+        "id": 12054544042,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 235,
+      "moving_time": 227,
+      "start_date": "2024-08-03T18:06:03Z",
+      "start_date_local": "2024-08-03T20:06:03Z",
+      "distance": 718,
+      "start_index": 692,
+      "end_index": 927,
+      "device_watts": false,
+      "segment": {
+        "id": 34031537,
+        "resource_state": 2,
+        "name": "Cap des Frères => Fort de la Hte Franqui",
+        "activity_type": "Run",
+        "distance": 718,
+        "average_grade": 0.9,
+        "maximum_grade": 5.5,
+        "elevation_high": 51.3,
+        "elevation_low": 44.5,
+        "start_latlng": [
+          42.925127,
+          3.053002
+        ],
+        "end_latlng": [
+          42.927485,
+          3.045204
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Leucate",
+        "state": "Aude",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3254890336263424000,
+      "resource_state": 2,
+      "name": "Retour La Franqui",
+      "activity": {
+        "id": 12054544042,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 367,
+      "moving_time": 364,
+      "start_date": "2024-08-03T18:07:00Z",
+      "start_date_local": "2024-08-03T20:07:00Z",
+      "distance": 1097,
+      "start_index": 749,
+      "end_index": 1116,
+      "device_watts": false,
+      "segment": {
+        "id": 21370764,
+        "resource_state": 2,
+        "name": "Retour La Franqui",
+        "activity_type": "Run",
+        "distance": 1097,
+        "average_grade": -1.1,
+        "maximum_grade": 8.8,
+        "elevation_high": 41,
+        "elevation_low": 27.2,
+        "start_latlng": [
+          42.925729,
+          3.0513
+        ],
+        "end_latlng": [
+          42.929241,
+          3.039153
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Leucate",
+        "state": "Occitanie",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3254890336266172400,
+      "resource_state": 2,
+      "name": "Passage de la sorcière - aller",
+      "activity": {
+        "id": 12054544042,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 177,
+      "moving_time": 150,
+      "start_date": "2024-08-03T18:36:23Z",
+      "start_date_local": "2024-08-03T20:36:23Z",
+      "distance": 417,
+      "start_index": 1446,
+      "end_index": 1623,
+      "device_watts": false,
+      "segment": {
+        "id": 21370715,
+        "resource_state": 2,
+        "name": "Passage de la sorcière - aller",
+        "activity_type": "Run",
+        "distance": 417,
+        "average_grade": -2.6,
+        "maximum_grade": 5.4,
+        "elevation_high": 39.7,
+        "elevation_low": 28,
+        "start_latlng": [
+          42.925875,
+          3.050461
+        ],
+        "end_latlng": [
+          42.923298,
+          3.053949
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Leucate",
+        "state": "Occitanie",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3254890336262363000,
+      "resource_state": 2,
+      "name": "La descente des Parisiens",
+      "activity": {
+        "id": 12054544042,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 342,
+      "moving_time": 331,
+      "start_date": "2024-08-03T18:38:47Z",
+      "start_date_local": "2024-08-03T20:38:47Z",
+      "distance": 1093.8,
+      "start_index": 1590,
+      "end_index": 1932,
+      "device_watts": false,
+      "segment": {
+        "id": 36265824,
+        "resource_state": 2,
+        "name": "La descente des Parisiens",
+        "activity_type": "Run",
+        "distance": 1093.8,
+        "average_grade": 0,
+        "maximum_grade": 8.1,
+        "elevation_high": 36.2,
+        "elevation_low": 27,
+        "start_latlng": [
+          42.924208,
+          3.053936
+        ],
+        "end_latlng": [
+          42.917207,
+          3.059297
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Leucate",
+        "state": "Aude",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    }
+  ],
+  "splits_metric": [
+    {
+      "distance": 1003.3,
+      "elapsed_time": 329,
+      "elevation_difference": -7.9,
+      "moving_time": 329,
+      "split": 1,
+      "average_speed": 3.05,
+      "average_grade_adjusted_speed": 3.02,
+      "pace_zone": 0
+    },
+    {
+      "distance": 998.1,
+      "elapsed_time": 299,
+      "elevation_difference": -0.3,
+      "moving_time": 299,
+      "split": 2,
+      "average_speed": 3.34,
+      "average_grade_adjusted_speed": 3.38,
+      "pace_zone": 0
+    },
+    {
+      "distance": 999.6,
+      "elapsed_time": 337,
+      "elevation_difference": 11.7,
+      "moving_time": 337,
+      "split": 3,
+      "average_speed": 2.97,
+      "average_grade_adjusted_speed": 3.08,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1001.9,
+      "elapsed_time": 1407,
+      "elevation_difference": -1.1,
+      "moving_time": 340,
+      "split": 4,
+      "average_speed": 2.95,
+      "average_grade_adjusted_speed": 2.97,
+      "pace_zone": 0
+    },
+    {
+      "distance": 999.7,
+      "elapsed_time": 344,
+      "elevation_difference": -13.9,
+      "moving_time": 344,
+      "split": 5,
+      "average_speed": 2.91,
+      "average_grade_adjusted_speed": 2.84,
+      "pace_zone": 0
+    },
+    {
+      "distance": 999.2,
+      "elapsed_time": 329,
+      "elevation_difference": 2.6,
+      "moving_time": 329,
+      "split": 6,
+      "average_speed": 3.04,
+      "average_grade_adjusted_speed": 3.09,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1001.3,
+      "elapsed_time": 370,
+      "elevation_difference": 5.8,
+      "moving_time": 370,
+      "split": 7,
+      "average_speed": 2.71,
+      "average_grade_adjusted_speed": 2.78,
+      "pace_zone": 0
+    },
+    {
+      "distance": 100.3,
+      "elapsed_time": 37,
+      "elevation_difference": -0.1,
+      "moving_time": 37,
+      "split": 8,
+      "average_speed": 2.71,
+      "average_grade_adjusted_speed": 2.71,
+      "pace_zone": 0
+    }
+  ],
+  "splits_standard": [
+    {
+      "distance": 1612.3,
+      "elapsed_time": 507,
+      "elevation_difference": -17.2,
+      "moving_time": 507,
+      "split": 1,
+      "average_speed": 3.18,
+      "average_grade_adjusted_speed": 3.13,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1606.5,
+      "elapsed_time": 530,
+      "elevation_difference": 17.4,
+      "moving_time": 530,
+      "split": 2,
+      "average_speed": 3.03,
+      "average_grade_adjusted_speed": 3.15,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1613.1,
+      "elapsed_time": 1625,
+      "elevation_difference": -8.2,
+      "moving_time": 558,
+      "split": 3,
+      "average_speed": 2.89,
+      "average_grade_adjusted_speed": 2.88,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1605.6,
+      "elapsed_time": 569,
+      "elevation_difference": 5.6,
+      "moving_time": 569,
+      "split": 4,
+      "average_speed": 2.82,
+      "average_grade_adjusted_speed": 2.89,
+      "pace_zone": 0
+    },
+    {
+      "distance": 665.9,
+      "elapsed_time": 221,
+      "elevation_difference": -0.8,
+      "moving_time": 221,
+      "split": 5,
+      "average_speed": 3.01,
+      "average_grade_adjusted_speed": 3.02,
+      "pace_zone": 0
+    }
+  ],
+  "laps": [
+    {
+      "id": 42170133681,
+      "resource_state": 2,
+      "name": "Lap 1",
+      "activity": {
+        "id": 12054544042,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 3381,
+      "moving_time": 2386,
+      "start_date": "2024-08-03T17:54:31Z",
+      "start_date_local": "2024-08-03T19:54:31Z",
+      "distance": 7103.36,
+      "average_speed": 2.98,
+      "max_speed": 4.522,
+      "lap_index": 1,
+      "split": 1,
+      "start_index": 0,
+      "end_index": 2255,
+      "total_elevation_gain": 48.1,
+      "device_watts": false,
+      "pace_zone": 0
+    }
+  ],
+  "best_efforts": [
+    {
+      "id": 51379364780,
+      "resource_state": 2,
+      "name": "400m",
+      "activity": {
+        "id": 12054544042,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 113,
+      "moving_time": 113,
+      "start_date": "2024-08-03T17:54:31Z",
+      "start_date_local": "2024-08-03T19:54:31Z",
+      "distance": 400,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 426,
+      "end_index": 539
+    },
+    {
+      "id": 51379364781,
+      "resource_state": 2,
+      "name": "1/2 mile",
+      "activity": {
+        "id": 12054544042,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 236,
+      "moving_time": 236,
+      "start_date": "2024-08-03T17:54:31Z",
+      "start_date_local": "2024-08-03T19:54:31Z",
+      "distance": 805,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 303,
+      "end_index": 539
+    },
+    {
+      "id": 51379364782,
+      "resource_state": 2,
+      "name": "1K",
+      "activity": {
+        "id": 12054544042,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 295,
+      "moving_time": 295,
+      "start_date": "2024-08-03T17:54:31Z",
+      "start_date_local": "2024-08-03T19:54:31Z",
+      "distance": 1000,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 245,
+      "end_index": 540
+    },
+    {
+      "id": 51379364777,
+      "resource_state": 2,
+      "name": "1 mile",
+      "activity": {
+        "id": 12054544042,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 491,
+      "moving_time": 491,
+      "start_date": "2024-08-03T17:54:31Z",
+      "start_date_local": "2024-08-03T19:54:31Z",
+      "distance": 1609,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 50,
+      "end_index": 541
+    },
+    {
+      "id": 51379364778,
+      "resource_state": 2,
+      "name": "2 mile",
+      "activity": {
+        "id": 12054544042,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 1026,
+      "moving_time": 1026,
+      "start_date": "2024-08-03T17:54:31Z",
+      "start_date_local": "2024-08-03T19:54:31Z",
+      "distance": 3219,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 57,
+      "end_index": 1083
+    },
+    {
+      "id": 51379364779,
+      "resource_state": 2,
+      "name": "5K",
+      "activity": {
+        "id": 12054544042,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 2704,
+      "moving_time": 2704,
+      "start_date": "2024-08-03T17:54:31Z",
+      "start_date_local": "2024-08-03T19:54:31Z",
+      "distance": 5000,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 42,
+      "end_index": 1680
+    }
+  ],
+  "photos": {
+    "primary": null,
+    "count": 0
+  },
+  "stats_visibility": [
+    {
+      "type": "heart_rate",
+      "visibility": "everyone"
+    },
+    {
+      "type": "pace",
+      "visibility": "everyone"
+    },
+    {
+      "type": "power",
+      "visibility": "everyone"
+    },
+    {
+      "type": "speed",
+      "visibility": "everyone"
+    },
+    {
+      "type": "calories",
+      "visibility": "everyone"
+    }
+  ],
+  "hide_from_home": false,
+  "embed_token": "b817d197302a0b547d272e2de9e416fa8a4d2b24",
+  "similar_activities": {
+    "effort_count": 1,
+    "average_speed": 2.9771165129924557,
+    "min_average_speed": 2.9771165129924557,
+    "mid_average_speed": 2.977116512992456,
+    "max_average_speed": 2.9771165129924557,
+    "pr_rank": null,
+    "frequency_milestone": null,
+    "trend": {
+      "speeds": [
+        2.977116512992456
+      ],
+      "current_activity_index": 0,
+      "min_speed": 2.9771165129924557,
+      "mid_speed": 2.977116512992456,
+      "max_speed": 2.9771165129924557,
+      "direction": 0
+    },
+    "resource_state": 2
+  },
+  "available_zones": []
 }

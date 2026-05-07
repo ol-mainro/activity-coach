@@ -1,8 +1,929 @@
 {
-  "id": 12373515908,
+  "resource_state": 3,
+  "athlete": {
+    "id": 12778566,
+    "resource_state": 1
+  },
   "name": "Course à pied dans l'après-midi",
-  "date": "2024-09-10",
   "distance": 8122.8,
   "moving_time": 2509,
-  "sport_type": "Run"
+  "elapsed_time": 2522,
+  "total_elevation_gain": 4.2,
+  "type": "Run",
+  "sport_type": "Run",
+  "workout_type": 0,
+  "device_name": "Strava App",
+  "id": 12373515908,
+  "start_date": "2024-09-10T10:24:54Z",
+  "start_date_local": "2024-09-10T12:24:54Z",
+  "timezone": "(GMT+01:00) Europe/Paris",
+  "utc_offset": 7200,
+  "location_city": null,
+  "location_state": null,
+  "location_country": null,
+  "achievement_count": 0,
+  "kudos_count": 1,
+  "comment_count": 0,
+  "athlete_count": 1,
+  "photo_count": 0,
+  "map": {
+    "id": "a12373515908",
+    "polyline": "emliHorqMGAKMESEIAWKE?IEA]m@UIg@o@Su@e@_AQaAQWCOa@m@MOQK[iAWo@KAEDMKKOEQKy@I_@GMMMUa@CUIWKKYi@Va@JKHABC?QHu@MAq@YYUEAQH\\aE?a@CLM@ECCKMQ@UDY?WGECGEY?[Om@AOBMEQ?e@K{@?[OaAHiA?[E_@Bc@Cq@\\qAKECKPi@No@BSXuAC{@Bo@H[G_@MQFU@WFGNq@AOBGDu@Bu@AkAJu@?kADa@?[Fg@Dk@?oBHq@DcBH{@Bk@Da@@q@JcADi@C}@D]?o@H{@?s@VoC@_ADYAu@EUTmARw@@gAFkAJw@DmAGk@?aBDi@GiBI[Go@HUAKIe@QYEU?YCO?c@MwAIa@Ey@@QBIUs@e@}@Da@CS?WAIUw@CSYg@Qc@ESBs@AMIO?MFo@?UCa@M_AFw@?Y]aCJc@Ai@CYBg@Cg@ECE[L{AAISq@AmABa@A]?q@AaBUaADM@e@FI?g@@KJUBSASAMIGAIS[Me@HYEm@?]AMKOAKEwAISEUEu@AwALm@IcBKi@QSQgB@[CkBIYGg@ECGQG[O_@I]_@uBMmAI[KQFM@YAGIGMm@GkAUaBE_@?QG_@Eo@EQQqAGsA?WIg@_@u@I]@KMu@?GWb@C`@CAAHEI`@{@@[C_AI}@CcAGi@DELCD?J^ERKZEZAx@JtAANVBGISb@Fj@Bj@F\\@^JXBn@VhAFfAf@bCHr@Nr@Bj@NrA@ZV|B@l@\\xBB\\d@dCTf@FTD`AV`BF\\HF@HFDL^BPCdADn@Bt@CZHn@Cd@Id@?ZDt@LTH`AAb@Bj@Ch@Dj@Gb@Al@VjB@VDL?LDLA^D|@LfA@f@Gl@@XCZDf@APDZC^F|AA\\Gn@?THj@Dr@?ZJbB?`@B^AVBbADV@dAVjBXvADLBd@^pBDl@JVNRP|@?LG^AbA^zDF~CCf@?b@EVVB?HExAGz@AbAGj@Ex@@VFLAZCDBXARIXAR?p@@FGPBt@K\\CZBJARO`@@b@ETCf@BZGp@@XIz@Kh@GtAK~@?LDb@@h@APKX?ZOpAAdAM~@Bl@Ij@?f@Ep@?PKp@?RERDd@CLBf@C^EJAt@EVI\\Ej@?P@NQn@AXBTBj@Gj@@LEHGr@Bd@KvB@`BCNHdAEf@GZ@j@DHDt@Bh@EtABV@XFVDh@DV?^Hd@Bl@Pp@Jz@NBRRLXEPATHz@?b@SZEDLr@Tj@FF\\lAHLThATt@FNXLz@bANd@LVHd@LJJZd@fALd@JNZfANTFPR`@^jAn@xAZ`A^p@DL?FCL]r@Wz@SPa@XKNGFK@STGBMNK`@",
+    "resource_state": 3,
+    "summary_polyline": "oqliHgxqMKQMk@e@_AO}@S[COo@}@QK[iAWo@KAEDY[[kBk@}@Mm@KKYi@Va@XQ?QHu@MAq@YYUWF\\aE?a@CLM@Wa@@UDY?WKMEY?[Om@AOBMEQ?e@K{@?[OaAHiA?[E_@Bc@Cq@\\qAKECK`@yABSXuAC{@Bo@H[G_@MQFU@WFGNq@AOBGDu@Bu@AkAJu@?kARqC?oBHq@DcBRiC@q@JcADi@C}@D]?o@H{@?s@VoC@_ADYAu@EUTmARw@@gAFkAJw@DmAGk@?aBDi@GiBI[Go@HUAKIe@QYEUCi@?c@MwAIa@Ey@D[Us@e@}@Da@CSAa@Uw@CSYg@Qc@ESBs@AMIO?MFeACa@M_AFw@?Y]aCJc@EcABg@Cg@ECE[L{AU{@AmABa@CqDUaADM@e@FI?g@La@@g@AM_@m@Me@HYEm@?]AMKOAKEwAISEUEu@AwALm@IcBKi@QSQgB@[CkBIYGg@ECGQa@yA_@uBMmAUm@FM@YAGIGMm@GkAUaBEq@G_@Eo@EQQqAI{BGW_@u@I]@KMu@?GWb@C`@CAAHEI`@{@@[C_AI}@?g@KeALIJ?HX?NOd@EZAx@JtAANVBGISb@Fj@Bj@F\\@^JXBn@VhAFfA`AjFTzCV|B@l@\\xBB\\d@dCTf@FTD`AV`BF\\RVL^BPCdAHdBCZHn@Cd@Id@?ZDt@LTH`AAb@Bj@Ch@Dj@Gb@Al@VjB@VDL?LDLA^D|@LfA@f@Gl@@XCZDf@APDZC^F|AA\\Gn@NtBJ`DB^AVHzA@dAVjBXvADLBd@^pBDl@JVNRP|@Gl@AbA^zDF~CCf@?b@EVVB?HExAGz@AbAGj@Ex@@VFLAZCDBXM`A@x@GPBt@K\\CZ@^O`@@b@ETCf@BZGp@@XIz@Kh@GtAK~@FzAAPKX?ZOpAAdAM~@Bl@Ij@ExA?PQxADd@CLBf@C^EJAt@Ot@Ej@@`@Qn@AXF`ASvBBd@KvB@`BCNHdAMbAPtCEtADp@RxA?^Hd@Bl@Pp@Jz@NBRRLXEPATHz@?b@Y`@Lr@Tj@FF\\lAHL^bBRj@XLz@bA\\|@Hd@LJJZd@fALd@JNZfAj@hA\\`A"
+  },
+  "trainer": false,
+  "commute": false,
+  "manual": false,
+  "private": false,
+  "visibility": "everyone",
+  "flagged": false,
+  "gear_id": null,
+  "start_latlng": [
+    48.89315865933895,
+    2.389039797708392
+  ],
+  "end_latlng": [
+    48.893987042829394,
+    2.3866594210267067
+  ],
+  "average_speed": 3.237,
+  "max_speed": 10.08,
+  "has_heartrate": false,
+  "heartrate_opt_out": false,
+  "display_hide_heartrate_option": false,
+  "elev_high": 58.5,
+  "elev_low": 53.5,
+  "upload_id": 13192171745,
+  "upload_id_str": "13192171745",
+  "external_id": "E0FD781E-AC4C-41EA-8D75-1B0C3D6FA35A-activity.fit",
+  "from_accepted_tag": false,
+  "pr_count": 0,
+  "total_photo_count": 0,
+  "has_kudoed": false,
+  "description": null,
+  "calories": 779.5,
+  "perceived_exertion": null,
+  "prefer_perceived_exertion": null,
+  "segment_efforts": [
+    {
+      "id": 3268544104230042000,
+      "resource_state": 2,
+      "name": "LAFARGE to EQUIOM ",
+      "activity": {
+        "id": 12373515908,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 772,
+      "moving_time": 768,
+      "start_date": "2024-09-10T10:28:05Z",
+      "start_date_local": "2024-09-10T12:28:05Z",
+      "distance": 2296.6,
+      "start_index": 185,
+      "end_index": 957,
+      "device_watts": false,
+      "segment": {
+        "id": 15207541,
+        "resource_state": 2,
+        "name": "LAFARGE to EQUIOM ",
+        "activity_type": "Run",
+        "distance": 2296.6,
+        "average_grade": 0,
+        "maximum_grade": 1.6,
+        "elevation_high": 56.2,
+        "elevation_low": 50.9,
+        "start_latlng": [
+          48.895926,
+          2.394712
+        ],
+        "end_latlng": [
+          48.896555,
+          2.425509
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": null,
+        "state": null,
+        "country": null,
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3268544104232119000,
+      "resource_state": 2,
+      "name": "500m répétitions pantin",
+      "activity": {
+        "id": 12373515908,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 164,
+      "moving_time": 163,
+      "start_date": "2024-09-10T10:28:05Z",
+      "start_date_local": "2024-09-10T12:28:05Z",
+      "distance": 501.2,
+      "start_index": 185,
+      "end_index": 349,
+      "device_watts": false,
+      "segment": {
+        "id": 33438232,
+        "resource_state": 2,
+        "name": "500m répétitions pantin",
+        "activity_type": "Run",
+        "distance": 501.2,
+        "average_grade": 0,
+        "maximum_grade": 2.8,
+        "elevation_high": 49.4,
+        "elevation_low": 48.8,
+        "start_latlng": [
+          48.895953,
+          2.394718
+        ],
+        "end_latlng": [
+          48.89602,
+          2.401363
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Paris",
+        "state": "Île-de-France",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3268544104230502000,
+      "resource_state": 2,
+      "name": "BR Track and Field : 1000m ",
+      "activity": {
+        "id": 12373515908,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 342,
+      "moving_time": 341,
+      "start_date": "2024-09-10T10:30:45Z",
+      "start_date_local": "2024-09-10T12:30:45Z",
+      "distance": 1024.4,
+      "start_index": 345,
+      "end_index": 687,
+      "device_watts": false,
+      "segment": {
+        "id": 16249041,
+        "resource_state": 2,
+        "name": "BR Track and Field : 1000m ",
+        "activity_type": "Run",
+        "distance": 1024.4,
+        "average_grade": 0.1,
+        "maximum_grade": 1.5,
+        "elevation_high": 39.8,
+        "elevation_low": 37.4,
+        "start_latlng": [
+          48.896108,
+          2.401342
+        ],
+        "end_latlng": [
+          48.895432,
+          2.415129
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Pantin",
+        "state": "Île-de-France",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3268544104231726600,
+      "resource_state": 2,
+      "name": "Elis - Railway Metro Ligne 5 ",
+      "activity": {
+        "id": 12373515908,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 496,
+      "moving_time": 493,
+      "start_date": "2024-09-10T10:36:20Z",
+      "start_date_local": "2024-09-10T12:36:20Z",
+      "distance": 1448.8,
+      "start_index": 680,
+      "end_index": 1176,
+      "device_watts": false,
+      "segment": {
+        "id": 18480157,
+        "resource_state": 2,
+        "name": "Elis - Railway Metro Ligne 5 ",
+        "activity_type": "Run",
+        "distance": 1448.8,
+        "average_grade": 0.2,
+        "maximum_grade": 1.7,
+        "elevation_high": 54.1,
+        "elevation_low": 51,
+        "start_latlng": [
+          48.895398,
+          2.414919
+        ],
+        "end_latlng": [
+          48.898036,
+          2.434224
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Pantin",
+        "state": "Île-de-France",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3268544104230540000,
+      "resource_state": 2,
+      "name": "Hassan Céhéf",
+      "activity": {
+        "id": 12373515908,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 221,
+      "moving_time": 221,
+      "start_date": "2024-09-10T10:46:49Z",
+      "start_date_local": "2024-09-10T12:46:49Z",
+      "distance": 686,
+      "start_index": 1295,
+      "end_index": 1516,
+      "device_watts": false,
+      "segment": {
+        "id": 21461484,
+        "resource_state": 2,
+        "name": "Hassan Céhéf",
+        "activity_type": "Run",
+        "distance": 686,
+        "average_grade": -0.4,
+        "maximum_grade": 23.1,
+        "elevation_high": 67,
+        "elevation_low": 57,
+        "start_latlng": [
+          48.898013,
+          2.434741
+        ],
+        "end_latlng": [
+          48.896495,
+          2.425706
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Bobigny",
+        "state": "Île-de-France",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3268544104232036000,
+      "resource_state": 2,
+      "name": "chemin de halage elis",
+      "activity": {
+        "id": 12373515908,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 160,
+      "moving_time": 160,
+      "start_date": "2024-09-10T10:52:19Z",
+      "start_date_local": "2024-09-10T12:52:19Z",
+      "distance": 490.5,
+      "start_index": 1625,
+      "end_index": 1783,
+      "device_watts": false,
+      "segment": {
+        "id": 12088398,
+        "resource_state": 2,
+        "name": "chemin de halage elis",
+        "activity_type": "Run",
+        "distance": 490.5,
+        "average_grade": 0.2,
+        "maximum_grade": 3.8,
+        "elevation_high": 57,
+        "elevation_low": 51.5,
+        "start_latlng": [
+          48.896327,
+          2.421428
+        ],
+        "end_latlng": [
+          48.895336,
+          2.415002
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Pantin",
+        "state": "Île-de-France",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3268544104229145000,
+      "resource_state": 2,
+      "name": "Chemin de l'Halage to the Peripherique on Quai de l'Ourcq",
+      "activity": {
+        "id": 12373515908,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 496,
+      "moving_time": 496,
+      "start_date": "2024-09-10T10:54:59Z",
+      "start_date_local": "2024-09-10T12:54:59Z",
+      "distance": 1523.6,
+      "start_index": 1783,
+      "end_index": 2269,
+      "device_watts": false,
+      "segment": {
+        "id": 13249382,
+        "resource_state": 2,
+        "name": "Chemin de l'Halage to the Peripherique on Quai de l'Ourcq",
+        "activity_type": "Run",
+        "distance": 1523.6,
+        "average_grade": 0,
+        "maximum_grade": 5.4,
+        "elevation_high": 59,
+        "elevation_low": 51.4,
+        "start_latlng": [
+          48.895322,
+          2.415032
+        ],
+        "end_latlng": [
+          48.895721,
+          2.394853
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Pantin",
+        "state": "Île-de-France",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3268544104229184000,
+      "resource_state": 2,
+      "name": "Le passage des teuffeurs",
+      "activity": {
+        "id": 12373515908,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 129,
+      "moving_time": 129,
+      "start_date": "2024-09-10T11:00:57Z",
+      "start_date_local": "2024-09-10T13:00:57Z",
+      "distance": 396.9,
+      "start_index": 2135,
+      "end_index": 2260,
+      "device_watts": false,
+      "segment": {
+        "id": 37739748,
+        "resource_state": 2,
+        "name": "Le passage des teuffeurs",
+        "activity_type": "Run",
+        "distance": 396.9,
+        "average_grade": -0.4,
+        "maximum_grade": 2.9,
+        "elevation_high": 55.2,
+        "elevation_low": 52.8,
+        "start_latlng": [
+          48.896189,
+          2.400224
+        ],
+        "end_latlng": [
+          48.895953,
+          2.394913
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Pantin",
+        "state": "Seine-Saint-Denis",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "everyone",
+      "hidden": false
+    },
+    {
+      "id": 3268544104232282600,
+      "resource_state": 2,
+      "name": "Villette - Allée du canal coté Géode - Est => Ouest",
+      "activity": {
+        "id": 12373515908,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 62,
+      "moving_time": 62,
+      "start_date": "2024-09-10T11:04:37Z",
+      "start_date_local": "2024-09-10T13:04:37Z",
+      "distance": 240.7,
+      "start_index": 2351,
+      "end_index": 2411,
+      "device_watts": false,
+      "segment": {
+        "id": 4252101,
+        "resource_state": 2,
+        "name": "Villette - Allée du canal coté Géode - Est => Ouest",
+        "activity_type": "Run",
+        "distance": 240.7,
+        "average_grade": -0.1,
+        "maximum_grade": 0.5,
+        "elevation_high": 54.1,
+        "elevation_low": 53.7,
+        "start_latlng": [
+          48.894546,
+          2.391385
+        ],
+        "end_latlng": [
+          48.893245,
+          2.388768
+        ],
+        "elevation_profile": null,
+        "elevation_profiles": null,
+        "climb_category": 0,
+        "city": "Paris",
+        "state": "IdF",
+        "country": "France",
+        "private": false,
+        "hazardous": false,
+        "starred": false
+      },
+      "pr_rank": null,
+      "achievements": [],
+      "visibility": "only_me",
+      "hidden": false
+    }
+  ],
+  "splits_metric": [
+    {
+      "distance": 1002.9,
+      "elapsed_time": 303,
+      "elevation_difference": 0.1,
+      "moving_time": 303,
+      "split": 1,
+      "average_speed": 3.31,
+      "average_grade_adjusted_speed": 3.32,
+      "pace_zone": 0
+    },
+    {
+      "distance": 997.6,
+      "elapsed_time": 317,
+      "elevation_difference": -0.5,
+      "moving_time": 317,
+      "split": 2,
+      "average_speed": 3.15,
+      "average_grade_adjusted_speed": 3.15,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1001.8,
+      "elapsed_time": 319,
+      "elevation_difference": -0.3,
+      "moving_time": 319,
+      "split": 3,
+      "average_speed": 3.14,
+      "average_grade_adjusted_speed": 3.14,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1000,
+      "elapsed_time": 303,
+      "elevation_difference": -0.2,
+      "moving_time": 303,
+      "split": 4,
+      "average_speed": 3.3,
+      "average_grade_adjusted_speed": 3.3,
+      "pace_zone": 0
+    },
+    {
+      "distance": 999.4,
+      "elapsed_time": 310,
+      "elevation_difference": 0.2,
+      "moving_time": 297,
+      "split": 5,
+      "average_speed": 3.36,
+      "average_grade_adjusted_speed": 3.37,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1002.1,
+      "elapsed_time": 324,
+      "elevation_difference": 0.4,
+      "moving_time": 324,
+      "split": 6,
+      "average_speed": 3.09,
+      "average_grade_adjusted_speed": 3.1,
+      "pace_zone": 0
+    },
+    {
+      "distance": 998.4,
+      "elapsed_time": 317,
+      "elevation_difference": 0.4,
+      "moving_time": 317,
+      "split": 7,
+      "average_speed": 3.15,
+      "average_grade_adjusted_speed": 3.17,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1000.3,
+      "elapsed_time": 280,
+      "elevation_difference": 0.1,
+      "moving_time": 280,
+      "split": 8,
+      "average_speed": 3.57,
+      "average_grade_adjusted_speed": 3.57,
+      "pace_zone": 0
+    },
+    {
+      "distance": 120.3,
+      "elapsed_time": 49,
+      "elevation_difference": -0.1,
+      "moving_time": 49,
+      "split": 9,
+      "average_speed": 2.46,
+      "average_grade_adjusted_speed": 2.45,
+      "pace_zone": 0
+    }
+  ],
+  "splits_standard": [
+    {
+      "distance": 1610.8,
+      "elapsed_time": 495,
+      "elevation_difference": 0.1,
+      "moving_time": 495,
+      "split": 1,
+      "average_speed": 3.25,
+      "average_grade_adjusted_speed": 3.26,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1607.9,
+      "elapsed_time": 514,
+      "elevation_difference": -0.8,
+      "moving_time": 514,
+      "split": 2,
+      "average_speed": 3.13,
+      "average_grade_adjusted_speed": 3.13,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1609.8,
+      "elapsed_time": 491,
+      "elevation_difference": 0.1,
+      "moving_time": 478,
+      "split": 3,
+      "average_speed": 3.37,
+      "average_grade_adjusted_speed": 3.37,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1610.8,
+      "elapsed_time": 515,
+      "elevation_difference": 2.4,
+      "moving_time": 515,
+      "split": 4,
+      "average_speed": 3.13,
+      "average_grade_adjusted_speed": 3.14,
+      "pace_zone": 0
+    },
+    {
+      "distance": 1609.9,
+      "elapsed_time": 477,
+      "elevation_difference": -1.7,
+      "moving_time": 477,
+      "split": 5,
+      "average_speed": 3.38,
+      "average_grade_adjusted_speed": 3.38,
+      "pace_zone": 0
+    },
+    {
+      "distance": 73.6,
+      "elapsed_time": 30,
+      "elevation_difference": 0,
+      "moving_time": 30,
+      "split": 6,
+      "average_speed": 2.45,
+      "average_grade_adjusted_speed": 2.45,
+      "pace_zone": 0
+    }
+  ],
+  "laps": [
+    {
+      "id": 43351334690,
+      "resource_state": 2,
+      "name": "Lap 1",
+      "activity": {
+        "id": 12373515908,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 2521,
+      "moving_time": 2521,
+      "start_date": "2024-09-10T10:24:54Z",
+      "start_date_local": "2024-09-10T12:24:54Z",
+      "distance": 8122.75,
+      "average_speed": 3.22,
+      "max_speed": 10.08,
+      "lap_index": 1,
+      "split": 1,
+      "start_index": 0,
+      "end_index": 2370,
+      "total_elevation_gain": 4.2,
+      "device_watts": false,
+      "pace_zone": 0
+    }
+  ],
+  "best_efforts": [
+    {
+      "id": 52637732267,
+      "resource_state": 2,
+      "name": "400m",
+      "activity": {
+        "id": 12373515908,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 98,
+      "moving_time": 98,
+      "start_date": "2024-09-10T10:24:54Z",
+      "start_date_local": "2024-09-10T12:24:54Z",
+      "distance": 400,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 1211,
+      "end_index": 1296
+    },
+    {
+      "id": 52637732268,
+      "resource_state": 2,
+      "name": "1/2 mile",
+      "activity": {
+        "id": 12373515908,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 217,
+      "moving_time": 217,
+      "start_date": "2024-09-10T10:24:54Z",
+      "start_date_local": "2024-09-10T12:24:54Z",
+      "distance": 805,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 2210,
+      "end_index": 2421
+    },
+    {
+      "id": 52637732269,
+      "resource_state": 2,
+      "name": "1K",
+      "activity": {
+        "id": 12373515908,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 279,
+      "moving_time": 279,
+      "start_date": "2024-09-10T10:24:54Z",
+      "start_date_local": "2024-09-10T12:24:54Z",
+      "distance": 1000,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 2148,
+      "end_index": 2421
+    },
+    {
+      "id": 52637732264,
+      "resource_state": 2,
+      "name": "1 mile",
+      "activity": {
+        "id": 12373515908,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 473,
+      "moving_time": 473,
+      "start_date": "2024-09-10T10:24:54Z",
+      "start_date_local": "2024-09-10T12:24:54Z",
+      "distance": 1609,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 1956,
+      "end_index": 2421
+    },
+    {
+      "id": 52637732265,
+      "resource_state": 2,
+      "name": "2 mile",
+      "activity": {
+        "id": 12373515908,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 985,
+      "moving_time": 985,
+      "start_date": "2024-09-10T10:24:54Z",
+      "start_date_local": "2024-09-10T12:24:54Z",
+      "distance": 3219,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 1449,
+      "end_index": 2420
+    },
+    {
+      "id": 52637732266,
+      "resource_state": 2,
+      "name": "5K",
+      "activity": {
+        "id": 12373515908,
+        "visibility": "everyone",
+        "resource_state": 1
+      },
+      "athlete": {
+        "id": 12778566,
+        "resource_state": 1
+      },
+      "elapsed_time": 1533,
+      "moving_time": 1533,
+      "start_date": "2024-09-10T10:24:54Z",
+      "start_date_local": "2024-09-10T12:24:54Z",
+      "distance": 5000,
+      "pr_rank": null,
+      "achievements": [],
+      "start_index": 918,
+      "end_index": 2423
+    }
+  ],
+  "photos": {
+    "primary": null,
+    "count": 0
+  },
+  "stats_visibility": [
+    {
+      "type": "heart_rate",
+      "visibility": "everyone"
+    },
+    {
+      "type": "pace",
+      "visibility": "everyone"
+    },
+    {
+      "type": "power",
+      "visibility": "everyone"
+    },
+    {
+      "type": "speed",
+      "visibility": "everyone"
+    },
+    {
+      "type": "calories",
+      "visibility": "everyone"
+    }
+  ],
+  "hide_from_home": false,
+  "embed_token": "16db6f0079fb36dd1a0daf500c96cfd8bc9e7c34",
+  "similar_activities": {
+    "effort_count": 1,
+    "average_speed": 3.2374651255480273,
+    "min_average_speed": 3.2374651255480273,
+    "mid_average_speed": 3.2374651255480273,
+    "max_average_speed": 3.2374651255480273,
+    "pr_rank": null,
+    "frequency_milestone": null,
+    "trend": {
+      "speeds": [
+        3.2374651255480273
+      ],
+      "current_activity_index": 0,
+      "min_speed": 3.2374651255480273,
+      "mid_speed": 3.2374651255480273,
+      "max_speed": 3.2374651255480273,
+      "direction": 0
+    },
+    "resource_state": 2
+  },
+  "available_zones": []
 }
