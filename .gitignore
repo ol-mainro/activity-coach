@@ -6,6 +6,7 @@
 
 # Sensitive credentials (never commit)
 SECRETS.md
+ext-services-config/credentials.local.yml
 
 # Deploy
 app-coach-deploy.zip

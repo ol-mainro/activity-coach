@@ -1,17 +1,60 @@
 #!/usr/bin/env node
 // Imports full Strava activity data (including private_note) via REST API.
-// Reads credentials from ~/.config/strava-mcp/config.json (managed by Strava MCP).
-// Run: node scripts/import-strava.js
+//
+// Credential resolution order:
+//   1. ~/.config/strava-mcp/config.json       (MCP Strava, auto-refresh)
+//   2. ./ext-services-config/credentials.local.yml  (local override, gitignored)
+//
+// Run: node scripts/import-strava.js [--force-all]
 
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
 const os = require('os');
 
-const CONFIG_PATH = path.join(os.homedir(), '.config', 'strava-mcp', 'config.json');
+const MCP_CONFIG_PATH = path.join(os.homedir(), '.config', 'strava-mcp', 'config.json');
+const LOCAL_CREDS_PATH = path.join(__dirname, '..', 'ext-services-config', 'credentials.local.yml');
+const LOCAL_CREDS_SAVE_PATH = LOCAL_CREDS_PATH; // token refresh writes back here if local creds used
 const RAW_DIR = path.join(__dirname, '..', 'raw-data', 'strava');
 const RECENT_DAYS = 7;
 const RATE_DELAY_MS = 300;
+
+// Minimal YAML parser for the fixed credentials.local.yml format
+function parseCredentialsYml(content) {
+  const get = (key) => {
+    const m = content.match(new RegExp(`^\\s+${key}:\\s*["']?([^"'\\n]+)["']?`, 'm'));
+    return m ? m[1].trim() : null;
+  };
+  return {
+    clientId:     get('client_id'),
+    clientSecret: get('client_secret'),
+    accessToken:  get('access_token'),
+    refreshToken: get('refresh_token'),
+    expiresAt:    Number(get('expires_at') || 0),
+    _source:      'local',
+  };
+}
+
+function saveCredentialsYml(config) {
+  const content = `strava:\n  client_id: "${config.clientId}"\n  client_secret: "${config.clientSecret}"\n  access_token: "${config.accessToken}"\n  refresh_token: "${config.refreshToken}"\n  expires_at: ${config.expiresAt}\n`;
+  fs.writeFileSync(LOCAL_CREDS_SAVE_PATH, content);
+}
+
+function loadConfig() {
+  if (fs.existsSync(MCP_CONFIG_PATH)) {
+    const cfg = JSON.parse(fs.readFileSync(MCP_CONFIG_PATH, 'utf8'));
+    cfg._source = 'mcp';
+    return cfg;
+  }
+  if (fs.existsSync(LOCAL_CREDS_PATH)) {
+    return parseCredentialsYml(fs.readFileSync(LOCAL_CREDS_PATH, 'utf8'));
+  }
+  throw new Error(
+    'Aucun credential Strava trouvé.\n' +
+    '  → Connecter le MCP Strava (génère ~/.config/strava-mcp/config.json)\n' +
+    '  → OU créer ext-services-config/credentials.local.yml (voir credentials.yml pour le guide)'
+  );
+}
 
 function httpsRequest(options, body = null) {
   return new Promise((resolve, reject) => {
@@ -55,7 +98,8 @@ async function getValidToken(config) {
   config.accessToken = res.body.access_token;
   config.refreshToken = res.body.refresh_token;
   config.expiresAt = res.body.expires_at;
-  fs.writeFileSync(CONFIG_PATH, JSON.stringify(config, null, 2));
+  if (config._source === 'local') saveCredentialsYml(config);
+  else fs.writeFileSync(MCP_CONFIG_PATH, JSON.stringify(config, null, 2));
   console.log('✅ Token refreshed');
   return config.accessToken;
 }
@@ -104,7 +148,8 @@ async function main() {
   const forceAll = process.argv.includes('--force-all');
   if (forceAll) console.log('⚠️  --force-all: reimporting all activities');
 
-  const config = JSON.parse(fs.readFileSync(CONFIG_PATH, 'utf8'));
+  const config = loadConfig();
+  console.log(`🔑 Credentials source: ${config._source}`);
   const token = await getValidToken(config);
 
   const recentCutoff = new Date(Date.now() - RECENT_DAYS * 24 * 60 * 60 * 1000);

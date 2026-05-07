@@ -28,7 +28,11 @@ Dès qu'un processus récurrent peut être automatisé sans IA générative, cr�
 
 ### Scripts existants
 
-- **`./scripts/import-strava.js`** — import Strava via API REST directe (credentials `~/.config/strava-mcp/config.json`, token auto-refresh). Récupère les champs complets dont `private_note`. Import incrémental avec détection auto des fichiers sparse. Flags : `--force-all`.
+- **`./scripts/import-strava.js`** — import Strava via API REST directe. Récupère les champs complets dont `private_note`. Import incrémental avec détection auto des fichiers sparse. Flags : `--force-all`.
+  - Résolution des credentials (ordre de priorité) :
+    1. `~/.config/strava-mcp/config.json` — géré par le MCP Strava, token auto-refresh
+    2. `./ext-services-config/credentials.local.yml` — override local non versionné (fallback si MCP absent)
+  - Si aucune source n'existe : voir `./ext-services-config/credentials.yml` pour le guide bootstrap OAuth.
 - **`./scripts/build-data.js`** — transforme `./raw-data/strava/*.json` → `./artefacts/app-coach/data/runs.json`.
 
 ---
