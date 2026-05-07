@@ -54,7 +54,8 @@
       "Bash(rtk ls *)",
       "Bash(rtk read *)",
       "mcp__strava__get-recent-activities",
-      "Bash(node *)"
+      "Bash(node *)",
+      "mcp__strava__get-activity-details"
     ]
   },
   "sandbox": {
