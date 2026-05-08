@@ -1,6 +1,6 @@
 # Connaissance Physiologie — Corps de coureur de Romain
 
-_Généré le 2026-05-06 depuis les données Strava et connaissances physiologiques._
+_Généré le 2026-05-08 depuis les données Strava et connaissances physiologiques._
 
 ---
 
