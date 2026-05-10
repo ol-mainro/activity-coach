@@ -1,8 +1,8 @@
 {
-  "generated": "2026-05-08",
-  "count": 74,
+  "generated": "2026-05-10",
+  "count": 75,
   "stats": {
-    "total_2026_km": 421.5,
+    "total_2026_km": 441.4,
     "max_long_km": 30.1,
     "long_runs_ge20km": 6,
     "monthly": {
@@ -15,10 +15,22 @@
       "2026-02": 30.8,
       "2026-03": 156.8,
       "2026-04": 173.9,
-      "2026-05": 34.1
+      "2026-05": 53.9
     }
   },
   "runs": [
+    {
+      "id": 18427350572,
+      "date": "2026-05-08T15:42:36Z",
+      "date_display": "08/05",
+      "name": "Course à pied dans l'après-midi",
+      "dist": 19.83,
+      "time": "1:55:14",
+      "pace": 349,
+      "type": "longue",
+      "sport_type": "Run",
+      "elevation": 100.9
+    },
     {
       "id": 18398189680,
       "date": "2026-05-06T13:08:42Z",
