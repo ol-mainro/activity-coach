@@ -880,6 +880,8 @@
 
   /* ── Runs data ── */
   const runs = [
+    { date:'13/05', name:"Course dans l'après-midi",         dist: 9.35, time:'47:04',  pace:302, type:'endurance'},
+    { date:'10/05', name:'Course à pied matinale',           dist:15.37, time:'1:27:03',pace:340, type:'endurance'},
     { date:'08/05', name:"Course dans l'après-midi",         dist:19.83, time:'1:55:14',pace:349, type:'longue'   },
     { date:'06/05', name:"Course dans l'après-midi",         dist:12.02, time:'1:00:41',pace:303, type:'endurance'},
     { date:'03/05', name:'Course matinale',                  dist:22.07, time:'1:56:36',pace:317, type:'longue'   },
@@ -987,7 +989,7 @@
     { label:'Fév 2026', km: 30.8,  note:'Montée en charge' },
     { label:'Mar 2026', km:156.8,  note:'Pic entraînement' },
     { label:'Avr 2026', km:173.9,  note:'Affûtage amorcé' },
-    { label:'Mai 2026', km: 53.9,  note:'Tapering · J-' + daysLeft },
+    { label:'Mai 2026', km: 78.7,  note:'Tapering · J-' + daysLeft },
   ];
   const amMax = Math.max(...analyseMonthly.map(m => m.km));
   const amEl = document.getElementById('analyse-monthly-bars');
@@ -1017,7 +1019,7 @@
     { label:'Fév 2026', km: 30.8 },
     { label:'Mar 2026', km:156.8 },
     { label:'Avr 2026', km:173.9 },
-    { label:'Mai 2026', km: 53.9 },
+    { label:'Mai 2026', km: 78.7 },
   ];
   const maxKm = Math.max(...monthly.map(m => m.km));
   const mbEl = document.getElementById('monthly-bars');

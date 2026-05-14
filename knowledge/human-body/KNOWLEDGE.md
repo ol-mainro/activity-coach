@@ -1,6 +1,6 @@
 # Connaissance Physiologie — Corps de coureur de Romain
 
-_Généré le 2026-05-10 depuis les données Strava et connaissances physiologiques._
+_Généré le 2026-05-14 depuis les données Strava et connaissances physiologiques._
 
 ---
 
@@ -8,8 +8,8 @@ _Généré le 2026-05-10 depuis les données Strava et connaissances physiologiq
 
 - **Objectif principal** : Marathon d'Auxerre, 26 mai 2026
 - **Niveau** : coureur expérimenté, entraînement sérieux depuis mars 2026
-- **Kilométrage total** : ~695 km (toutes données Strava)
-- **Kilométrage 2026** : 441,4 km
+- **Kilométrage total** : ~720 km (toutes données Strava)
+- **Kilométrage 2026** : 466,1 km
 
 ---
 
@@ -22,10 +22,10 @@ _Généré le 2026-05-10 depuis les données Strava et connaissances physiologiq
 | Février 2026 | 30,7 km |
 | Mars 2026 | 156,6 km |
 | Avril 2026 | 173,8 km |
-| Mai 2026 (au 10/05) | 54,0 km |
-| **Total 2026** | **441,4 km** |
+| Mai 2026 (au 13/05) | 78,7 km |
+| **Total 2026** | **466,1 km** |
 
-**Analyse** : Montée en charge très marquée et rapide entre février et mars (+410 %), maintenue en avril. Un volume de ~170 km/mois représente un niveau sérieux (environ 40 km/semaine). Tapering en cours en mai (J-16) : semaine du 04/05 au 10/05 clôturée à ~32 km (12 km le 06/05 + 19,8 km le 08/05). Volume bien géré : la sortie longue du 08/05 confirme que les jambes tournent encore bien à J-18.
+**Analyse** : Montée en charge très marquée et rapide entre février et mars (+410 %), maintenue en avril. Un volume de ~170 km/mois représente un niveau sérieux (environ 40 km/semaine). Tapering en cours en mai (J-12) : semaine du 04/05 au 10/05 clôturée à ~47 km (12 km le 06/05 + 19,8 km le 08/05 + 15,4 km le 10/05). Volume plus élevé que prévu initialement mais intensité très modérée sur les 3 sorties. La semaine du 11/05 en cours : 9,35 km réalisés le 13/05 — bonne gestion de la réduction de charge.
 
 ### Répartition des types de sorties (toutes données)
 | Type | Nb | Description |
@@ -60,7 +60,7 @@ _Généré le 2026-05-10 depuis les données Strava et connaissances physiologiq
 | 03/05/2026 | 22,1 km | ~1:56 | 5:17/km |
 | 08/05/2026 | 19,8 km | 1:55:14 | 5:49/km |
 
-**Observation** : La sortie du 22/03 (30,1 km à 5:13/km) reste la plus longue et le meilleur indicateur d'endurance fondamentale. La sortie du 08/05 (19,8 km à 5:49/km, 101 m D+) constitue une belle sortie longue de tapering, avec dénivelé notable. L'allure plus lente qu'habituellement sur cette distance (probablement parcours accidenté ou sortie détente) est cohérente avec une phase de récupération avant la compétition. La dernière sortie véritablement longue avant le marathon est désormais derrière Romain.
+**Observation** : La sortie du 22/03 (30,1 km à 5:13/km) reste la plus longue et le meilleur indicateur d'endurance fondamentale. La sortie du 08/05 (19,8 km à 5:49/km, 101 m D+) constitue la dernière sortie longue de tapering. La sortie du 10/05 (15,4 km à 5:40/km) est une sortie d'endurance douce, sans signal d'alerte. La sortie du 13/05 (9,35 km à 5:02/km) amorce la semaine décisive J-12 : allure légèrement relevée (5:02/km) témoignant du maintien des sensations. La dernière sortie véritablement longue est désormais derrière Romain — le travail est fait.
 
 ---
 
@@ -102,17 +102,18 @@ Compte tenu :
 - **Efficacité lipidique** : les sorties longues à 5:00–5:30/km favorisent l'utilisation des graisses comme carburant
 - **Économie de course** : le volume accumulé améliore la mécanique, réduit le coût énergétique
 
-### Points d'attention à J-16
-1. **Tapering avancé** : La semaine du 04/05 au 10/05 totalise ~32 km (06/05 : 12 km endurance, 08/05 : 19,8 km longue avec D+). Bonne gestion : ni trop ni trop peu. La semaine du 11/05 devra être plus légère (15–20 km max).
+### Points d'attention à J-12 (14 mai 2026)
+1. **Tapering en bonne voie** : Semaine du 04/05-10/05 : ~47 km (volume plus élevé que prévu mais intensités basses). Semaine 11/05-17/05 en cours : 9,35 km le 13/05 — bonne entrée dans la semaine finale avant la dernière semaine de réduction. Objectif : 15–18 km total pour 11-17/05, sans sortie longue.
 2. **Mur du 30e km** : Romain n'a jamais couru > 30 km en compétition. Gestion des stocks de glycogène cruciale — planifier les gels énergétiques (gel toutes les 30–40 min à partir du 10e km).
-3. **Maintien des sensations** : ne pas totalement cesser les allures vives — prévoir 1–2 séances courtes à allure marathon (2–3 km) dans la semaine du 11/05.
+3. **Maintien des sensations** : La sortie du 13/05 à 5:02/km montre que les jambes ont du ressort. Prévoir 1 séance courte à allure marathon (2–3 km à 4:55–5:00/km) dans les jours qui viennent, puis réduire.
 4. **Hydratation et ravitaillement** : finaliser la stratégie de course (gels, eau, électrolytes). Répéter mentalement les points de ravitaillement du parcours d'Auxerre.
+5. **Récupération prioritaire** : Les 12 derniers jours sont décisifs — sommeil, alimentation (charges glucidiques à partir du 22/05), pas de séance de qualité après le 17/05.
 
-### Semaines type en phase de tapering (actualisées au 10/05)
+### Semaines type en phase de tapering (actualisées au 14/05)
 - **Semaine du 27/04 au 03/05** ✅ : ~32 km réalisés (inclus 22,1 km longue le 03/05)
-- **Semaine du 04/05 au 10/05** ✅ : ~32 km réalisés (12 km le 06/05 à 5:03/km + 19,8 km le 08/05 à 5:49/km, +101 m D+)
-- **Semaine du 11/05 au 17/05** : 15–20 km, allures modérées, 1–2 courtes séances à allure marathon (~4:55/km)
-- **Semaine du 18/05 au 24/05** : 10–12 km total, allures faciles, quelques courtes accélérations
+- **Semaine du 04/05 au 10/05** ✅ : ~47 km réalisés (12 km le 06/05 à 5:03/km + 19,8 km le 08/05 à 5:49/km + 15,4 km le 10/05 à 5:40/km) — volume plus élevé qu'attendu mais intensités très basses, pas d'alerte
+- **Semaine du 11/05 au 17/05** 🔄 en cours : 9,35 km le 13/05 à 5:02/km — objectif 15–18 km total, 1 courte séance à allure marathon (~4:55/km), pas de sortie > 12 km
+- **Semaine du 18/05 au 24/05** : 10–12 km total, allures faciles, quelques courtes accélérations — priorité sommeil et nutrition (charges glucidiques)
 - **25 mai** : 10–15 min de footing léger, visualisation
 - **26 mai** : MARATHON D'AUXERRE 🏁
 
